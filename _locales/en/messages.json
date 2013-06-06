@@ -211,7 +211,7 @@
     "message": "Disable Horizontal Scrolling"
   },
   "ui_config_advanced_disable_horizontal_scrollbar_tip": {
-    "message": "Disables horizontal scrolling, allowing verical scrolling."
+    "message": "Disables horizontal scrolling, allowing vertical scrolling."
   },
   "ui_config_advanced_hide_rctm": {
     "message": "Hide Recently Closed Tab Menu button"
