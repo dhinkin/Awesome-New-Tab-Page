@@ -463,7 +463,7 @@
     "message": "Online backups are stored using the Chrome Storage API and have a limited space of 100KB. You can access these backups over multiple computers which are logged in with same Google Chrome account. <a href='https://support.google.com/chrome/answer/185277?hl=en'>Learn how to sign in to Chrome.</a>"
   },
   "ui_online_backups_warning": {
-    "message": "<b>Important: </b> You need to be signed in to to Google Chrome using the same account to synchronize backups online. If you are not signed in, these backups will be stored offline, only on this computer. Images uploaded directly to the extension are <i>not</i> backed up."
+    "message": "<b>Important: </b> You need to be signed in to Google Chrome using the same account to synchronize backups online. If you are not signed in, these backups will be stored offline, only on this computer. Images uploaded directly to the extension are <i>not</i> backed up."
   },
   "ui_apps_tip_message_title": {
     "message": "New App Installed"
