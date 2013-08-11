@@ -322,7 +322,7 @@ function _e(_eNum) {
     // Ctrl + Click = Open in new tab
     if ( e.which !== 3 ) {
       if ( e.ctrlKey === true ) {
-	e.which = 2;
+      	e.which = 2;
       }
       if (e.metaKey === true ) {
         e.which = 3;
