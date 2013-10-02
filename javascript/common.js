@@ -70,8 +70,8 @@
       color: "rgba(0, 160, 60, 1)",
       id: "webstore",
       stock: true,
-      img: "icon128.png",
-      simg: "icon128.png",
+      img: "/images/antp-flat-128.png",
+      simg: "/images/antp-flat-128.png",
       appLaunchUrl: "http://dev.antp.co/widgets"
     },
     tutorial: {
