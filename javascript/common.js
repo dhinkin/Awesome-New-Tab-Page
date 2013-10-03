@@ -115,35 +115,6 @@
       id: "google",
       path: "widgets/google/widget.google.html"
     },
-    amazoninstantvideo: {
-      where: [2,1],
-      size: [1,1],
-      type: "app",
-      isApp: true,
-      enabled: false,
-      stock: true,
-      name: "Amazon Instant Video",
-      name_show: false,
-      color: "rgba(255, 51, 0,  1)",
-      img: "/widgets/amazoninstantvideo/widget.aiv.png",
-      simg: "/widgets/amazoninstantvideo/widget.aiv.png",
-      appLaunchUrl: "http://www.amazon.com/Instant-Video/b?ie=UTF8&tag=sntp-20&node=2858778011",
-      id: "amazoninstantvideo"
-    },
-    amazon: {
-      where: [1,3],
-      size: [1,1],
-      type: "app",
-      isApp: true,
-      stock: true,
-      name: "Amazon",
-      name_show: false,
-      color: "rgba(168, 84, 0,  1)",
-      img: "/widgets/amazon/widget.amazon.png",
-      simg: "/widgets/amazon/widget.amazon.png",
-      appLaunchUrl: "http://www.amazon.com/?tag=sntp-20",
-      id: "amazon"
-    },
     facebook: {
       where: [0,4],
       size: [1,1],
@@ -171,34 +142,6 @@
       simg: "/widgets/twitter/widget.twitter.png",
       appLaunchUrl: "http://www.twitter.com/",
       id: "twitter"
-    },
-    tv: {
-      where: [2,0],
-      size: [1,1],
-      type: "iframe",
-      isApp: false,
-      stock: true,
-      name: "Hulu / Netflix",
-      id: "tv",
-      path: "widgets/tv/widget.tv.html"
-    },
-    tabs: {
-      id: "tabs",
-      isApp: false,
-      name: "Tab Manager",
-      path: "widgets/tabs/tabs.html",
-      poke: 2,
-      resize: true,
-      size: [1,2],
-      type: "iframe",
-      v2: {
-        resize    : true,
-        min_height: 1,
-        min_width : 1,
-        max_height: 3,
-        max_width : 3
-      },
-      where: [2,1]
     }
   };
 
@@ -217,7 +160,6 @@
     ];
 
   var gradient = ", -webkit-gradient( linear, right bottom, left top, color-stop(1, rgba(255, 255, 255, .04)), color-stop(0, rgba(255, 255, 255, 0.35)) )";
-  var amazon_regex = new RegExp("amazon\.(com|cn|co\.uk|at|fr|de|it|co\.jp|es)[/]{0,1}[\?]{0,1}");
 
   // For Google Analytics
   var _gaq = _gaq || [];
@@ -333,18 +275,6 @@ function _e(_eNum) {
 
     if ( url && typeof(url) === "string" && url !== ""
     &&   url_handler && url_handler === url ) {
-
-      // Update Amazon.com URLs to TLD of user-preference
-      if( url.match(amazon_regex)
-      &&   localStorage["amazon-locale"] !== null
-      &&   localStorage["amazon-locale"] !== ""
-      &&   typeof(localStorage["amazon-locale"]) !== "undefined" ) {
-        if ( url.match("Instant-Video") === null ) {
-          url = "http://www." + localStorage["amazon-locale"] + "/?tag=sntp-20";
-        } else {
-          url = "http://www.amazon.com/Instant-Video/b?ie=UTF8&tag=sntp-20&node=2858778011"
-        }
-      }
 
       if ( e.shiftKey !== true ) {
         if ( e.which === 1 ) {

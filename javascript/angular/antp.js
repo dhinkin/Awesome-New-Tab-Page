@@ -119,7 +119,6 @@ var
         // Fixed list app urls with  their search urls
         var fixedSearchURLs = {
           "http://www.youtube.com/"                       : "http://www.youtube.com/results?search_query={input}",
-          "http://www.amazon.com/?tag=sntp-20"            : "http://www.amazon.com/s/?field-keywords={input}&tag=sntp-20",
           "http://www.facebook.com/"                      : "http://www.facebook.com/search/?q={input}",
           "http://www.twitter.com/"                       : "http://twitter.com/search?q={input}&src=typd",
           "http://plus.google.com/"                       : "http://plus.google.com/s/{input}",
@@ -409,7 +408,7 @@ var
         .attr("active-edit-type", editor_type);
 
       var stock_app = false;
-      if ( $.inArray(id, ["webstore", "amazon", "amazoninstantvideo", "facebook", "twitter"]) !== -1 ) {
+      if ( $.inArray(id, ["webstore", "facebook", "twitter"]) !== -1 ) {
         tile.img = stock_widgets[id].simg;
         stock_app = true;
       }

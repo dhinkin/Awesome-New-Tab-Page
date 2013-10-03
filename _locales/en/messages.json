@@ -149,10 +149,6 @@
   "ui_config_shgrid_desc": {
     "message": "When enabled, the grid will show at all times."
   },
-  "ui_config_amazonlocale":
-  {
-    "message": "For the <i>stock</i> Amazon shortcut, select your country."
-  },
   "ui_config_reset": {
     "message": "Reset"
   },

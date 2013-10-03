@@ -241,13 +241,6 @@
     }
   });
 
-  $(document).ready(function($) {
-    $("#amazon-locale-selection").val(localStorage.getItem("amazon-locale") || "amazon.com");
-    $("#amazon-locale-selection").change(function() {
-      localStorage.setItem("amazon-locale", $(this).val());
-    });
-  });
-
   $(".bg-color").css("background-color", "#" + (localStorage.getItem("color-bg") || "221f20"));
 
   $(document).ready(function($) {
