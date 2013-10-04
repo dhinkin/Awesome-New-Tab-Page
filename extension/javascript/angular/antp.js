@@ -752,7 +752,7 @@ var
         });
 
         $scope.safeApply.call(self);
-      }, 50);
+      }, 1500);
     });
   };
 
