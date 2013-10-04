@@ -79,8 +79,8 @@ var
         /* Start :: CSS */
 
           tile.css = {};
-          tile.css.height = ( tile.size[0] * 200 ) + ( ( tile.size[0] - 1 ) * 6 );
-          tile.css.width  = ( tile.size[1] * 200 ) + ( ( tile.size[1] - 1 ) * 6 );
+          tile.css.height = ( tile.size[0] * GRID_TILE_SIZE ) + ( ( tile.size[0] - 1 ) * ( GRID_TILE_PADDING * 2 ) );
+          tile.css.width  = ( tile.size[1] * GRID_TILE_SIZE ) + ( ( tile.size[1] - 1 ) * ( GRID_TILE_PADDING * 2 ) );
           tile.css.top    = tile.where[0] * ( GRID_TILE_SIZE + ( GRID_TILE_PADDING * 2 ) ) + ( GRID_TILE_PADDING * 2 );
           tile.css.left   = tile.where[1] * ( GRID_TILE_SIZE + ( GRID_TILE_PADDING * 2 ) ) + ( GRID_TILE_PADDING * 2 );
 

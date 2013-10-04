@@ -64,8 +64,8 @@ var GRID_MIN_HEIGHT     = 3,
     GRID_MIN_WIDTH      = 7,
     GRID_MARGIN_TOP     = function(){ return preference.get("showbmb") ? 27 : 0 },
     GRID_MARGIN_LEFT    = function(){ return preference.get("hideLeftButtons") ? 0 : 27 },
-    GRID_TILE_SIZE      = 200,  // NEVER CHANGE
-    GRID_TILE_PADDING   = 3,    // NEVER CHANGE
+    GRID_TILE_SIZE      = 200,
+    GRID_TILE_PADDING   = 3,
 
     TILE_MIN_WIDTH      = 1,
     TILE_MAX_WIDTH      = 3,
@@ -511,9 +511,9 @@ $(window).mouseup("mouseup", function(e) {
     var left = $(resize_element.element).position().left;
     var column, bracket;
     for (var col = 1; col < 50; col++) {
-      bracket = ((GRID_TILE_SIZE * (col-0)) + (GRID_TILE_PADDING * 2) * (col-0)) + 6;
+      bracket = ((GRID_TILE_SIZE * (col-0)) + (GRID_TILE_PADDING * 2) * (col-0)) + (GRID_TILE_PADDING * 2);
       if ( bracket > left + 103 ) {
-        new_left  = ((GRID_TILE_SIZE * (col-1)) + (GRID_TILE_PADDING * 2) * (col-1)) + 6;
+        new_left  = ((GRID_TILE_SIZE * (col-1)) + (GRID_TILE_PADDING * 2) * (col-1)) + (GRID_TILE_PADDING * 2);
 
         column = col - 1;
 
@@ -527,9 +527,9 @@ $(window).mouseup("mouseup", function(e) {
     var top = $(resize_element.element).position().top;
     var row;
     for (var _row = 1; _row < 50; _row++) {
-      bracket = ((GRID_TILE_SIZE * (_row-0)) + (GRID_TILE_PADDING * 2) * (_row-0)) + 6;
+      bracket = ((GRID_TILE_SIZE * (_row-0)) + (GRID_TILE_PADDING * 2) * (_row-0)) + (GRID_TILE_PADDING * 2);
       if ( bracket > top + 103 ) {
-        new_top  = ((GRID_TILE_SIZE * (_row-1)) + (GRID_TILE_PADDING * 2) * (_row-1)) + 6;
+        new_top  = ((GRID_TILE_SIZE * (_row-1)) + (GRID_TILE_PADDING * 2) * (_row-1)) + (GRID_TILE_PADDING * 2);
 
         row = _row - 1;
 
