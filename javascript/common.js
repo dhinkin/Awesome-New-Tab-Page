@@ -320,8 +320,13 @@ function _e(_eNum) {
   $(document).on("mouseup", ".url", function(e) {
 
     // Ctrl + Click = Open in new tab
-    if ( e.which !== 3 && e.ctrlKey === true ) {
-      e.which = 2;
+    if ( e.which !== 3 ) {
+      if ( e.ctrlKey === true ) {
+      	e.which = 2;
+      }
+      if (e.metaKey === true ) {
+        e.which = 3;
+      }
     }
 
     var url = $(this).attr("data-url");
