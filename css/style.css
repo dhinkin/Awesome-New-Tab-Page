@@ -1043,6 +1043,10 @@ body > .widget-drawer-app img {
  * Tabs & Panes
  */
 
+  .tab-pane > div {
+    padding-bottom: 5px;
+  }
+
   .tab-content > .tab-pane,
   .tab-content > .show-if-app:not(.active), .type-app .hide-if-app {
     display: none;
