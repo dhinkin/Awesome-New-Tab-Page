@@ -22,6 +22,11 @@
 /* START :: Recently Closed Tabs & Tab Manager Widget */
   chrome.tabs.onRemoved.addListener( onRemoved );
   function onRemoved(tabId) {
+    if ( localStorage.hideRCTM === "true" ) {
+      localStorage.removeItem("recently_closed");
+      return;
+    }
+
     var
       recently_closed = JSON.parse(localStorage.getItem("recently_closed")),
       tabs = localStorage.getItem("open_tabs"),
