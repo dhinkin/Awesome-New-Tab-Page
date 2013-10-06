@@ -29,7 +29,7 @@
     mouseenter: function() {
       hscroll = false;
     }
-  }, "body > .ui-2, body > #recently-closed-tabs-menu");
+  }, ".no-scoll,body > .ui-2");
 
   function scrollHorizontal(event) {
     var delta = 0;
@@ -44,10 +44,6 @@
       event = event.originalEvent;
 
     if ( hscroll === false ) {
-      if ( event.preventDefault )
-        event.preventDefault();
-
-      event.returnValue = false;
       return;
     }
 

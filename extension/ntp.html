@@ -138,7 +138,7 @@
       <div id="unlock-button" title="{{ 'ui_button_unlock' | i18n}}"></div>
     </div>
 
-    <div id="recently-closed-tabs-menu" ng-controller="RCTMCtrl">
+    <div id="recently-closed-tabs-menu" class="no-scroll" ng-controller="RCTMCtrl">
       <div>{{ 'ui_button_rct' | i18n}}</div>
 
       <div class="rctm-item" ng-repeat="rct in recently_closed">
@@ -151,7 +151,7 @@
       <div ng-show="recently_closed" class="rctm-reset-all" ng-click="clear()">{{ "rctm_clear_all" | i18n }}</div>
     </div>
 
-    <div id="about" class="ui-2 container">
+    <div id="about" class="ui-2 container no-scroll">
       <div class="ui-2 header">
         <div class="ui-2 left">
           <div class="ui-2 logo"></div>
@@ -228,7 +228,7 @@
       </div>
     </div>
 
-    <div id="config" class="ui-2 container">
+    <div id="config" class="ui-2 container no-scoll">
       <div class="ui-2 header">
         <div class="ui-2 left">
           <div class="ui-2 logo"></div>
@@ -402,8 +402,8 @@
       </div>
     </div>
 
-    <div ng-controller="windowAppsWidgetsCtrl">
-      <div id="apps" class="ui-2 container" ng-controller="windowAppsWidgetsCtrl">
+    <div ng-controller="windowAppsWidgetsCtrl" class="no-scoll">
+      <div id="apps" class="ui-2 container">
         <div class="ui-2 header">
           <div class="ui-2 left">
             <div class="ui-2 logo"></div>
