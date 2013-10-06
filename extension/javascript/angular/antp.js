@@ -482,31 +482,27 @@ var
 
       $("#swatches").html("").hide();
       if ( is_app === true && stock_app === false ) {
-        var image = tile.img;
-        required("quantize", function() {
-          required("color-thief", function() {
-            var medianPalette = createPalette(
-              $("<img />").attr({
-                "src": image,
-                "id" : "temporary-element-to-delete"
-              }).css({
-                "display": "none"
-              }).appendTo("body")
-            , 5);
-            $.each(medianPalette, function(index, value) {
-              var swatchEl = $('<div>')
-              .css("background-color","rgba(" +value[0]+ "," +value[1]+  "," +value[2]+ ", 1)")
-              .data({
-                "r": value[0],
-                "g": value[1],
-                "b": value[2]
-              }).addClass("swatch");
-              $("#swatches").append(swatchEl).show();
-            });
-
-            $("#temporary-element-to-delete").remove();
-          });
+        var image = tile.img,
+          medianPalette = createPalette(
+          $("<img />").attr({
+            "src": image,
+            "id" : "temporary-element-to-delete"
+          }).css({
+            "display": "none"
+          }).appendTo("body")
+        , 5);
+        $.each(medianPalette, function(index, value) {
+          var swatchEl = $('<div>')
+          .css("background-color","rgba(" +value[0]+ "," +value[1]+  "," +value[2]+ ", 1)")
+          .data({
+            "r": value[0],
+            "g": value[1],
+            "b": value[2]
+          }).addClass("swatch");
+          $("#swatches").append(swatchEl).show();
         });
+
+        $("#temporary-element-to-delete").remove();
       }
       $(".ui-2#editor #invisible-tile-img").attr("src", tile.img);
       if (tile.backgroundSize) {
