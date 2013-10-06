@@ -35,7 +35,6 @@ $("#import-btn").bind("click", function() {
   $importTextarea.show();
   $importTextarea.focus();
   $("#run-import-btn").show();
-  _gaq.push([ "_trackEvent", "Window", "Import/Export" ]);
 });
 
 // upon click on restore button

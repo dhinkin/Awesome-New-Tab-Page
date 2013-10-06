@@ -52,7 +52,6 @@
       optionsInit = true;
     }
 
-    _gaq.push([ '_trackEvent', 'Window', "Config" ]);
     closeButton(".ui-2#config");
     $(".ui-2#config").toggle();
     requiredColorPicker();
@@ -60,15 +59,11 @@
   });
 
   $(document).on("click", "#app-drawer-button", function() {
-    _gaq.push([ '_trackEvent', 'Window', "Apps" ]);
-
     closeButton(".ui-2#apps");
     $(".ui-2#apps").toggle();
   });
 
   $(document).on("click", "#widget-drawer-button", function() {
-    _gaq.push([ '_trackEvent', 'Window', "Widgets" ]);
-
     closeButton(".ui-2#widgets");
     $(".ui-2#widgets").toggle();
   });
@@ -78,16 +73,12 @@
   });
 
   $(document).on("click", "#recently-closed-tabs", function() {
-    _gaq.push([ "_trackEvent", "Window", "Recently Closed Tabs" ]);
-
     closeButton("#recently-closed-tabs-menu");
     $("#recently-closed-tabs-menu").toggle();
   });
 
   var aboutInit = false;
   $(document).on("click", "#logo-button,.ui-2.logo", function() {
-    _gaq.push([ '_trackEvent', 'Window', "About" ]);
-
     closeButton(".ui-2#about");
     $(".ui-2#about").toggle();
 
@@ -270,7 +261,6 @@
       deleteShortcuts();
       deleteRoot();
       localStorage.clear();
-      _gaq.push(['_trackEvent', 'Reset', chrome.app.getDetails().version]);
 
       setTimeout(function() {
         reload();

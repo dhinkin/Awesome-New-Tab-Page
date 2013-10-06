@@ -231,7 +231,6 @@ if (typeof Object.merge !== "function") {
 
 function _e(_eNum) {
   console.log("Error #"+_eNum);
-  _gaq.push(['_trackEvent', 'Error', _eNum]);
 }
 
 /* URL Handler :: Start */
