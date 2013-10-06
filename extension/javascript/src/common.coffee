@@ -101,7 +101,7 @@
       appLaunchUrl: "http://www.twitter.com/"
       id: "twitter"
 
-  palette = [
+  window.palette = [
     "rgba(51,   153,  51,    1)",
     "rgba(229,  20,   0,     1)",
     "rgba(27,   161,  226,   1)",
@@ -114,7 +114,7 @@
     "rgba(0,    171,  169,   1)"
   ]
 
-  gradient = ", -webkit-gradient( linear, right bottom, left top, color-stop(1, rgba(255, 255, 255, .04)), color-stop(0, rgba(255, 255, 255, 0.35)) )"
+  window.gradient = ", -webkit-gradient( linear, right bottom, left top, color-stop(1, rgba(255, 255, 255, .04)), color-stop(0, rgba(255, 255, 255, 0.35)) )"
 
 # Check if there are stored widgets
   if localStorage.getItem("widgets") is null
@@ -234,7 +234,7 @@
 
 # START :: Preferences
   DEFAULTS = # uses localStorage keys
-    "perm-grid": true
+    "perm-grid": false
     hideScrollbar: false
     hideLeftButtons: false
     disableHscroll: false
