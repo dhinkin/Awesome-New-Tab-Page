@@ -1,4 +1,9 @@
 node_modules
+antp-packaged.zip
+*.compiled.js
+*.compiled.js.map
+*.uglified.js
+*.uglified.js.map
 
 # Windows image file caches
 Thumbs.db
