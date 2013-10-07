@@ -297,11 +297,9 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
   padding-bottom: 2px;
 }
 .rctm-close {
-  background-image: url(/images/ui-2/x.png);
-  background-size: 19px;
-  background-repeat: no-repeat;
-  width: 19px;
-  height: 19px;
+  width: 24px;
+  height: 24px;
+  background-position: -225px -51px; /* Sprite */
   display: inline-block;
   opacity: .5;
 }
@@ -319,10 +317,10 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
 .rctm-item {
   display: block;
   white-space: nowrap;
-  padding-right: 5px;
+  padding-right: 10px;
   padding-top: 4px;
   padding-bottom: 1px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 .rctm-item:nth-child(even) {
   background-color: #EEEEEE;
@@ -333,6 +331,7 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
 .rctm-icon {
   width: 16px;
   height: 16px;
+  margin-bottom: 4px;
 }
 .rctm-icon,
 .rctm-link {
