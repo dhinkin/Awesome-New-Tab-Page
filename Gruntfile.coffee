@@ -54,6 +54,7 @@ module.exports = (grunt) ->
 
         files:
           "extension/javascript/libs.uglified.js": [
+            "extension/javascript/libs/center.js"
             "extension/javascript/libs/quantize.js"
             "extension/javascript/libs/color-thief.js"
           ]

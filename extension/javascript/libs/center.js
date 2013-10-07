@@ -1,3 +1,7 @@
+/*!
+ *  Credit to stackoverflow user molokoloco: http://stackoverflow.com/a/2257651/1335143
+**/
+
 (function($){
 	 $.fn.extend({
 		  center: function (options) {
