@@ -596,13 +596,8 @@ var
       $scope.$apply();
     };
 
-    setTimeout($scope.update, 1000);
-
-    $(window).bind("storage", function (e) {
-      if ( typeof(e.originalEvent) === "object"
-        && typeof(e.originalEvent.key) === "string"
-        && e.originalEvent.key === "recently_closed" )
-          $scope.update();
+    $(document).on("click", "#recently-closed-tabs", function() {
+      $scope.update();
     });
 
   }
