@@ -6,15 +6,6 @@
   window.util.toArray = (list) ->
     Array::slice.call list or [], 0
 
-# localStorage shortcuts
-  window.store =
-    # store.set("key", "obj")
-    set: (key, obj) ->
-      localStorage.setItem key, JSON.stringify(obj)
-    # store.get("key")
-    get: (key) ->
-      JSON.parse localStorage.getItem(key)
-
 # Variables that are relatively static
   window.stock_widgets =
     webstore:
@@ -116,12 +107,6 @@
 
   window.gradient = ", -webkit-gradient( linear, right bottom, left top, color-stop(1, rgba(255, 255, 255, .04)), color-stop(0, rgba(255, 255, 255, 0.35)) )"
 
-# Check if there are stored widgets
-  if localStorage.getItem("widgets") is null
-
-    # If not, use stock widgets
-    store.set "widgets", stock_widgets
-
 # display messages to be displayed on page refresh
   if localStorage.msg
     msg = JSON.parse(localStorage.msg)
@@ -132,20 +117,9 @@
     ), 500
     localStorage.removeItem "msg"
 
-# Load widget settings
-  window.widgets = JSON.parse(localStorage.getItem("widgets"))
-
-  chrome.management.getAll (data) ->
-    window.extensions = data
-
 # Reload page
   window.reload = ->
     window.location.reload true
-
-# Save changes to the widgets variable in localStorage & optionally refresh
-  window.localStorageSync = (refresh) ->
-    localStorage.setItem "widgets", JSON.stringify(widgets)
-    $(window).trigger "antp-widgets" if refresh is true
 
 # Generate a GUID-style string
   window.new_guid = ->
@@ -231,34 +205,3 @@
     url_handler = false
 
   # END :: URL Handler
-
-# START :: Preferences
-  DEFAULTS = # uses localStorage keys
-    "perm-grid": false
-    hideScrollbar: false
-    hideLeftButtons: false
-    disableHscroll: false
-    hideRCTM: false
-
-  window.preference =
-    get: (key) ->
-      value = localStorage.getItem(key)
-      if not value and DEFAULTS[key]
-        localStorage.setItem key, DEFAULTS[key]
-        return DEFAULTS[key]
-      yesorno =
-        yes: true
-        no: false
-        true: true
-        false: false
-
-      return yesorno[value]  if typeof yesorno[value] is "boolean"
-      value
-
-    set: (key, value) ->
-      if value is null
-        localStorage.removeItem key
-        return
-      localStorage.setItem key, value
-
-  # END :: Preferences
