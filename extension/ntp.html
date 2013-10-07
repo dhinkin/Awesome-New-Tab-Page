@@ -55,14 +55,14 @@
           top: {{widget.css.top}}px; left: {{widget.css.left}}px;
           background-size: {{widget.backgroundSize}}; background-position: {{widget.backgroundPosition}}">
         <iframe ng-src="{{widget.path}}{{widget.hash}}" scrolling="no" frameborder="0" align="center" height="100%" width="100%"></iframe>
-        <div class="iframe-mask" ng-switch on="widget.resize">
+        <div class="iframe-mask">
           <div id="delete" class="sprite"></div>
           <div id="widget-config" class="url sprite" data-url="{{widget.optionsUrl}}{{widget.hash}}" ng-show="widget.optionsUrl"></div>
           <div class="resize-tile">
-            <div class="resize-tile-top" ng-switch-when="true"></div>
-            <div class="resize-tile-bottom" ng-switch-when="true"></div>
-            <div class="resize-tile-left" ng-switch-when="true"></div>
-            <div class="resize-tile-right" ng-switch-when="true"></div>
+            <div class="resize-tile-top" ng-show="widget.resize"></div>
+            <div class="resize-tile-bottom" ng-show="widget.resize"></div>
+            <div class="resize-tile-left" ng-show="widget.resize"></div>
+            <div class="resize-tile-right" ng-show="widget.resize"></div>
           </div>
         </div>
       </div>
