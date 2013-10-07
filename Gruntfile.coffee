@@ -71,8 +71,9 @@ module.exports = (grunt) ->
 
         files: [
           src: [
-            "extension/**",
+            "extension/**"
             "!extension/javascript/src/**"
+            "!extension/images/ui-2/src/**"
           ]
           dest: "./"
           filter: "isFile"
