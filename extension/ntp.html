@@ -58,11 +58,11 @@
         <div class="iframe-mask" ng-switch on="widget.resize">
           <div id="delete" class="sprite"></div>
           <div id="widget-config" class="url sprite" data-url="{{widget.optionsUrl}}{{widget.hash}}" ng-show="widget.optionsUrl"></div>
-          <div class="resize-tile" ng-switch-when="true">
-            <div class="resize-tile-top"></div>
-            <div class="resize-tile-bottom"></div>
-            <div class="resize-tile-left"></div>
-            <div class="resize-tile-right"></div>
+          <div class="resize-tile">
+            <div class="resize-tile-top" ng-switch-when="true"></div>
+            <div class="resize-tile-bottom" ng-switch-when="true"></div>
+            <div class="resize-tile-left" ng-switch-when="true"></div>
+            <div class="resize-tile-right" ng-switch-when="true"></div>
           </div>
         </div>
       </div>
