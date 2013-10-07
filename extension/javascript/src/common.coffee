@@ -1,3 +1,8 @@
+# Awesome New Tab Page
+# Copyright 2011-2013 Awesome HQ, LLC & Michael Hart
+# All rights reserved.
+# http://antp.co http://awesomehq.com
+
 # Error logging
   Raven.config("https://daa268858eb148978bcf2b39fb26891c@app.getsentry.com/14013", {}).install()
 

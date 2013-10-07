@@ -1,3 +1,8 @@
+# Awesome New Tab Page
+# Copyright 2011-2013 Awesome HQ, LLC & Michael Hart
+# All rights reserved.
+# http://antp.co http://awesomehq.com
+
 # localStorage shortcuts
   window.store =
     # store.set("key", "obj")
