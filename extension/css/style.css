@@ -1,21 +1,8 @@
-/** Awesome New Tab Page
-  *   antp.co
-  *   Copyright 2011-2012 Michael Hart (h4r7.me)
-  * Want to make it even more awesome?
-  *   github.antp.co
-  *
-  * Licensed under GPL v3:
-  *   http://www.gnu.org/licenses/gpl-3.0.txt
-  *   Further Restrictions:
-  *     To make use of or modify the below code in any way:
-  *     - You agree to leave this copyright and license notice intact without
-  *       modification; and
-  *     - You agree to mark your modified versions as modified from the original
-  *       version; and
-  *     - You agree not to misrepresent the origin of this material or your
-  *       relationship with the authors of this project or the project itself.
-***/
-
+.sprite {
+  background-image: url(/images/ui-2/sprites.png);
+  background-repeat: no-repeat;
+  display: block;
+}
 
 a:link,
 a:visited,
@@ -117,40 +104,40 @@ body {
 #delete {
   width: 48px;
   height: 48px;
-  background-image: url("/images/ui-2/tile.png");
-  background-position: 0 0;
+  background-position: -5px -63px; /* Sprite */
   cursor: pointer;
   display: none;
 }
 #delete:hover {
-  background-image: url("/images/ui-2/tile.png");
-  background-position: 0 -48px;
+  width: 48px;
+  height: 48px;
+  background-position: -63px -63px; /* Sprite */
 }
 
 #widget-config {
   width: 48px;
   height: 48px;
-  background-image: url("/images/ui-2/tile.png");
-  background-position: 96px 0px;
+  background-position: -109px -5px; /* Sprite */
   cursor: pointer;
   display: none;
 }
 #widget-config:hover {
-  background-image: url("/images/ui-2/tile.png");
-  background-position: 96px -48px;
+  width: 48px;
+  height: 48px;
+  background-position: -51px -5px; /* Sprite */
 }
 
 #shortcut-edit {
   width: 48px;
   height: 48px;
-  background-image: url("/images/ui-2/tile.png");
-  background-position: 48px 0px;
+  background-position: -5px -121px; /* Sprite */
   cursor: pointer;
   display: none;
 }
 #shortcut-edit:hover {
-  background-image: url("/images/ui-2/tile.png");
-  background-position: 48px -48px;
+  width: 48px;
+  height: 48px;
+  background-position: -121px -63px; /* Sprite */
 }
 #widget-holder .iframe-mask:hover #delete,
 #widget-holder .iframe-mask:hover #shortcut-edit,
@@ -267,12 +254,6 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
   left: 7px;
   color: white;
   word-wrap: break-word;
-}
-#lock-button {
-  background-color: red;
-  border-color: red;
-  opacity: 1;
-  color: white;
 }
 
 .bubble.active, .bubble:hover {
@@ -396,20 +377,17 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
 }
 #top-buttons {
   position: fixed;
-  top: -2px;
-  left: -2px;
+  top: 0; left: 0;
   text-decoration: none;
   z-index: 900;
-  width: 35px;
+  width: 40px;
   height: 100%;
 }
 #top-buttons > div {
-  margin-left: 5px;
-  width: 32px;
-  height: 32px;
+  margin: 2px;
+  width: 36px;
+  height: 36px;
   -webkit-transition: left .2s ease-in-out, top .2s ease-in-out, -webkit-filter .7s ease;
-  margin-top: 2px;
-  margin-bottom: 2px;
   display: block;
   opacity: .75;
   cursor: pointer;
@@ -426,52 +404,46 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
 
   background-color: transparent;
   background-image: url("/images/antp-flat-128.png");
-  background-position: 0px -4px;
-  background-size: 32px;
+  background-position: 2px -4px;
+  background-size: 30px;
   background-repeat: no-repeat;
 }
 #config-button {
-  background-color: transparent;
-  background-image: url("/images/ui-2/side-buttons.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  background-position: -193px -5px; /* Sprite */
 }
 #app-drawer-button {
-  background-color: transparent;
-  background-image: url("/images/ui-2/side-buttons.png");
-  background-position: 0 -32px;
-  background-repeat: no-repeat;
-  border-color: transparent;
+  width: 36px;
+  height: 36px;
+  background-position: -63px -167px; /* Sprite */
 }
 #widget-drawer-button {
-  background-color: transparent;
-  background-image: url("/images/ui-2/side-buttons.png");
-  background-position: 0 -64px;
-  background-repeat: no-repeat;
-  border-color: transparent;
+  width: 36px;
+  height: 36px;
+  background-position: -109px -167px; /* Sprite */
+}
+#recently-closed-tabs {
+  width: 36px;
+  height: 36px;
+  background-position: -63px -121px; /* Sprite */
 }
 #unlock-button {
-  background-color: transparent;
-  background-image: url("/images/ui-2/side-buttons.png");
-  background-position: 0 -128px;
-  background-repeat: no-repeat;
-  border-color: transparent;
+  width: 36px;
+  height: 36px;
+  background-position: -155px -121px; /* Sprite */
 }
 #lock-button {
-  background-color: transparent;
-  background-image: url("/images/ui-2/side-buttons.png");
-  background-position: 0 -160px;
-  background-repeat: no-repeat;
-  border-color: transparent;
+  width: 36px;
+  height: 36px;
+  background-position: -201px -165px; /* Sprite */
 
   display: none;
 }
-#recently-closed-tabs {
-  background-color: transparent;
-  background-image: url("/images/ui-2/side-buttons.png");
-  background-position: 0 -96px;
-  background-repeat: no-repeat;
-  border-color: transparent;
+#pro-button {
+  width: 36px;
+  height: 36px;
+  background-position: -201px -119px;
 }
 .perm-grid .tile {
   background-color: rgba(0, 0, 0, .2);
@@ -566,7 +538,6 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
   height: 72px;
   background-repeat: no-repeat;
 
-  border-right: 1px solid #E2E1DF;
   cursor: pointer;
 
   position: absolute;
@@ -590,57 +561,24 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
   top: 25px;
 }
 .ui-2.crumb {
-  background: url("/images/ui-2/crumb.png");
-  background-position: 17px 17px;
+  width: 16px;
+  height: 16px;
+  background-position: -167px -3px; /* Sprite; manually adjusted */
   display: inline-block;
-  height: 10px;
-  width: 10px;
 }
 .ui-2.sub-name {
   display: inline-block;
 }
-.ui-2.help {
-  background: url("/images/ui-2/help.png");
-  width: 24px;
-  height: 24px;
-
-  cursor: pointer;
-
-  position: absolute;
-  right: 40px;
-  top: 36px;
-}
-.ui-2.config {
-  background: url("/images/ui-2/cog.png");
-  width: 24px;
-  height: 24px;
-
-  cursor: pointer;
-
-  position: absolute;
-  right: 70px;
-  top: 36px;
-}
-.ui-2.vr {
-  width: 1px;
-  height: 72px;
-
-  border-right: 1px solid #E2E1DF;
-
-  position: absolute;
-  right: 32px;
-  top: 0px;
-}
 .ui-2.x {
-  background: url("/images/ui-2/x.png");
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
+  background-position: -5px -5px; /* Sprite */
 
   cursor: pointer;
 
   position: absolute;
   right: 0px;
-  top: 36px;
+  top: 18px;
 }
 .ui-2 .tip {
   font-style: italic;
@@ -653,7 +591,7 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
 .ui-2#about {
   display: none;
 }
-.ui-2#about-contrib {
+.ui-2#about-who {
   position: absolute;
   left: 55px;
   width: 325px;
@@ -661,7 +599,7 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
 .ui-2#about-dev {
   position: absolute;
   left: 55px;
-  top: 185px;
+  top: 205px;
   width: 325px;
 }
 .ui-2#about-rate {
@@ -1272,12 +1210,11 @@ body > .widget-drawer-app img {
 }
 
 #backups-list .button {
-  width: 20px;
-  height: 18px;
   opacity: .4;
   -webkit-transition: opacity .2s ease-in-out;
   cursor: pointer;
   padding-right: 2px;
+  display: inline-block;
 }
 #backups-list .button:hover {
   opacity: .7;
@@ -1317,4 +1254,16 @@ body > .widget-drawer-app img {
   height: 26px;
   padding-left: 6px;
   padding-right: 6px;
+}
+
+.online-backups-load {
+  width: 24px;
+  height: 24px;
+  background-position: -225px -85px; /* Sprite */
+}
+
+.online-backups-x {
+  width: 24px;
+  height: 24px;
+  background-position: -225px -51px; /* Sprite */
 }

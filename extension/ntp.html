@@ -56,8 +56,8 @@
           background-size: {{widget.backgroundSize}}; background-position: {{widget.backgroundPosition}}">
         <iframe ng-src="{{widget.path}}{{widget.hash}}" scrolling="no" frameborder="0" align="center" height="100%" width="100%"></iframe>
         <div class="iframe-mask" ng-switch on="widget.resize">
-          <div id="delete"></div>
-          <div id="widget-config" class="url" data-url="{{widget.optionsUrl}}{{widget.hash}}" ng-show="widget.optionsUrl"></div>
+          <div id="delete" class="sprite"></div>
+          <div id="widget-config" class="url sprite" data-url="{{widget.optionsUrl}}{{widget.hash}}" ng-show="widget.optionsUrl"></div>
           <div class="resize-tile" ng-switch-when="true">
             <div class="resize-tile-top"></div>
             <div class="resize-tile-bottom"></div>
@@ -86,8 +86,8 @@
         <div class="app-name" ng-hide="!app.name_show">{{app.name}}</div>
         <a class="url" data-url="{{app.appLaunchUrl}}" href="{{app.appLaunchUrl}}" onleftclick="{{app.onleftclick}}"></a>
         <div class="iframe-mask">
-          <div id="delete"></div>
-          <div id="shortcut-edit"></div>
+          <div id="delete" class="sprite"></div>
+          <div id="shortcut-edit" class="sprite"></div>
           <div class="resize-tile" style="display: none; ">
             <div class="resize-tile-top"></div>
             <div class="resize-tile-bottom"></div>
@@ -116,8 +116,8 @@
         <a class="url" data-url="{{shortcut.appLaunchUrl}}" href="{{shortcut.appLaunchUrl}}" onleftclick="{{shortcut.onleftclick}}"></a>
         <img ng-src="chrome://favicon/{{shortcut.appLaunchUrl}}" class="app-favicon" ng-hide="!shortcut.favicon_show" />
         <div class="iframe-mask">
-          <div id="delete"></div>
-          <div id="shortcut-edit"></div>
+          <div id="delete" class="sprite"></div>
+          <div id="shortcut-edit" class="sprite"></div>
           <div class="resize-tile" style="display: none; ">
             <div class="resize-tile-top"></div>
             <div class="resize-tile-bottom"></div>
@@ -131,12 +131,13 @@
 
     <div id="top-buttons">
       <div id="logo-button" title="{{ 'ui_about' | i18n}}"></div>
-      <div id="config-button" title="{{ 'ui_config' | i18n}}"></div>
-      <div id="app-drawer-button" title="{{ 'ui_button_apps' | i18n}}"></div>
-      <div id="widget-drawer-button" title="{{ 'ui_button_widgets' | i18n}}"></div>
-      <div id="recently-closed-tabs" title="{{ 'ui_button_rct' | i18n}}"></div>
-      <div id="lock-button" title="{{ 'ui_button_lock' | i18n}}" style="display: none;"></div>
-      <div id="unlock-button" title="{{ 'ui_button_unlock' | i18n}}"></div>
+      <div id="config-button" class="sprite" title="{{ 'ui_config' | i18n}}"></div>
+      <div id="app-drawer-button" class="sprite" title="{{ 'ui_button_apps' | i18n}}"></div>
+      <div id="widget-drawer-button" class="sprite" title="{{ 'ui_button_widgets' | i18n}}"></div>
+      <div id="recently-closed-tabs" class="sprite" title="{{ 'ui_button_rct' | i18n}}"></div>
+      <div id="lock-button" class="sprite" title="{{ 'ui_button_lock' | i18n}}" style="display: none;"></div>
+      <div id="unlock-button" class="sprite" title="{{ 'ui_button_unlock' | i18n}}"></div>
+      <div id="pro-button" class="sprite" title="Awesome New Tab Page Pro"></div>
     </div>
 
     <div id="recently-closed-tabs-menu" class="no-scroll" ng-controller="RCTMCtrl">
@@ -158,50 +159,36 @@
           <div class="ui-2 logo"></div>
           <div class="ui-2 name">
             Awesome New Tab Page
-            <span class="ui-2 crumb">&nbsp;</span>
+            <span class="ui-2 crumb sprite">&nbsp;</span>
             <span class="ui-2 subname"> {{'ui_about' | i18n}} </span>
-          </div>
-          <div class="ui-2 plus-share">
-            <div class="g-plus" data-action="share" data-href="https://chrome.google.com/webstore/detail/mgmiemnjjchgkmgbeljfocdjjnpjnmcg"></div>
           </div>
         </div>
         <div class="ui-2 right">
-          <div class="ui-2 config" title="{{ 'ui_config' | i18n}}"></div>
-          <div class="ui-2 help url" data-url="https://ntp.uservoice.com/" title="{{ 'ui_button_help' | i18n }}"></div>
-          <div class="ui-2 vr"></div>
-          <div class="ui-2 x" title="{{ 'ui_button_close' | i18n }}"></div>
+          <div class="ui-2 x sprite" title="{{ 'ui_button_close' | i18n }}"></div>
         </div>
       </div>
 
       <div class="ui-2 contents">
-        <div id="about-contrib" class="ui-2">
-          <h3>{{'ui_about_contrib' | i18n}}</h3>
-          <p>{{'ui_about_contrib_desc' | i18n}}</p>
-          <a href="https://github.com/NewTabPage/Awesome-New-Tab-Page/contributors" class="bubble ilb">
-            {{'ui_about_dev' | i18n}}
+        <div id="about-who" class="ui-2">
+          <h3>Who makes this?</h3>
+          <p>Awesome New Tab Page is published by <nobr>Awesome HQ, LLC</nobr>,
+            a company founded in the beautiful city of Seattle by <nobr>Michael Hart</nobr>.</p>
+
+          <h3>Do you guys make anything else?</h3>
+          <p>We also make an Android client for <nobr>Droplr.com</nobr> called Androplr. Check it out!</p>
+          <a href="https://play.google.com/store/apps/details?id=com.androplr.free" class="bubble ilb">
+            Androplr on Google Play
           </a>
-          <a href="http://crowdin.net/project/antp" class="bubble ilb">
-            {{'ui_about_contrib_translators' | i18n}}
-          </a>
-          <a href="https://ntp.uservoice.com/forums/136895-feedback" class="bubble ilb">
-            {{'ui_about_contrib_users' | i18n}}
-          </a>
-          <p>{{'ui_about_contrib_cta' | i18n}}</p>
         </div>
 
         <div id="about-dev" class="ui-2">
           <h3>{{'ui_about_dev' | i18n}}</h3>
-          <a href="https://github.com/NewTabPage/Awesome-New-Tab-Page/contributors" class="bubble ilb">
-            Fork ANTP
-          </a>
-          <a href="https://github.com/NewTabPage/Awesome-New-Tab-Page/wiki" class="bubble ilb">
-            Visit Wiki
-          </a>
-
           <p>Did you know that making a widget for Awesome New Tab Page is as easy as making a website?</p>
-          <p>Learn more here:
-            <u><a href="https://github.com/NewTabPage/Awesome-New-Tab-Page/wiki">github.com</a></u>.
-          </p>
+          <p>Go ahead; make something awesome!</p>
+
+          <a href="https://github.com/NewTabPage/Boilerplate-Widget" class="bubble ilb">
+            Make a widget
+          </a>
         </div>
 
         <div id="about-share" class="ui-2">
@@ -235,18 +222,12 @@
           <div class="ui-2 logo"></div>
           <div class="ui-2 name">
             Awesome New Tab Page
-            <span class="ui-2 crumb">&nbsp;</span>
+            <span class="ui-2 crumb sprite">&nbsp;</span>
             <span class="ui-2 subname">{{'ui_config' | i18n}}</span>
-          </div>
-          <div class="ui-2 plus-share">
-            <div class="g-plus" data-action="share" data-href="https://chrome.google.com/webstore/detail/mgmiemnjjchgkmgbeljfocdjjnpjnmcg"></div>
           </div>
         </div>
         <div class="ui-2 right">
-          <div class="ui-2 config" title="{{ 'ui_config' | i18n}}"></div>
-          <div class="ui-2 help url" data-url="https://ntp.uservoice.com/" title="{{ 'ui_button_help' | i18n }}"></div>
-          <div class="ui-2 vr"></div>
-          <div class="ui-2 x" title="{{ 'ui_button_close' | i18n }}"></div>
+          <div class="ui-2 x sprite" title="{{ 'ui_button_close' | i18n }}"></div>
         </div>
       </div>
 
@@ -343,8 +324,8 @@
                       <span class="backup-name"> {{backup.name}} </span> <span class="dim"> - {{backup.size}} KB</span>
                     </div>
                     <span class="buttons">
-                      <img src="/images/ui-2/down.png" title="{{'ui_online_backup_load_backup' | i18n}}" class="button" ng-click="loadBackup(backup.name)">
-                      <img src="/images/ui-2/x.png" title="{{'ui_online_backup_remove_backup' | i18n}}" class="button" ng-click="removeBackup(backup.name)">
+                      <div title="{{'ui_online_backup_load_backup' | i18n}}" class="button online-backups-load sprite" ng-click="loadBackup(backup.name)"></div>
+                      <div title="{{'ui_online_backup_remove_backup' | i18n}}" class="button online-backups-x sprite" ng-click="removeBackup(backup.name)"></div>
                     </span>
                   </div>
                 </div>
@@ -410,20 +391,14 @@
             <div class="ui-2 logo"></div>
             <div class="ui-2 name">
               Awesome New Tab Page
-              <span class="ui-2 crumb">&nbsp;</span>
+              <span class="ui-2 crumb sprite">&nbsp;</span>
               <span class="ui-2 subname">
                 {{'ui_button_apps' | i18n}}
               </span>
             </div>
-            <div class="ui-2 plus-share">
-              <div class="g-plus" data-action="share" data-href="https://chrome.google.com/webstore/detail/mgmiemnjjchgkmgbeljfocdjjnpjnmcg"></div>
-            </div>
           </div>
           <div class="ui-2 right">
-            <div class="ui-2 config" title="{{ 'ui_config' | i18n}}"></div>
-            <div class="ui-2 help url" data-url="https://ntp.uservoice.com/" title="{{ 'ui_button_help' | i18n }}"></div>
-            <div class="ui-2 vr"></div>
-            <div class="ui-2 x" title="{{ 'ui_button_close' | i18n }}"></div>
+            <div class="ui-2 x sprite" title="{{ 'ui_button_close' | i18n }}"></div>
           </div>
         </div>
 
@@ -464,20 +439,14 @@
             <div class="ui-2 logo"></div>
             <div class="ui-2 name">
               Awesome New Tab Page
-              <span class="ui-2 crumb">&nbsp;</span>
+              <span class="ui-2 crumb sprite">&nbsp;</span>
               <span class="ui-2 subname">
                 {{'ui_button_widgets' | i18n}}
               </span>
             </div>
-            <div class="ui-2 plus-share">
-              <div class="g-plus" data-action="share" data-href="https://chrome.google.com/webstore/detail/mgmiemnjjchgkmgbeljfocdjjnpjnmcg"></div>
-            </div>
           </div>
           <div class="ui-2 right">
-            <div class="ui-2 config" title="{{ 'ui_config' | i18n}}"></div>
-            <div class="ui-2 help url" data-url="https://ntp.uservoice.com/" title="{{ 'ui_button_help' | i18n }}"></div>
-            <div class="ui-2 vr"></div>
-            <div class="ui-2 x" title="{{ 'ui_button_close' | i18n }}"></div>
+            <div class="ui-2 x sprite" title="{{ 'ui_button_close' | i18n }}"></div>
           </div>
         </div>
 
@@ -531,24 +500,18 @@
           <div class="ui-2 logo"></div>
           <div class="ui-2 name">
             Awesome New Tab Page
-            <span class="ui-2 crumb">&nbsp;</span>
+            <span class="ui-2 crumb sprite">&nbsp;</span>
             <span class="ui-2 subname">
               {{'ui_te' | i18n}}
             </span>
-            <span class="ui-2 crumb">&nbsp;</span>
+            <span class="ui-2 crumb sprite">&nbsp;</span>
             <span class="ui-2 subname" id="editor-name">
               {{name}}
             </span>
           </div>
-          <div class="ui-2 plus-share">
-            <div class="g-plus" data-action="share" data-href="https://chrome.google.com/webstore/detail/mgmiemnjjchgkmgbeljfocdjjnpjnmcg"></div>
-          </div>
         </div>
         <div class="ui-2 right">
-          <div class="ui-2 config" title="{{ 'ui_config' | i18n}}"></div>
-          <div class="ui-2 help url" data-url="https://ntp.uservoice.com/" title="{{ 'ui_button_help' | i18n }}"></div>
-          <div class="ui-2 vr"></div>
-          <div class="ui-2 x" title="{{ 'ui_button_close' | i18n }}"></div>
+          <div class="ui-2 x sprite" title="{{ 'ui_button_close' | i18n }}"></div>
         </div>
       </div>
 

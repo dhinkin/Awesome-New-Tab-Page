@@ -149,7 +149,7 @@
 
     if ( !preference.get("hideLeftButtons") ) {
       $("#top-buttons > div").css("left", "0px");
-      $("#widget-holder,#grid-holder").css("left", "27px");
+      $("#widget-holder,#grid-holder").css("left", "32px");
     }
   }
 
@@ -161,7 +161,7 @@
     mouseenter: function() {
       if ( preference.get("hideLeftButtons") ) {
         $("#top-buttons > div").css("left", "0px");
-        $("#widget-holder,#grid-holder").css("left", "27px");
+        $("#widget-holder,#grid-holder").css("left", "32px");
       }
     },
     mouseleave: function() {

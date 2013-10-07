@@ -63,7 +63,7 @@ $(document).ready(function($) {
 var GRID_MIN_HEIGHT     = 3,
     GRID_MIN_WIDTH      = 7,
     GRID_MARGIN_TOP     = function(){ return preference.get("showbmb") ? 27 : 0 },
-    GRID_MARGIN_LEFT    = function(){ return preference.get("hideLeftButtons") ? 0 : 27 },
+    GRID_MARGIN_LEFT    = function(){ return preference.get("hideLeftButtons") ? 0 : 32 },
     GRID_TILE_SIZE      = 200,
     GRID_TILE_PADDING   = 3,
 
@@ -804,7 +804,7 @@ $(window).mouseup("mouseup", function(e) {
 
       if ( preference.get("hideLeftButtons") ) {
         $(".side-button").css("left", "0px");
-        $("#widget-holder,#grid-holder").css("left", "27px");
+        $("#widget-holder,#grid-holder").css("left", "32px");
       }
     } else {
       // Lock
