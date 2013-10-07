@@ -248,7 +248,9 @@ var
       });
     };
 
-    timeoutId = setTimeout($scope.update, 1000);
+    $(document).on("click", "#app-drawer-button,#widget-drawer-button", function() {
+      timeoutId = setTimeout($scope.update, 1);
+    });
 
     $scope.updateBuffer = function() {
       clearTimeout(timeoutId);
