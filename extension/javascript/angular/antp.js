@@ -894,7 +894,7 @@ var
 
   chrome.storage.onChanged.addListener(storageItemChanged);
 
-  $("img").live("dragstart", function(event) { event.preventDefault(); });
+  $(document).on("dragstart", "img", function(event) { event.preventDefault(); });
 
   $scope.update();
 }
