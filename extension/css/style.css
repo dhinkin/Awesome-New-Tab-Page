@@ -82,7 +82,7 @@ body {
 #widget-holder,#grid-holder {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 27px;
 }
 #widget-holder > .widget {
   margin: 3px;
