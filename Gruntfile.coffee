@@ -13,6 +13,7 @@ module.exports = (grunt) ->
           "extension/javascript/app.compiled.js": [
             "extension/javascript/src/common.coffee"
             "extension/javascript/src/storage.coffee"
+            "extension/javascript/src/google-analytics.coffee"
           ]
 
     uglify:

@@ -34,6 +34,6 @@ function requiredTutorial() {
 
 $(document).ready(function() {
   setTimeout(function() {
-    require(["filesystem", "google-analytics", "storage-updates"]);
+    require(["filesystem", "storage-updates"]);
   }, 1000);
 });
