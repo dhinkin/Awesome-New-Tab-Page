@@ -3,8 +3,12 @@
 # All rights reserved.
 # http://antp.co http://awesomehq.com
 
-# Error logging
-  Raven.config("https://daa268858eb148978bcf2b39fb26891c@app.getsentry.com/14013", {}).install()
+# Error logging with getsentry.com
+  Raven.config("https://daa268858eb148978bcf2b39fb26891c@app.getsentry.com/14013",
+    tags:
+      version: if chrome then chrome.app.getDetails().version else ""
+      id: if chrome then chrome.app.getDetails().id else ""
+  ).install()
 
 # Utility functions
   window.util = {};
