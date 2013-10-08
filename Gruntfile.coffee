@@ -47,13 +47,16 @@ module.exports = (grunt) ->
              * Merged and uglified files from third parties.
              * Full files and licenses can be found in ./libs folder relative to this file.
              * Possibly incomplete list of files/libraries included:
-             * - quantize.js Copyright 2008 Nick Rabinowitz
-             * - color-thief.js by Lokesh Dhakar - http://www.lokeshdhakar.com
+             * - raven.min.js https://github.com/getsentry/raven-js
+             * - center.js http://stackoverflow.com/a/2257651/1335143
+             * - quantize.js https://gist.github.com/nrabinowitz/1104622
+             * - color-thief.js https://github.com/lokesh/color-thief
              */\n
              """
 
         files:
           "extension/javascript/libs.uglified.js": [
+            "extension/javascript/libs/raven.min.js"
             "extension/javascript/libs/center.js"
             "extension/javascript/libs/quantize.js"
             "extension/javascript/libs/color-thief.js"
