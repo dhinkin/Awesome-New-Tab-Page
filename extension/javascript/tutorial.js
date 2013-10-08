@@ -62,7 +62,7 @@ function startTutorial() {
           var current = steps[api.step];
           if (current) {
             api.set('content.text', current.content);
-            api.set('content.title.text', "<b>" + current.title + "</b>");
+            api.set('content.title', "<b>" + current.title + "</b>");
             api.set('position.target', current.target);
           }
 
