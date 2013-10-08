@@ -50,6 +50,7 @@ module.exports = (grunt) ->
              * Possibly incomplete list of files/libraries included:
              * - raven.min.js https://github.com/getsentry/raven-js
              * - center.js http://stackoverflow.com/a/2257651/1335143
+             * - jquery.qtip.min.js http://qtip2.com
              * - quantize.js https://gist.github.com/nrabinowitz/1104622
              * - color-thief.js https://github.com/lokesh/color-thief
              */\n
@@ -59,6 +60,7 @@ module.exports = (grunt) ->
           "extension/javascript/libs.uglified.js": [
             "extension/javascript/libs/raven.min.js"
             "extension/javascript/libs/center.js"
+            "extension/javascript/libs/jquery.qtip.min.js"
             "extension/javascript/libs/quantize.js"
             "extension/javascript/libs/color-thief.js"
           ]

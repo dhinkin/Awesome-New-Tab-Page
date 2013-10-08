@@ -1266,3 +1266,7 @@ body > .widget-drawer-app img {
   height: 24px;
   background-position: -225px -51px; /* Sprite */
 }
+
+.qtip-bootstrap {
+  border-radius: 0;
+}
