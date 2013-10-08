@@ -58,6 +58,8 @@ module.exports = (grunt) ->
 
         files:
           "extension/javascript/libs.uglified.js": [
+            "extension/javascript/jquery.js" # Note: Used directly by tutorial, open tabs, clock and notepad
+            "extension/javascript/angular/angular.js" # Note: Used directly by tutorial and open tabs
             "extension/javascript/libs/raven.min.js"
             "extension/javascript/libs/center.js"
             "extension/javascript/libs/jquery.qtip.min.js"
