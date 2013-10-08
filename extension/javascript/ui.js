@@ -510,9 +510,8 @@ function dialogue(content, title) {
     style: 'qtip-light qtip-rounded qtip-bootstrap qtip-dialogue',
     events: {
       render: function(event, api) {
-        $('button', api.elements.content).click(api.hide);
-      },
-      hide: function(event, api) { api.destroy(); }
+        $('button', api.elements.content).click(function(){api.destroy();});
+      }
     }
   });
 }
