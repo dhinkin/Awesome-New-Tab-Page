@@ -72,7 +72,7 @@ module.exports = (grunt) ->
 
     watch:
       files: [ "extension/javascript/src/*.coffee" ]
-      tasks: [ "coffee:compile", "uglify:libs" ]
+      tasks: [ "coffee:compile" ]
 
     compress:
       main:
