@@ -379,11 +379,11 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
   top: 0; left: 0;
   text-decoration: none;
   z-index: 900;
-  width: 40px;
+  width: 45px;
   height: 100%;
 }
 #top-buttons > div {
-  margin: 2px;
+  margin: 4px;
   width: 36px;
   height: 36px;
   -webkit-transition: left .2s ease-in-out, top .2s ease-in-out, -webkit-filter .7s ease;
