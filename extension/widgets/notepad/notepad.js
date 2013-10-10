@@ -1,19 +1,9 @@
 if(localStorage.getItem("StockNotepad") === null) {
-  localStorage.setItem("StockNotepad", parent.chrome.i18n.getMessage("notepad_default") );
+  localStorage.setItem("StockNotepad", "This widget has been deprecated. Please install Bigger Notes if you'd like to take notes on ANTP: https://chrome.google.com/webstore/detail/bigger-notes-antp/lohbonfeioofpgpcmebnncnmiobojbgk" );
 }
 
 $(document).ready(function($) {
   if (localStorage.getItem("StockNotepad")) {
-    $("#notepad").val( localStorage.getItem("StockNotepad") );
+    $("#notepad").val( "This widget has been deprecated. Please install Bigger Notes if you'd like to take notes on ANTP: https://chrome.google.com/webstore/detail/bigger-notes-antp/lohbonfeioofpgpcmebnncnmiobojbgk\n\nPlease save your notes!\n\n" + localStorage.getItem("StockNotepad") );
   }
-
-  $("#notepad").live("keyup", function() {
-    localStorage.setItem("StockNotepad", $(this).val() );
-  });
 });
-
-  $(window).bind("storage", function (e) {
-    if ( e.originalEvent.key === "StockNotepad" ) {
-      $("#notepad").val( localStorage.getItem("StockNotepad") );
-    }
-  });
