@@ -4,11 +4,11 @@
 # http://antp.co http://awesomehq.com
 
 # Error logging with getsentry.com
-  Raven.config("https://daa268858eb148978bcf2b39fb26891c@app.getsentry.com/14013",
-    tags:
-      version: if chrome then chrome.app.getDetails().version else ""
-      id: if chrome then chrome.app.getDetails().id else ""
-  ).install()
+  if chrome && chrome.app.getDetails().id is "mgmiemnjjchgkmgbeljfocdjjnpjnmcg"
+    Raven.config("https://daa268858eb148978bcf2b39fb26891c@app.getsentry.com/14013",
+      tags:
+        version: chrome.app.getDetails().version
+    ).install()
 
 # Utility functions
   window.util = {};
