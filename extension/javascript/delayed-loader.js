@@ -34,6 +34,6 @@ function requiredTutorial() {
 
 $(document).ready(function() {
   setTimeout(function() {
-    require(["filesystem", "storage-updates"]);
+    require(["filesystem"]);
   }, 1000);
 });
