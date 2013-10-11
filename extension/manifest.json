@@ -6,7 +6,7 @@
   "background": {
     "scripts": [
       "/javascript/jquery.js",
-      "/javascript/background.js"
+      "/javascript/background.compiled.js"
     ],
     "persistent": false
   },

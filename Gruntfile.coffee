@@ -15,6 +15,10 @@ module.exports = (grunt) ->
             "extension/javascript/src/storage.coffee"
             "extension/javascript/src/google-analytics.coffee"
           ]
+          "extension/javascript/background.compiled.js": [
+            "extension/javascript/src/storage.coffee"
+            "extension/javascript/src/background.coffee"
+          ]
 
     uglify:
       antp:

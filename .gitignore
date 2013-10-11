@@ -5,6 +5,7 @@ antp-packaged.zip
 *.uglified.js
 *.uglified.js.map
 app.compiled.src.coffee
+background.compiled.src.coffee
 
 # Windows image file caches
 Thumbs.db
