@@ -73,6 +73,23 @@ module.exports = (grunt) ->
             "extension/javascript/libs/color-thief.js"
           ]
 
+    bumpup:
+      setters:
+        # Overrides version setter
+        version: (old, releaseType, options) ->
+          year = new Date().getFullYear()
+
+          onejan = new Date(new Date().getFullYear(), 0, 1)
+          weeknumber = Math.ceil((((new Date() - onejan) / 86400000) + onejan.getDay() + 1) / 7)
+          weeknumber = weeknumber
+
+          day = new Date().getDay();
+
+          release = parseInt(old.split(".")[2]) + 1
+
+          year + "." + weeknumber + day + "." + release
+
+      files: ["package.json", "extension/manifest.json"]
 
     watch:
       files: [ "extension/javascript/src/*.coffee" ]
@@ -99,6 +116,8 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-watch"
   grunt.loadNpmTasks "grunt-contrib-compress"
+  grunt.loadNpmTasks "grunt-bumpup";
 
   grunt.registerTask "default", [ "coffee:compile", "uglify:libs", "watch" ]
-  grunt.registerTask "package", [ "coffee:compile", "uglify:libs", "compress" ]
+  grunt.registerTask "pack", [ "coffee:compile", "uglify:libs", "bumpup", "compress" ]
+  grunt.registerTask "repack", [ "coffee:compile", "uglify:libs", "compress" ]

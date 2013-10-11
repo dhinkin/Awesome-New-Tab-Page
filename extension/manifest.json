@@ -1,5 +1,5 @@
 {
-  "update_url":"http://clients2.google.com/service/update2/crx",
+  "update_url": "http://clients2.google.com/service/update2/crx",
   "minimum_chrome_version": "29",
   "offline_enabled": true,
   "default_locale": "en",
@@ -10,17 +10,19 @@
     ],
     "persistent": false
   },
-  "chrome_url_overrides" : {
+  "chrome_url_overrides": {
     "newtab": "ntp.html"
   },
   "options_page": "options.html",
   "name": "Awesome New Tab Page",
   "description": "Enhance your New Tab Page with ultimate customizability and power. Awesome, like you. [ANTP]",
-  "version": "2013.122.3.1",
+  "version": "2013.414.1",
   "icons": {
     "128": "icon128.png"
   },
-  "optional_permissions": [ "*://*/*" ],
+  "optional_permissions": [
+    "*://*/*"
+  ],
   "permissions": [
     "management",
     "bookmarks",
