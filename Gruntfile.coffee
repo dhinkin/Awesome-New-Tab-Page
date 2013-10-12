@@ -119,5 +119,5 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-bumpup";
 
   grunt.registerTask "default", [ "coffee:compile", "uglify:libs", "watch" ]
-  grunt.registerTask "pack", [ "coffee:compile", "uglify:libs", "bumpup", "compress" ]
-  grunt.registerTask "repack", [ "coffee:compile", "uglify:libs", "compress" ]
+  grunt.registerTask "pack", [ "coffee:compile", "uglify:libs", "compress" ]
+  grunt.registerTask "bump", [ "coffee:compile", "uglify:libs", "bumpup", "compress" ]
