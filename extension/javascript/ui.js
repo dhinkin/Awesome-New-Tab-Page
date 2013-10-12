@@ -132,25 +132,29 @@
 /* START :: Top Left Buttons */
 
   $(window).bind("antp-config-first-open", function() {
-    var option = preference.get("hideLeftButtons");
-
-    $("#hideLeftButtons").prop("checked", option);
-    $(document).on("change", "#hideLeftButtons", moveLeftButtons);
+    storage.get("settings", function(storage_data) {
+      $("#hideLeftButtons").prop("checked", storage_data.settings.buttons);
+      $(document).on("change", "#hideLeftButtons", moveLeftButtons);
+    });
   });
 
   function moveLeftButtons(e) {
-    if ( e )
-      preference.set("hideLeftButtons", $(this).is(":checked"));
+    storage.get("settings", function(storage_data) {
+      if ( e ) {
+        settings.set({"buttons": $("#hideLeftButtons").is(":checked")});
+        storage_data.settings.buttons = $("#hideLeftButtons").is(":checked");
+      }
 
-    if ( preference.get("hideLeftButtons") && preference.get("lock") ) {
-      $("#top-buttons > div").css("left", "-50px");
-      $("#widget-holder,#grid-holder").css("left", "0px");
-    }
+      if ( !storage_data.settings.buttons && storage_data.settings.lock ) {
+        $("#top-buttons > div").css("left", "-50px");
+        $("#widget-holder,#grid-holder").css("left", "0px");
+      }
 
-    if ( !preference.get("hideLeftButtons") ) {
-      $("#top-buttons > div").css("left", "0px");
-      $("#widget-holder,#grid-holder").css("left", "27px");
-    }
+      if ( storage_data.settings.buttons ) {
+        $("#top-buttons > div").css("left", "0px");
+        $("#widget-holder,#grid-holder").css("left", "32px");
+      }
+    });
   }
 
   $(document).ready(function($) {
@@ -159,16 +163,20 @@
 
   $(document).on({
     mouseenter: function() {
-      if ( preference.get("hideLeftButtons") ) {
-        $("#top-buttons > div").css("left", "0px");
-        $("#widget-holder,#grid-holder").css("left", "27px");
-      }
+      storage.get("settings", function(storage_data) {
+        if ( !storage_data.settings.buttons ) {
+          $("#top-buttons > div").css("left", "0px");
+          $("#widget-holder,#grid-holder").css("left", "32px");
+        }
+      });
     },
     mouseleave: function() {
-      if ( preference.get("hideLeftButtons") && preference.get("lock") ) {
-        $("#top-buttons > div").css("left", "-50px");
-        $("#widget-holder,#grid-holder").css("left", "0px");
-      }
+      storage.get("settings", function(storage_data) {
+        if ( !storage_data.settings.buttons && storage_data.settings.lock ) {
+          $("#top-buttons > div").css("left", "-50px");
+          $("#widget-holder,#grid-holder").css("left", "0px");
+        }
+      });
     }
   }, "#top-buttons");
 
@@ -182,47 +190,6 @@
         case "#options":
           $("#config-button").trigger("click");
           break;
-      }
-    }
-
-    $(window).bind("antp-config-first-open", function() {
-      var option = preference.get("showbmb");
-
-      $("#toggleBmb").prop("checked", option);
-      $(document).on("change", "#toggleBmb", updateBookmarkBar);
-    });
-
-    bookmark_bar_rendered = false;
-    if( preference.get("showbmb") ) {
-      $("#toggleBmb").attr('checked', 'checked');
-      bookmark_bar_rendered = true;
-      required('bookmarkbar', function() {
-        chrome.bookmarks.getTree(getBookmarks);
-        $("#bookmarksBar").show();
-      });
-    } else {
-      $("#bookmarksBar").hide();
-    }
-
-    function updateBookmarkBar(e) {
-      if ( e )
-        preference.set("showbmb", $(this).is(":checked"));
-
-      if ( preference.get("showbmb") ) {
-        if ( bookmark_bar_rendered === false ) {
-          bookmark_bar_rendered = true;
-          required('bookmarkbar', function() {
-            chrome.bookmarks.getTree(getBookmarks);
-          });
-        }
-
-        $("#bookmarksBar").show();
-        preference.set("showbmb", true);
-        moveGrid({ "animate_top": true });
-      } else {
-        $("#bookmarksBar").hide();
-        preference.set("showbmb", false);
-        moveGrid({ "animate_top": true });
       }
     }
 
@@ -271,44 +238,46 @@
   });
 
   $(window).bind("antp-config-first-open", function() {
-    var
-      gridwidth = preference.get("grid-width"),
-      gridheight = preference.get("grid-height");
-
-    $("#grid-width").val(gridwidth);
-    $("#grid-height").val(gridheight);
-    $(document).on("change", "#grid-width, #grid-height", updateGridSize);
+    storage.get("settings", function(storage_data) {
+      $("#grid_width").val(storage_data.settings.grid_width);
+      $("#grid_height").val(storage_data.settings.grid_height);
+      $(document).on("change keyup", "#grid_width, #grid_height", updateGridSize);
+    });
   });
 
   function updateGridSize(e) {
     if ( e ) {
       var value = $(this).val();
+      console.log($(this).attr("id"), value, typeof value)
 
       if ( value === "" ) {
-        preference.set($(this).attr("id"), null);
-
-        placeGrid();
-        $(window).trigger("antp-widgets");
-
+        var toSet = {};
+        toSet[$(this).attr("id")] = null;
+        settings.set(toSet, function() {
+          storage.get(["tiles", "settings"], placeGrid);
+          $(window).trigger("antp-widgets");
+        });
         return;
       }
 
-      if ($(this).attr("id") === "grid-width") {
+      if ($(this).attr("id") === "grid_width") {
         value  = (value < 4) ? 4 : value;
         value  = (value > 50) ? 50 : value;
         $(this).val(value);
       }
 
-      if ($(this).attr("id") === "grid-height") {
+      if ($(this).attr("id") === "grid_height") {
         value  = (value < 3) ? 3 : value;
         value  = (value > 25) ? 25 : value;
         $(this).val(value);
       }
 
-      preference.set($(this).attr("id"), $(this).val());
-
-      placeGrid();
-      $(window).trigger("antp-widgets");
+      var toSet = {};
+      toSet[$(this).attr("id")] = $(this).val();
+      settings.set(toSet, function() {
+        storage.get(["tiles", "settings"], placeGrid);
+        $(window).trigger("antp-widgets");
+      });
     }
   }
 
@@ -317,23 +286,25 @@
 /* START :: Hide Scrollbar */
 
   $(window).bind("antp-config-first-open", function() {
-    var
-      hideScrollbar = $("#hide-scrollbar"),
-      option = preference.get("hideScrollbar");
-    hideScrollbar.prop("checked", option);
-
-    $(document).on("change", "#hide-scrollbar", updateScrollBarVisibility);
+    storage.get("settings", function(storage_data) {
+      $("#hide-scrollbar").prop("checked", storage_data.settings.scrollbar_bottom);
+      $(document).on("change", "#hide-scrollbar", updateScrollBarVisibility);
+    });
   });
 
   function updateScrollBarVisibility(e) {
-    if ( e )
-      preference.set("hideScrollbar", $(this).is(":checked"));
+    storage.get("settings", function(storage_data) {
+      if ( e ) {
+        settings.set({"scrollbar_bottom": $("#hide-scrollbar").is(":checked")});
+        storage_data.settings.scrollbar_bottom = $("#hide-scrollbar").is(":checked");
+      }
 
-    if ( preference.get("hideScrollbar") ) {
-      $("body").css("overflow-x", "hidden");
-    } else {
-      $("body").css("overflow-x", "");
-    }
+      if ( storage_data.settings.scrollbar_bottom ) {
+        $("body").css("overflow-x", "");
+      } else {
+        $("body").css("overflow-x", "hidden");
+      }
+    });
   }
   updateScrollBarVisibility();
 
@@ -342,23 +313,25 @@
 /* START :: Hide RCTM */
 
   $(window).bind("antp-config-first-open", function() {
-    var
-      hideRCTM = $("#hideRCTM"),
-      option = preference.get("hideRCTM");
-    hideRCTM.prop("checked", option);
-
-    $(document).on("change", "#hideRCTM", updateRCTMVisibility);
+    storage.get("settings", function(storage_data) {
+      $("#hideRCTM").prop("checked", storage_data.settings.recently_closed);
+      $(document).on("change", "#hideRCTM", updateRCTMVisibility);
+    });
   });
 
   function updateRCTMVisibility(e) {
-    if ( e )
-      preference.set("hideRCTM", $(this).is(":checked"));
+    storage.get("settings", function(storage_data) {
+      if ( e ) {
+        settings.set({"recently_closed": $("#hideRCTM").is(":checked")});
+        storage_data.settings.recently_closed = $("#hideRCTM").is(":checked");
+      }
 
-    if ( preference.get("hideRCTM") ) {
-      $("#recently-closed-tabs").hide();
-    } else {
-      $("#recently-closed-tabs").show();
-    }
+      if ( storage_data.settings.recently_closed ) {
+        $("#recently-closed-tabs").show();
+      } else {
+        $("#recently-closed-tabs").hide();
+      }
+    });
   }
   updateRCTMVisibility();
 
@@ -404,12 +377,10 @@ $(".tile").bind({
       if (e.originalEvent.dataTransfer.items.length > 0) {
         var url = e.originalEvent.dataTransfer.getData("URL");
         if (url !== null && url !== "") {
-          required('/javascript/tile-editor.js?nocache=12', function() {  // ensure tile-editor.js is loaded
-            createShortcut(e.srcElement);
-            $("[ng-model='$parent.$parent.appLaunchUrl']").val(url).change();
-            $("[ng-model='$parent.$parent.name']").val("").change();
-            $("[ng-model='$parent.$parent.name']").focus();
-          });
+          createShortcut(srcElement);
+          $("[ng-model='$parent.$parent.appLaunchUrl']").val(url).change();
+          $("[ng-model='$parent.$parent.name']").val("").change();
+          $("[ng-model='$parent.$parent.name']").focus();
         }
       }
     }

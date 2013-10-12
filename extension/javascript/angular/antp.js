@@ -56,10 +56,16 @@ var
     $scope.apps = {};
     $scope.custom_shortcuts = {};
 
-    $scope.revisionCount = 0;
+    $scope.update = function(storage_data) {
+      var tiles = storage_data.tiles;
 
-    $scope.update = function() {
-      var tiles = store.get("widgets");
+      // load defaults
+      if (!tiles) {
+        tiles = stock_widgets;
+        storage.set({
+          tiles: tiles
+        });
+      };
 
       $scope.widgets = [];
       $scope.apps = {};
@@ -84,13 +90,13 @@ var
           tile.css.top    = tile.where[0] * ( GRID_TILE_SIZE + ( GRID_TILE_PADDING * 2 ) ) + ( GRID_TILE_PADDING * 2 );
           tile.css.left   = tile.where[1] * ( GRID_TILE_SIZE + ( GRID_TILE_PADDING * 2 ) ) + ( GRID_TILE_PADDING * 2 );
 
-          if ( parseInt(preference.get("grid-height")) % 1 === 0 ) {
-            if ( (parseInt(tile.where[0]) + parseInt(tile.size[0])) > parseInt(preference.get("grid-height")) )
+          if ( parseInt(storage_data.settings.grid_height) % 1 === 0 ) {
+            if ( (parseInt(tile.where[0]) + parseInt(tile.size[0])) > parseInt(storage_data.settings.grid_height) )
               return;
           }
 
-          if ( parseInt(preference.get("grid-width")) % 1 === 0 ) {
-            if ( (parseInt(tile.where[1]) + parseInt(tile.size[1])) > parseInt(preference.get("grid-width")) )
+          if ( parseInt(storage_data.settings.grid_width) % 1 === 0 ) {
+            if ( (parseInt(tile.where[1]) + parseInt(tile.size[1])) > parseInt(storage_data.settings.grid_width) )
               return;
           }
 
@@ -167,27 +173,22 @@ var
       }, 250);
 
 
-      // To prevent an onload error
-      if ( $scope.revisionCount !== 0 ) {
-        $scope.$apply();
+      $scope.$apply();
+    }; // End of $scope.update()
+
+    storage.get("tiles", $scope.update);
+
+    chrome.storage.onChanged.addListener(function (changes, areaName) {
+      if (changes.tiles && areaName !== "local") {
+        $scope.update({tiles: changes.tiles});
       }
-
-      $scope.revisionCount++;
-    };
-
-    $scope.update();
-
-    $(window).bind("storage antp-widgets", function (e) {
-      if ( typeof(e.originalEvent) === "object"
-        && typeof(e.originalEvent.key) === "string"
-        && e.originalEvent.key === "widgets" )
-          $scope.update();
-      else if ( e.type === "antp-widgets" )
-        $scope.update();
     });
 
-    // todo: setup stock widget check and setup (initialize localStorage)
-
+    // May be necessary since onChanged runs on-same-page, which could be bad for rapid-firing
+    // events, like changing tile or background colors
+    $(window).bind("antp-widgets", function () {
+      storage.get("tiles", $scope.update);
+    });
   }
 
   /* END :: Widgets/Apps/Custom Shortcuts */
@@ -317,10 +318,10 @@ var
       }
     };
 
-    $scope.update = function (a, b) {
+    $scope.update = function (storage_data, a, b) {
       // save all the things, put all the things into the tile.
       var id = $(".ui-2#editor").attr("active-edit-id");
-      var widgets = JSON.parse(localStorage.getItem("widgets"));
+      var widgets = storage_data.tiles
       $scope[a] = widgets[id][a] = b;
 
       if (a == "shortcut_pin" && b == true)
@@ -377,14 +378,12 @@ var
           break;
       }
 
-      localStorage.setItem("widgets", JSON.stringify(widgets));
+      storage.set({tiles: widgets});
       $scope.safeApply();
     };
 
-    $scope.edit = function() {
-
-      var id = $(this).parent().parent().attr("id");
-      var widgets = JSON.parse(localStorage.getItem("widgets"));
+    $scope.edit = function(id, storage_data) {
+      var widgets = storage_data.tiles;
 
       var tile = widgets[id];
 
@@ -476,7 +475,9 @@ var
             $scope.backgroundcolor = "rgba("+rgb.r+","+rgb.g+","+rgb.b+", 1)";
             $scope.shortcut_background_transparent = false;
             $scope.color = $scope.backgroundcolor;
-            $scope.update("backgroundcolor", $scope.color);
+            storage.get("tiles", function(storage_data) {
+              $scope.update(storage_data, "backgroundcolor", $scope.color);
+            });
           }
         });
         $(".ui-2#editor #shortcut_colorpicker").ColorPickerSetColor( ({ r: rgb[1], g: rgb[2], b: rgb[3] }) );
@@ -515,20 +516,30 @@ var
     };
 
     $scope.setswatch = function(e) {
-      var id = $(".ui-2#editor").attr("active-edit-id");
-      var widgets = JSON.parse(localStorage.getItem("widgets"));
+      var $target = $(e.target.outerHTML);
+      storage.get("tiles", function(storage_data) {
+        var id = $(".ui-2#editor").attr("active-edit-id");
+        var widgets = storage_data.tiles;
 
-      var rgb = $(e.target.outerHTML).css("background-color").match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-      var r = rgb[1];
-      var g = rgb[2];
-      var b = rgb[3];
-      $scope.backgroundcolor = "rgb(" + r + ", " + g + ", " + b + ")";
-      $scope.color = $scope.backgroundcolor;
-      $scope.shortcut_background_transparent = false;
-      $scope.update("backgroundcolor", $scope.color);
+        var rgb = $target.css("background-color").match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+        var r = rgb[1];
+        var g = rgb[2];
+        var b = rgb[3];
+        $scope.backgroundcolor = "rgb(" + r + ", " + g + ", " + b + ")";
+        $scope.color = $scope.backgroundcolor;
+        $scope.shortcut_background_transparent = false;
+        storage.get("tiles", function(storage_data) {
+          $scope.update(storage_data, "backgroundcolor", $scope.color);
+        });
+      });
     }
 
-    $(document).on("click", "#shortcut-edit", $scope.edit);
+    $(document).on("click", "#shortcut-edit", function() {
+      var id = $(this).parent().parent().attr("id");
+      storage.get("tiles", function(storage_data) {
+        $scope.edit(id, storage_data);
+      });
+    });
   }
 
   ajs.directive('ngTileEditor', function() {
@@ -563,10 +574,15 @@ var
 
             ngModelCtrl.$setViewValue(value);
           });
-          if ($scope.update)
-            $scope.update(attr.ngModel.split(".")[2], value);
-          else
-            $scope.$parent.update(attr.ngModel.split(".")[2], value);
+          if ($scope.update) {
+            storage.get("tiles", function(storage_data) {
+              $scope.$parent.update(storage_data, attr.ngModel.split(".")[2], value);
+            });
+          } else {
+            storage.get("tiles", function(storage_data) {
+              $scope.$parent.update(storage_data, attr.ngModel.split(".")[2], value);
+            });
+          }
         });
       }
     };
@@ -582,7 +598,7 @@ var
 
     $scope.clear = function() {
       $scope.recently_closed = [];
-      store.set("recently_closed", []);
+      storage.set({open_tabs: []});
 
       $scope.$apply();
     };
@@ -590,16 +606,16 @@ var
     $scope.removeTab = function(tabToRemove) {
       var index = this.recently_closed.indexOf(tabToRemove);
       this.recently_closed.splice(index, 1);
-      store.set("recently_closed", this.recently_closed);
+      storage.set({closed_tabs: this.recently_closed});
     };
 
-    $scope.update = function() {
-      $scope.recently_closed = store.get("recently_closed");
+    $scope.update = function(storage_data) {
+      $scope.recently_closed = storage_data.closed_tabs;
       $scope.$apply();
     };
 
     $(document).on("click", "#recently-closed-tabs", function() {
-      $scope.update();
+      storage.get("closed_tabs", $scope.update);
     });
 
   }
@@ -898,6 +914,3 @@ var
 
   $scope.update();
 }
-
-/* END :: List directive */
-

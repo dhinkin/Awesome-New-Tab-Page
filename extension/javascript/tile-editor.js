@@ -18,56 +18,28 @@
   *       similar name) or logo.
   **/
 
-
-function removeFromTile(tile) {
-  var to_delete = $(tile).parent().parent();
-  if(to_delete) {
-    var id = $(to_delete).attr("id");
-    if ( widgets[id]
-      && widgets[id].type === "shortcut"
-      && (widgets[id].img).match("filesystem:") ) {
-
-      deleteShortcut( (widgets[id].img).match(/^(.*)\/(.*)/)[2] );
-    }
-
-    $(".ui-2.x").trigger("click");
-    removeWidget( $(to_delete).attr("id") );
-
-    hscroll = true;
-
-    var tiles = getCovered(to_delete);
-    $(tiles.tiles).each(function(ind, elem){
-        $(elem).addClass("empty");
-    });
-
-    $(to_delete).remove();
-  }
-}
-
 // Create shortcut on click
 function createShortcut(tile) {
   var new_shortcut_id = new_guid();
 
-  addShortcut(
-    new_shortcut_id,
-    $(tile).attr("land-top"),
-    $(tile).attr("land-left")
-  );
+  storage.get("tiles", function(storage_data) {
+    addShortcut(
+      new_shortcut_id,
+      $(tile).attr("land-top"),
+      $(tile).attr("land-left"),
+      storage_data);
 
-  $("#" + new_shortcut_id).css({
-    "left": $(tile).position().left,
-    "top": $(tile).position().top,
-    "width": "200",
-    "height": "200",
-    "zIndex": "1"
-  }).find(".iframe-mask").find("#shortcut-edit").trigger("click");
+    setTimeout(function() {
+      $("#" + new_shortcut_id).find(".iframe-mask").find("#shortcut-edit").trigger("click");
+    }, 100);
 
-  $(tile).removeClass("add-shortcut").removeClass("empty");
+    $(tile).removeClass("add-shortcut").removeClass("empty");
+  });
 }
 
 // Adds shortcut
-function addShortcut(widget, top, left) {
-  widgets = JSON.parse(localStorage.getItem("widgets"));
+function addShortcut(widget, top, left, storage_data) {
+  widgets = storage_data.tiles;
 
   widgets[widget] = {
     where: [top,left],
@@ -77,12 +49,14 @@ function addShortcut(widget, top, left) {
     name: "Google",
     id: widget,
     img: "core.shortcut.blank2.png",
-    appLaunchUrl: "http://www.google.com/",
-    url: "http://www.google.com/",
+    appLaunchUrl: "https://www.google.com/",
+    url: "https://www.google.com/",
     color: palette[Math.floor(Math.random() * palette.length)],
     name_show: true,
     favicon_show: true
   };
 
-  localStorageSync(true);
+  storage.set({tiles: widgets}, function() {
+    $(window).trigger("antp-widgets");
+  });
 }

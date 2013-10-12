@@ -24,7 +24,6 @@
     <link rel="publisher" href="https://plus.google.com/101062285048075360930" />
     <link rel="shortcut icon" href="/images/favicon.png?20120409" />
 
-    <link rel="stylesheet" href="/css/core.bookmarkbar.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="/colorpicker/css/colorpicker.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="/css/jquery.jgrowl.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="/css/jquery.qtip.min.css" type="text/css" media="screen" />
@@ -38,8 +37,6 @@
   <body class="bg-color">
     <!-- Fixes an issue where scrolling sometimes didn't work. -->
     <div class="scroll-helper"></div>
-
-    <ul id="bookmarksBar" style="display:none;"></ul>
 
     <div id="grid-holder"></div>
 
@@ -236,14 +233,6 @@
           <pane name="{{'ui_config_general' | i18n}}">
             <div class="overflow-auto">
               <div class="float-left option-container">
-                <b>{{'ui_config_shbmb' | i18n}}</b>
-                <p class="tip">{{'ui_config_shbmb_tip' | i18n}}</p>
-              </div>
-              <onoff name="toggleBmb" state="toggleBmb" />
-            </div>
-
-            <div class="overflow-auto">
-              <div class="float-left option-container">
                 <b>{{'ui_config_shtlb' | i18n}}</b>
                 <p class="tip">{{'ui_config_shtlb_desc' | i18n}}</p>
               </div>
@@ -369,7 +358,7 @@
                 <b>{{'ui_config_advanced_grid_width' | i18n}}</b>
                 <p class="tip"><i18n message-id="ui_config_advanced_grid_width_tip"></i18n></p>
               </div>
-              <input type="number" id="grid-width" class="float-right advanced-input" autocomplete="off" spellcheck="false" min="4" max="50" placeholder="{{'ui_config_onoff_off' | i18n}}" />
+              <input type="number" id="grid_width" class="float-right advanced-input" autocomplete="off" spellcheck="false" min="4" max="50" placeholder="{{'ui_config_onoff_off' | i18n}}" />
             </div>
 
             <div class="overflow-auto">
@@ -377,7 +366,7 @@
                 <b>{{'ui_config_advanced_grid_height' | i18n}}</b>
                 <p class="tip"><i18n message-id="ui_config_advanced_grid_height_tip"></i18n></p>
               </div>
-              <input type="number" id="grid-height" class="float-right advanced-input" autocomplete="off" spellcheck="false" min="3" max="25" placeholder="{{'ui_config_onoff_off' | i18n}}" />
+              <input type="number" id="grid_height" class="float-right advanced-input" autocomplete="off" spellcheck="false" min="3" max="25" placeholder="{{'ui_config_onoff_off' | i18n}}" />
             </div>
           </pane>
         </tabs>
@@ -660,6 +649,7 @@
       <script type="text/javascript" src="/javascript/libs.uglified.js"></script>
       <script type="text/javascript" src="/javascript/app.compiled.js"></script>
 
+      <script type="text/javascript" src="/javascript/tile-editor.js"></script>
       <script type="text/javascript" src="/javascript/tilesystem.js?nocache=12"></script>
       <script type="text/javascript" src="/javascript/hscroll.js"></script>
 

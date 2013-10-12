@@ -1,34 +1,44 @@
 # START :: Recently Closed Tabs & Tab Manager Widget
 
-  onRemoved = (tabId) ->
-    if localStorage.hideRCTM is "true"
-      localStorage.removeItem "recently_closed"
+  onRemoved = (tabId, storage_data) ->
+    # Cleanup old data
+    localStorage.removeItem "recently_closed"
+
+    # If RCTM is disabled, clear data and return
+    if storage_data.settings.recently_closed is false
+      storage.remove "closed_tabs"
       return
-    recently_closed = JSON.parse(localStorage.getItem("recently_closed"))
-    tabs = localStorage.getItem("open_tabs")
-    tab = undefined
-    tabs = (if not tabs? then [] else JSON.parse(tabs))
-    tab = tabs.filter((tab) ->
+
+    open_tabs = storage_data.open_tabs
+    closed_tabs = storage_data.closed_tabs or []
+    disableRCTM = if typeof storage_data.settings isnt "undefined" and storage_data.settings.disableRCTM then storage_data.settings.disableRCTM else false
+
+    tab = open_tabs.filter((tab) ->
       tab.id is tabId
     )[0]
-    recently_closed = []  if recently_closed is null
-    return  if not tab or tab.incognito is true or tab.title is "" or (tab.url).indexOf("chrome://") isnt -1
-    recently_closed.unshift
+
+    return if not tab or tab.incognito is true or tab.title is "" or (tab.url).indexOf("chrome://") isnt -1
+    closed_tabs.unshift
       title: tab.title
       url: tab.url
 
-    recently_closed.pop()  if recently_closed.length > 15
-    localStorage.setItem "recently_closed", JSON.stringify(recently_closed)
+    if closed_tabs.length > 15 then closed_tabs.pop()
+    storage.set closed_tabs: closed_tabs
     getAllTabs()
+
   getAllTabs = ->
     chrome.tabs.getAllInWindow null, getAllTabs_callback
+
   getAllTabs_callback = (tabs) ->
-    localStorage.setItem "open_tabs", JSON.stringify(tabs)
-  chrome.tabs.onRemoved.addListener onRemoved
+    storage.set open_tabs: tabs
+
+  chrome.tabs.onRemoved.addListener (tabId) ->
+    storage.get ["open_tabs", "closed_tabs", "settings"], (storage_data) ->
+      onRemoved(tabId, storage_data)
+
   chrome.tabs.onMoved.addListener getAllTabs
   chrome.tabs.onCreated.addListener getAllTabs
   chrome.tabs.onUpdated.addListener getAllTabs
-  chrome.tabs.onRemoved.addListener getAllTabs
   getAllTabs()
 
 # START :: Tab Manager Widget
@@ -69,12 +79,14 @@
 
 # START :: Get Installed Widgets
 
-  reloadExtensions = (data) ->
-    extensions = data
-    installedWidgets = {}
+  window.reloadExtensions = (data) ->
+    window.extensions = data
+    window.installedWidgets = {}
 
     sayHelloToPotentialWidgets()
+
   buildWidgetObject = (_widget) ->
+    extensions = window.extensions;
     widget = {}
     if not _widget.request or not _widget.sender
       console.error "buildWidgetObject:", "Sender missing."
@@ -153,18 +165,20 @@
     widget.path = _widget.request.body.path
     widget.optionsUrl = ext.optionsUrl
     widget
+
   TILE_MIN_WIDTH = 1
   TILE_MAX_WIDTH = 3
   TILE_MIN_HEIGHT = 1
   TILE_MAX_HEIGHT = 3
-  extensions = undefined
-  installedWidgets = {}
+  window.extensions = {}
+  window.installedWidgets = {}
   chrome.management.getAll reloadExtensions
 
 # START :: External Communication Stuff
 
   # Attempts to establish a connection to all installed widgets
-  sayHelloToPotentialWidgets = ->
+  sayHelloToPotentialWidgets = (extensions) ->
+    extensions = window.extensions;
     for i of extensions
       chrome.extension.sendMessage extensions[i].id, "mgmiemnjjchgkmgbeljfocdjjnpjnmcg-poke"
 
@@ -175,7 +189,7 @@
         request: request
         sender: sender
       )
-      installedWidgets[widget.id] = widget  if widget?
+      window.installedWidgets[widget.id] = widget if widget?
   chrome.extension.onMessageExternal.addListener onMessageExternal
 
 # START :: App installed

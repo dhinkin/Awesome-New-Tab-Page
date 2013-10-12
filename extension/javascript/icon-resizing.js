@@ -42,8 +42,10 @@ IconResizing = {
     $("#icon-resize-scale-controls #zoom-slider").change(IconResizing.changeZoomLevel);
   },
 
-  calculateVars: function (callback) {
+  calculateVars: function (storage_data, callback) {
+    var widgets = storage_data.tiles;
     var previousId = IconResizing.id;
+
     IconResizing.id = $(".ui-2#editor").attr("active-edit-id");
     IconResizing.previewTile = $(".ui-2#editor #preview-tile, #widget-holder #" + IconResizing.id),
     IconResizing.tileImg = $("#invisible-tile-img");
@@ -76,7 +78,9 @@ IconResizing = {
   },
 
   previewTileUpdated: function(callback) {
-    IconResizing.calculateVars(callback);
+    storage.get("tiles", function(storage_data) {
+      IconResizing.calculateVars(storage_data, callback);
+    })
   },
 
   // reset tile's background position to center and scale to 1
@@ -173,12 +177,15 @@ IconResizing = {
 
   // save tile's position and scale to localstorage
   savePosition: function() {
-    widgets = JSON.parse(localStorage.getItem("widgets"));
-    if (widgets[IconResizing.id]) {
-      widgets[IconResizing.id].backgroundPosition = IconResizing.previewTile.filter(":eq(0)").css("background-position");
-      widgets[IconResizing.id].backgroundSize = IconResizing.previewTile.filter(":eq(0)").css("background-size");
-      localStorageSync(false);
-    }
+    storage.get("tiles", function(storage_data) {
+      widgets = storage_data.tiles;
+      if (widgets[IconResizing.id]) {
+        widgets[IconResizing.id].backgroundPosition = IconResizing.previewTile.filter(":eq(0)").css("background-position");
+        widgets[IconResizing.id].backgroundSize = IconResizing.previewTile.filter(":eq(0)").css("background-size");
+
+        storage.set({tiles: widgets});
+      }
+    });
   }
 }
 
@@ -196,13 +203,17 @@ IconDragging = {
   init: function(){
     // to start dragging on mousedown (start dragging only if clicked on preview tile)
     $(document).mousedown(function(event) {
-      if (IconResizing.id && event.button == 0 && widgets[IconResizing.id] && widgets[IconResizing.id].type == "shortcut") {
-        var previewTile = $(event.target).parents("#preview-tile");
-        if (previewTile.length > 0) { // if user clicked within preview tile then start dragging
-          $(event.target).css("cursor", "move");
-          IconDragging.startDragging(event, previewTile);
+      if ( $(event.target).parents("#preview-tile").length === 0 ) return;
+      storage.get("tiles", function(storage_data) {
+        var widgets = storage_data.tiles;
+        if (IconResizing.id && event.button == 0 && widgets[IconResizing.id] && widgets[IconResizing.id].type == "shortcut") {
+          var previewTile = $(event.target).parents("#preview-tile");
+          if (previewTile.length > 0) { // if user clicked within preview tile then start dragging
+            // $(event.target).css("cursor", "move");
+            IconDragging.startDragging(event, previewTile);
+          }
         }
-      }
+      });
     });
 
     // stop dragging if dragging is in progress

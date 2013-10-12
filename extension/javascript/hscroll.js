@@ -21,7 +21,10 @@
 
 /* START :: Horizontal Scrolling */
 
-  var hscroll = true;
+  var
+    hscroll = true,
+    hscroll_enabled = true;
+
   $(document).on({
     mouseleave: function() {
       hscroll = true;
@@ -34,7 +37,7 @@
   function scrollHorizontal(event) {
     var delta = 0;
 
-    if ( preference.get("disableHscroll") )
+    if ( !hscroll_enabled )
       return;
 
     if ( !event )
@@ -66,16 +69,24 @@
   /* START :: Options Window */
 
     $(window).bind("antp-config-first-open", function() {
-      var option = preference.get("disableHscroll");
-
-      $("#disableHscroll").prop("checked", option);
-      $(document).on("change", "#disableHscroll", disableHorizontalScrolling);
+      storage.get("settings", function(storage_data) {
+        $("#disableHscroll").prop("checked", storage_data.settings.hscroll);
+        $(document).on("change", "#disableHscroll", disableHorizontalScrolling);
+      });
     });
 
     function disableHorizontalScrolling(e) {
-      if ( e )
-        preference.set("disableHscroll", $(this).is(":checked"));
+      storage.get("settings", function(storage_data) {
+        if ( e ) {
+          settings.set({"hscroll": $("#disableHscroll").is(":checked")});
+          storage_data.settings.hscroll = $("#disableHscroll").is(":checked");
+        }
+
+        hscroll_enabled = storage_data.settings.hscroll;
+      });
     }
+
+    disableHorizontalScrolling();
 
     /* END :: Options Window */
 
