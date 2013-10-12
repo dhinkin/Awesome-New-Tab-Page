@@ -215,6 +215,7 @@
       deleteShortcuts();
       deleteRoot();
       localStorage.clear();
+      storage.clear()
 
       setTimeout(function() {
         reload();
