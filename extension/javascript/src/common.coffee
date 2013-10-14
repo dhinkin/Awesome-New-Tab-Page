@@ -18,7 +18,7 @@
 # Variables that are relatively static
   window.stock_widgets =
     webstore:
-      where: [2, 4]
+      where: [2, 1]
       size: [1, 1]
       type: "app"
       isApp: true
@@ -31,7 +31,7 @@
       appLaunchUrl: "https://chrome.google.com/webstore?utm_source=webstore-app&utm_medium=awesome-new-tab-page"
 
     getwidgets:
-      where: [2, 3]
+      where: [2, 0]
       size: [1, 1]
       type: "app"
       isApp: true
@@ -54,7 +54,7 @@
       path: "widgets/tutorial/widget.tutorial.html"
 
     clock:
-      where: [1, 2]
+      where: [1, 3]
       size: [1, 1]
       type: "iframe"
       isApp: false
@@ -74,7 +74,7 @@
       path: "widgets/google/widget.google.html"
 
     facebook:
-      where: [0, 4]
+      where: [2, 3]
       size: [1, 1]
       type: "app"
       isApp: true
@@ -88,7 +88,7 @@
       id: "facebook"
 
     twitter:
-      where: [1, 4]
+      where: [2, 2]
       size: [1, 1]
       type: "app"
       isApp: true
