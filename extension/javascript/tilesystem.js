@@ -800,10 +800,7 @@ $(document).mouseup(function() {
         $("#unlock-button").css("display", "none");
         $(".tile").addClass("tile-grid");
 
-        $(".ui-2#apps .drawer-app .url").removeClass("url").addClass("disabled-url");
-        setTimeout(function() {
-          $(".ui-2#apps .drawer-app .url").removeClass("url").addClass("disabled-url");
-        }, 1100);
+        disableUrls();
 
         if ( !storage_data.settings.buttons ) {
           $(".side-button").css("left", "0px");
@@ -821,13 +818,24 @@ $(document).mouseup(function() {
         $("#lock-button").css("display", "none");
         $(".tile").removeClass("tile-grid");
 
-        $(".ui-2#apps .drawer-app .disabled-url").removeClass("disabled-url").addClass("url");
-        setTimeout(function() {
-          $(".ui-2#apps .drawer-app .disabled-url").removeClass("disabled-url").addClass("url");
-        }, 1100);
+        disableUrls();
       }
     });
   });
+
+  function disableUrls() {
+    if($("body").hasClass("unlocked")) {
+      $(".ui-2#apps .drawer-app .url").removeClass("url").addClass("disabled-url");
+      setTimeout(function() {
+        $(".ui-2#apps .drawer-app .url").removeClass("url").addClass("disabled-url");
+      }, 1100);
+    } else {
+      $(".ui-2#apps .drawer-app .disabled-url").removeClass("disabled-url").addClass("url");
+      setTimeout(function() {
+        $(".ui-2#apps .drawer-app .disabled-url").removeClass("disabled-url").addClass("url");
+      }, 1100);
+    }
+  }
 
   /* END :: Lock */
 

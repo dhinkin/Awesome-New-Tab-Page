@@ -235,6 +235,7 @@ var
           timeoutId = setTimeout($scope.update, 30000);
 
           $scope.$apply();
+          disableUrls();
 
         }, 1000);
       });
