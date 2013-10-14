@@ -138,16 +138,16 @@
     "message": "Show the Bookmark Bar at the top of the page"
   },
   "ui_config_shtlb": {
-    "message": "Show top left buttons only on area-hover"
+    "message": "Always show top left buttons"
   },
   "ui_config_shtlb_desc": {
-    "message": "When enabled, the top left buttons will slide out of the way. To access them again, simply mouse over where they normally are."
+    "message": "When disabled, the top left buttons will slide out of the way. To access them again, simply mouse over where they normally were."
   },
   "ui_config_shgrid": {
-    "message": "Show Grid (when unlocked)"
+    "message": "Always show grid"
   },
   "ui_config_shgrid_desc": {
-    "message": "When enabled, the grid will show at all times."
+    "message": "When disabled, the grid will only be visible when the grid is unlocked."
   },
   "ui_config_reset": {
     "message": "Reset"
@@ -180,10 +180,10 @@
     "message": "OFF"
   },
   "ui_config_hide_scrollbar": {
-    "message": "Hide Bottom Scrollbar"
+    "message": "Show bottom scrollbar"
   },
   "ui_config_hide_scrollbar_tip": {
-    "message": "Hides the scrollbar at the bottom of the page."
+    "message": "Shows the scrollbar at the bottom of the page."
   },
   "ui_config_advanced": {
     "message": "Advanced"
@@ -204,16 +204,16 @@
     "message": "Overrides automatic grid generation. Using this setting may result in your tiles not being loaded. Setting this value too large may impact performance. Min: 3. Max: 25. <b>Erase number to disable!</b>"
   },
   "ui_config_advanced_disable_horizontal_scrollbar": {
-    "message": "Disable Horizontal Scrolling"
+    "message": "Enable horizontal scrolling"
   },
   "ui_config_advanced_disable_horizontal_scrollbar_tip": {
-    "message": "Disables horizontal scrolling, allowing vertical scrolling."
+    "message": "Enables horizontal scrolling. Disable to use vertical scrolling."
   },
   "ui_config_advanced_hide_rctm": {
-    "message": "Hide Recently Closed Tab Menu button"
+    "message": "Enable the Recently Closed Tab Menu"
   },
   "ui_config_advanced_hide_rctm_tip": {
-    "message": "Hides the Recently Closed Tab Menu button from the left."
+    "message": "Enables the Recently Closed Tab Menu in the top left. Disable to hide the icon and stop logging closed tabs."
   },
   "ui_about": {
     "message": "About"
