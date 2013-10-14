@@ -204,7 +204,6 @@
     localStorage.setItem("bg-img-css", $(this).val() );
   });
 
-  // Clears localStorage
   $(document).on("click", "#reset-button", function() {
     function reset(callbackReturned) {
       if (callbackReturned === false) {
