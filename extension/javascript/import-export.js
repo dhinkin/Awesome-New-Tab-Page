@@ -101,7 +101,7 @@ function validateImportString(importString) {
       return false;
     } else {
       var antpVersion = stringParts[2].split('.');
-      if (antpVersion.length != 4) {
+      if (antpVersion.length < 3) {
         $.jGrowl(chrome.i18n.getMessage("ui_import_export_invalid_string_msg"), { header: chrome.i18n.getMessage("ui_import_export_msg_header") });
         return false;
       }
