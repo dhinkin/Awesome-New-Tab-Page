@@ -787,15 +787,14 @@ $(document).mouseup(function() {
   lock = true;
   $(document).on("click", "#lock-button,#unlock-button", function() {
     storage.get("settings", function(storage_data) {
-      $(".ui-2.x").trigger("click");
       hscroll = true;
       settings.set({lock: !lock});
-
 
       if ( lock ) {
         // Unlock
         lock = !lock;
         $("body").addClass("unlocked").removeClass("locked");
+
 
         $("#lock-button").css("display", "block");
         $("#unlock-button").css("display", "none");
@@ -814,6 +813,8 @@ $(document).mouseup(function() {
         // Lock
         lock = !lock;
         $(".resize-tile").hide();
+
+        $(".ui-2.x").trigger("click");
 
         $("body").addClass("locked").removeClass("unlocked");
         $("#unlock-button").css("display", "block");
