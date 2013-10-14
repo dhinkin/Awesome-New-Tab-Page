@@ -121,7 +121,7 @@ function placeGrid(storage_data) {
   var placed_height = 0, placed_width = 0;
 
   // Ensure all placed widgets have a grid tile to land on
-  if ( typeof(tiles) === "object" ) {
+  if ( typeof tiles === "object" ) {
     $.each(tiles, function(id, widget) {
       if( parseFloat(widget.where[0]) + parseFloat(widget.size[0]) > placed_height ) {
         placed_height = parseFloat(widget.where[0]) + parseFloat(widget.size[0]);

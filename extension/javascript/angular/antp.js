@@ -309,11 +309,12 @@ var
       }
     };
 
-    $scope.update = function (storage_data, a, b) {
+    $scope.widgets = {};
+
+    $scope.update = function (a, b) {
       // save all the things, put all the things into the tile.
       var id = $(".ui-2#editor").attr("active-edit-id");
-      var widgets = storage_data.tiles
-      $scope[a] = widgets[id][a] = b;
+      $scope[a] = $scope.widgets[id][a] = b;
 
       if (a == "shortcut_pin" && b == true)
         $scope.shortcut_newtab = false;
@@ -322,24 +323,24 @@ var
 
       switch (a) {
         case "appLaunchUrl":
-          $scope.favicon = "chrome://favicon/" + widgets[id].appLaunchUrl;
-          widgets[id].url = widgets[id].appLaunchUrl;
+          $scope.favicon = "chrome://favicon/" + $scope.widgets[id].appLaunchUrl;
+          $scope.widgets[id].url = $scope.widgets[id].appLaunchUrl;
           $("#widget-holder #"+id+" a").attr("data-url", $scope.appLaunchUrl).attr("href", $scope.appLaunchUrl);
           $("#widget-holder #"+id+" .app-favicon").attr("src", $scope.favicon);
           break;
         case "shortcut_pin": case "shortcut_newtab":
-          widgets[id].onleftclick = "";
+          $scope.widgets[id].onleftclick = "";
           if ( $scope.shortcut_pin === true ) {
-            widgets[id].onleftclick = "pin";
+            $scope.widgets[id].onleftclick = "pin";
           }
           if ( $scope.shortcut_newtab === true ) {
-            widgets[id].onleftclick = "newtab";
+            $scope.widgets[id].onleftclick = "newtab";
           }
-          $scope.onleftclick = widgets[id].onleftclick;
-          $("#widget-holder #"+id+" .url").attr("onleftclick", widgets[id].onleftclick);
+          $scope.onleftclick = $scope.widgets[id].onleftclick;
+          $("#widget-holder #"+id+" .url").attr("onleftclick", $scope.widgets[id].onleftclick);
           break;
         case "searchUrl":
-          widgets[id].searchEnabled = ($scope.shortcut_search_url !== "");
+          $scope.widgets[id].searchEnabled = ($scope.shortcut_search_url !== "");
           $("#widget-holder #"+id+" .search-box").attr("data-search", $scope.shortcut_search_url);
           break;
         case "shortcut_background_transparent":
@@ -347,16 +348,16 @@ var
         case "backgroundcolor":
         case "img":
           if ($scope.shortcut_background_transparent === true) {
-            $scope.backgroundimage = "url("+widgets[id].img+")";
+            $scope.backgroundimage = "url("+$scope.widgets[id].img+")";
             $scope.backgroundcolor = "transparent";
-            widgets[id].shortcut_background_transparent = true;
+            $scope.widgets[id].shortcut_background_transparent = true;
           } else {
-            $scope.backgroundimage = "url("+widgets[id].img+")" + gradient;
-            widgets[id].color = $scope.color;
-            $scope.backgroundcolor = widgets[id].color;
-            widgets[id].shortcut_background_transparent = false;
+            $scope.backgroundimage = "url("+$scope.widgets[id].img+")" + gradient;
+            $scope.widgets[id].color = $scope.color;
+            $scope.backgroundcolor = $scope.widgets[id].color;
+            $scope.widgets[id].shortcut_background_transparent = false;
           }
-          $(".ui-2#editor #invisible-tile-img").attr("src", widgets[id].img);
+          $(".ui-2#editor #invisible-tile-img").attr("src", $scope.widgets[id].img);
           $("#widget-holder #"+id + ", #preview-tile").css("background-image", $scope.backgroundimage).css("background-color", $scope.backgroundcolor);
           IconResizing.previewTileUpdated();
           break;
@@ -369,12 +370,14 @@ var
           break;
       }
 
-      storage.set({tiles: widgets});
+      storage.set({tiles: $scope.widgets});
       $scope.safeApply();
     };
 
     $scope.edit = function(id, storage_data) {
+
       var widgets = storage_data.tiles;
+      $scope.widgets = storage_data.tiles;
 
       var tile = widgets[id];
 
@@ -466,9 +469,7 @@ var
             $scope.backgroundcolor = "rgba("+rgb.r+","+rgb.g+","+rgb.b+", 1)";
             $scope.shortcut_background_transparent = false;
             $scope.color = $scope.backgroundcolor;
-            storage.get("tiles", function(storage_data) {
-              $scope.update(storage_data, "backgroundcolor", $scope.color);
-            });
+            $scope.update("backgroundcolor", $scope.color);
           }
         });
         $(".ui-2#editor #shortcut_colorpicker").ColorPickerSetColor( ({ r: rgb[1], g: rgb[2], b: rgb[3] }) );
@@ -519,9 +520,7 @@ var
         $scope.backgroundcolor = "rgb(" + r + ", " + g + ", " + b + ")";
         $scope.color = $scope.backgroundcolor;
         $scope.shortcut_background_transparent = false;
-        storage.get("tiles", function(storage_data) {
-          $scope.update(storage_data, "backgroundcolor", $scope.color);
-        });
+        $scope.update("backgroundcolor", $scope.color);
       });
     }
 
@@ -566,13 +565,9 @@ var
             ngModelCtrl.$setViewValue(value);
           });
           if ($scope.update) {
-            storage.get("tiles", function(storage_data) {
-              $scope.$parent.update(storage_data, attr.ngModel.split(".")[2], value);
-            });
+            $scope.$parent.update(attr.ngModel.split(".")[2], value);
           } else {
-            storage.get("tiles", function(storage_data) {
-              $scope.$parent.update(storage_data, attr.ngModel.split(".")[2], value);
-            });
+            $scope.$parent.update(attr.ngModel.split(".")[2], value);
           }
         });
       }
