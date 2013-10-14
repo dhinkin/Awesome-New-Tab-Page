@@ -787,11 +787,16 @@ $(document).mouseup(function() {
   lock = true;
   $(document).on("click", "#lock-button,#unlock-button", function() {
     storage.get("settings", function(storage_data) {
-      if ( lock === true ) {
+      $(".ui-2.x").trigger("click");
+      hscroll = true;
+      settings.set({lock: !lock});
+
+
+      if ( lock ) {
         // Unlock
-        lock = false;
+        lock = !lock;
         $("body").addClass("unlocked").removeClass("locked");
-        settings.set({lock: lock});
+
         $("#lock-button").css("display", "block");
         $("#unlock-button").css("display", "none");
         $(".tile").addClass("tile-grid");
@@ -807,13 +812,10 @@ $(document).mouseup(function() {
         }
       } else {
         // Lock
-        lock = true;
+        lock = !lock;
         $(".resize-tile").hide();
 
-        hscroll = true;
-
         $("body").addClass("locked").removeClass("unlocked");
-        settings.set({lock: lock});
         $("#unlock-button").css("display", "block");
         $("#lock-button").css("display", "none");
         $(".tile").removeClass("tile-grid");
