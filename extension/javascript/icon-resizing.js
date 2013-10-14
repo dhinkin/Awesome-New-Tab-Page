@@ -26,6 +26,10 @@ IconResizing = {
     $("#icon-resize-scale-controls #contain-bt").click(function () { IconResizing.changeBackgroundSize("contain"); });
     // on zoom
     $("#icon-resize-scale-controls #zoom-slider").change(IconResizing.changeZoomLevel);
+
+    $("#zoom-slider").mouseup(function(event) {
+      event.stopPropagation();
+    });
   },
 
   calculateVars: function (storage_data, callback) {
