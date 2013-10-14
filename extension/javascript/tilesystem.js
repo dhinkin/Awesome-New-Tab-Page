@@ -274,7 +274,8 @@ $(document).keyup(function(e) {
   }
 });
 
-$(window).mouseup("mouseup", function(e) {
+// Trigger mouseup if during a resize the mouseup isn't on a resize div
+$(document).mouseup(function() {
   if ( typeof(resize_element.element) === "object" ) {
     $(".resize-tile > div").trigger("mouseup");
   }
