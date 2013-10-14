@@ -18,11 +18,8 @@
 
       chrome.storage.local.get keys, (items) ->
         # Process settings and replace
-        # console.time("settings")
-        items._settings = items.settings;
+        items.settings_debug = items.settings;
         items.settings = settings.getAll(items.settings);
-        # console.timeEnd("settings")
-        # todo: check time when done, since it will be added to all storage requests
 
         if callback
           callback(items)
