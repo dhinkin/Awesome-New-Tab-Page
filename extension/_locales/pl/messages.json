@@ -1,455 +1,464 @@
 {
-	"ui_button_apps":{
-		"message":"Dodatki"
-	},
-	"ui_button_widgets":{
-		"message":"Wid\u017cety"
-	},
-	"ui_button_widget_browser":{
-		"message":"Przegl\u0105darka widget\u00f3w"
-	},
-	"ui_button_unlock":{
-		"message":"Odblokuj"
-	},
-	"ui_button_lock":{
-		"message":"Zablokuj aby korzysta\u0107 z aplikacji i widget\u00f3w"
-	},
-	"ui_button_rct":{
-		"message":"Ostatnio zamkni\u0119te karty"
-	},
-	"ui_button_close":{
-		"message":"Zamknij"
-	},
-	"ui_button_ok":{
-		"message":"OK"
-	},
-	"ui_button_cancel":{
-		"message":"Anuluj"
-	},
-	"ui_button_about":{
-		"message":"O dodatku"
-	},
-	"ui_config":{
-		"message":"Konfiguracja"
-	},
-	"ui_button_help":{
-		"message":"Pomoc & Opinie"
-	},
-	"ui_c_learnmore":{
-		"message":"Dowiedz si\u0119 wi\u0119cej"
-	},
-	"ui_config_bg_changecolor":{
-		"message":"Zmiana koloru t\u0142a"
-	},
-	"ui_te":{
-		"message":"Edytor kafelka"
-	},
-	"ui_te_general":{
-		"message":"Og\u00f3lne"
-	},
-	"ui_te_name":{
-		"message":"Nazwa"
-	},
-	"ui_te_name_desc":{
-		"message":"Jak chcesz nazwa\u0107 skr\u00f3t?"
-	},
-	"ui_te_shname":{
-		"message":"Poka\u017c \/ ukryj nazw\u0119"
-	},
-	"ui_te_pin":{
-		"message":"Przypnij kart\u0119 po klikni\u0119ciu"
-	},
-	"ui_te_newtab":{
-		"message":"Otw\u00f3rz na nowej karcie lewym klikni\u0119ciem"
-	},
-	"ui_te_url_desc":{
-		"message":"Podaj adres do kt\u00f3rego chcesz linkowa\u0107, np. http:\/\/www.google.pl\/"
-	},
-	"ui_te_url_tip":{
-		"message":"Porada: Prawid\u0142owy adres URL zawiera oznaczenie protoko\u0142u - takich jak np. \"http:\/\/\" - przed adresem domeny. Bez prawid\u0142owego oznaczenia protoko\u0142u, Tw\u00f3j skr\u00f3t nie b\u0119dzie dzia\u0142a\u0107."
-	},
-	"ui_te_shfavicon":{
-		"message":"Poka\u017c \/ ukryj favicon"
-	},
-	"ui_te_search":{
-		"message":"Szukaj"
-	},
-	"ui_te_search_desc":{
-		"message":"Wprowad\u017a adres URL wyszukiwania na tej stronie. Na przyk\u0142ad:"
-	},
-	"ui_te_bg_colorpicker":{
-		"message":"Otw\u00f3rz Pr\u00f3bnik kolor\u00f3w"
-	},
-	"ui_te_bg_transparent":{
-		"message":"Przezroczyste t\u0142o"
-	},
-	"ui_te_bg_tip":{
-		"message":"Porada: Je\u015bli zaznaczysz t\u0105 opcj\u0119, mo\u017cesz zechcie\u0107 ukry\u0107 nazw\u0119 i ikon\u0119 ulubionych."
-	},
-	"ui_te_bg_note":{
-		"message":"Uwaga: Ta opcja nie ma wp\u0142ywu na ustawienia ikon i t\u0142a."
-	},
-	"ui_te_app_tip":{
-		"message":"Nie wszystkie opcje s\u0105 dost\u0119pne dla aplikacji. Je\u015bli chcia\u0142by\u015b uzyska\u0107 wi\u0119cej opcji, stw\u00f3rz niestandardowy skr\u00f3t. Po prostu kliknij na wolne pole przy odblokowanej siatce."
-	},
-	"ui_te_ib":{
-		"message":"Ikony i t\u0142o"
-	},
-	"ui_te_ib_desc":{
-		"message":"Wprowad\u017a adres URL dla obrazka, skorzystaj z opcji \"Przegl\u0105daj\" lub przeci\u0105gnij i upu\u015b\u0107 obrazek, aby zmieni\u0107 ikon\u0119."
-	},
-	"ui_te_ib_browse":{
-		"message":"Przegl\u0105daj"
-	},
-	"ui_te_ib_screenshot":{
-		"message":"U\u017cyj zrzutu ekranu"
-	},
-	"ui_screenshot_confirm_title":{
-		"message":"Wykonywanie zrzutu ekranu"
-	},
-	"ui_screenshot_confirm":{
-		"message":"W celu wykonania zrzutu ekranu strony, strona zostanie otworzona w nowej karcie. Kiedy strona si\u0119 za\u0142aduje, karta si\u0119 zamknie automatycznie i powr\u00f3cisz do Awesome New Tab Page. Prosz\u0119 nie zamyka\u0107 kart i nie prze\u0142\u0105cza\u0107 na inne karty. To powinno zaj\u0105\u0107 nie wi\u0119cej jak kilka sekund."
-	},
-	"ui_screenshot_permission_denied_title":{
-		"message":"Odmowa dost\u0119pu"
-	},
-	"ui_screenshot_permission_denied":{
-		"message":"Odm\u00f3wi\u0142e\u015b przyznania Awesome New Tab Page uprawnie\u0144 potrzebnych do umo\u017cliwienia wykonywania zrzut\u00f3w ekranu. Je\u015bli chcesz wykona\u0107 zrzut ekranu, musisz przyzna\u0107 Awesome New Tab Page potrzebne uprawnienia."
-	},
-	"ui_te_ib_tip":{
-		"message":"Porada: Zostaw puste aby nie by\u0142o \u017cadnej ikony."
-	},
-	"ui_te_ib_advanced":{
-		"message":"Zaawansowane: Ukryj nazw\u0119 i ikon\u0119 ulubionych i u\u017cyj obrazka w rozdzielczo\u015bci 200 na 200 pikseli aby optymalnie dostosowa\u0107 wygl\u0105d w stosunku 1:1."
-	},
-	"ui_config_general":{
-		"message":"Og\u00f3lne"
-	},
-	"ui_config_shbmb":{
-		"message":"Poka\u017c pasek zak\u0142adek"
-	},
-	"ui_config_shbmb_tip":{
-		"message":"Poka\u017c pasek zak\u0142adek na g\u00f3rze strony"
-	},
-	"ui_config_shtlb":{
-		"message":"Poka\u017c pasek przycisk\u00f3w po lewej stronie po najechaniu myszk\u0105"
-	},
-	"ui_config_shtlb_desc":{
-		"message":"Kiedy ta opcja jest aktywna, przyciski znajduj\u0105ce si\u0119 w po lewej stronie b\u0119d\u0105 automatycznie si\u0119 chowa\u0107. Aby uzyska\u0107 do nich dost\u0119p, najed\u017a kursorem w miejsce gdzie normalnie powinny si\u0119 znajdowa\u0107."
-	},
-	"ui_config_shgrid":{
-		"message":"Poka\u017c siatk\u0119(Kiedy interfejs jest odblokowany)"
-	},
-	"ui_config_shgrid_desc":{
-		"message":"Kiedy ta opcja jest aktywna, siatka b\u0119dzie widoczna ca\u0142y czas."
-	},
-	"ui_config_amazonlocale":{
-		"message":"Dla <i>domy\u015blnego<\/i> skr\u00f3tu strony Amazon, wybierz sw\u00f3j kraj."
-	},
-	"ui_config_reset":{
-		"message":"Resetuj"
-	},
-	"ui_config_reset_desc":{
-		"message":"Ten przycisk umo\u017cliwi Ci cofni\u0119cie wszystkich zmian jakich dokona\u0142e\u015b w Awesome New Tab Page."
-	},
-	"ui_confirm_reset":{
-		"message":"Czy na pewno chcesz zresetowa\u0107 widget, aplikacj\u0119, skr\u00f3ty niestandardowe, ustawienia widget\u00f3w (notes, itp.) oraz ustawienia t\u0142a? Wszystkie zapisane ustawienia zostan\u0105 utracone."
-	},
-	"ui_config_bg":{
-		"message":"T\u0142o"
-	},
-	"ui_config_bg_upload":{
-		"message":"Wy\u015blij obrazek"
-	},
-	"ui_config_bgimg1":{
-		"message":"<b>Zaawansowane<\/b> (skr\u00f3cone t\u0142o CSS): Wykorzystaj obraz z internetu."
-	},
-	"ui_config_bgimg3":{
-		"message":"Wyczy\u015b\u0107 pole by przywr\u00f3ci\u0107 domy\u015blne t\u0142o (jeden kolor)."
-	},
-	"ui_config_bgimg2":{
-		"message":"Przyk\u0142ad (BEZ \u015brednika na ko\u0144cu!):"
-	},
-	"ui_config_onoff_on":{
-		"message":"W\u0142\u0105cz"
-	},
-	"ui_config_onoff_off":{
-		"message":"Wy\u0142\u0105cz"
-	},
-	"ui_config_hide_scrollbar":{
-		"message":"Ukryj pasek przewijania"
-	},
-	"ui_config_hide_scrollbar_tip":{
-		"message":"Ukrywa pasek przewijania na dole strony."
-	},
-	"ui_config_advanced":{
-		"message":"Zaawansowane"
-	},
-	"ui_config_advanced_tip":{
-		"message":"Poni\u017cej s\u0105 opcje zaawansowane, kt\u00f3re je\u015bli by\u0142y by \u017ale ustawione, spowodowa\u0142y by trudno\u015bci z obs\u0142ug\u0105. U\u017cywasz tych opcji na w\u0142asn\u0105 odpowiedzialno\u015b\u0107."
-	},
-	"ui_config_advanced_grid_width":{
-		"message":"Ustaw szeroko\u015b\u0107 siatki"
-	},
-	"ui_config_advanced_grid_width_tip":{
-		"message":"Zast\u0119puje automatyczn\u0105 generacj\u0119 siatki. U\u017cycie tej opcji mo\u017ce spowodowa\u0107 \u017ce kafelki nie b\u0119d\u0105 si\u0119 \u0142adowa\u0107. Ustawiaj\u0105c t\u0105 warto\u015b\u0107 na zbyt wysok\u0105, mo\u017ce spowodowa\u0107 utrat\u0119 wydajno\u015bci. Minimum: 4. Maksimum 50. <b>Pozostaw puste aby dezaktywowa\u0107!<\/b>"
-	},
-	"ui_config_advanced_grid_height":{
-		"message":"Ustaw wysoko\u015b\u0107 siatki"
-	},
-	"ui_config_advanced_grid_height_tip":{
-		"message":"Zast\u0119puje automatyczn\u0105 generacj\u0119 siatki. U\u017cycie tej opcji mo\u017ce spowodowa\u0107 \u017ce kafelki nie b\u0119d\u0105 si\u0119 \u0142adowa\u0107. Ustawiaj\u0105c t\u0105 warto\u015b\u0107 na zbyt wysok\u0105, mo\u017ce spowodowa\u0107 utrat\u0119 wydajno\u015bci. Minimum: 3. Maksimum 25. <b>Pozostaw puste aby dezaktywowa\u0107!<\/b>"
-	},
-	"ui_config_advanced_disable_horizontal_scrollbar":{
-		"message":"Wy\u0142\u0105cz przewijanie poziome"
-	},
-	"ui_config_advanced_disable_horizontal_scrollbar_tip":{
-		"message":"Wy\u0142\u0105cza przewijanie w poziomie umo\u017cliwiaj\u0105c przewijanie w pionie."
-	},
-	"ui_about":{
-		"message":"O dodatku"
-	},
-	"ui_about_contrib":{
-		"message":"Wsp\u00f3\u0142pracownicy"
-	},
-	"ui_about_contrib_desc":{
-		"message":"Ten projekt nie istnia\u0142by bez ci\u0119\u017ckiej pracy, opinii, pomys\u0142\u00f3w, t\u0142umacze\u0144 i wsparcia kilku grup bardzo fajnych ludzi."
-	},
-	"ui_about_dev":{
-		"message":"Programi\u015bci"
-	},
-	"ui_about_contrib_translators":{
-		"message":"T\u0142umacze"
-	},
-	"ui_about_contrib_users":{
-		"message":"U\u017cytkownicy"
-	},
-	"ui_about_contrib_cta":{
-		"message":"Kliknij w link powy\u017cej by zobaczy\u0107 (i by\u0107 mo\u017ce do\u0142\u0105czy\u0107 do) tych wspania\u0142ych ludzi w akcji!"
-	},
-	"ui_about_share":{
-		"message":"Podziel si\u0119"
-	},
-	"ui_about_share1":{
-		"message":"Lubisz Awesome New Tab Page? Dlaczego nie mia\u0142by\u015b powiedzie\u0107 o tym znajomym i rodzinie?"
-	},
-	"ui_about_rate":{
-		"message":"Oce\u0144"
-	},
-	"ui_about_rate_desc":{
-		"message":"Lubisz to rozszerzenie? Po\u015bwi\u0119\u0107 chwil\u0119 i dodaj pozytywn\u0105 ocen\u0119 w Chrome Web Store."
-	},
-	"ui_install":{
-		"message":"Instaluj"
-	},
-	"ui_uninstall":{
-		"message":"Odinstaluj"
-	},
-	"ui_uninstall_title":{
-		"message":"Odinstaluj aplikacje"
-	},
-	"ui_confirm_uninstall":{
-		"message":"Czy na pewno chcesz odinstalowa\u0107 dodatek $app$?",
-		"placeholders":{
-			"app":{
-				"content":"$1",
-				"example":"Chrome Web Store"
-			}
-		}
-	},
-	"ui_faw_unlock_drag":{
-		"message":"Odblokuj i Przeci\u0105gnij"
-	},
-	"ui_faw_unlock_drag_apps":{
-		"message":"Odblokuj k\u0142\u00f3dk\u0119 i <b>przeci\u0105gnij<\/b> Twoje zainstalowane aplikacje na wolne pole."
-	},
-	"ui_faw_unlock_drag_widgets":{
-		"message":"Odblokuj k\u0142\u00f3dk\u0119 i <b>przeci\u0105gnij<\/b> Twoje zainstalowane Gad\u017cety na wolne pole."
-	},
-	"ui_faw_get_more_apps":{
-		"message":"Pobierz wi\u0119cej Aplikacji"
-	},
-	"ui_faw_get_more_apps_body":{
-		"message":"Pobierz wi\u0119cej aplikacji ze <a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'>Sklepu internetowego<\/a>."
-	},
-	"ui_faw_get_more_widgets":{
-		"message":"Pobierz wi\u0119cej gad\u017cet\u00f3w"
-	},
-	"ui_faw_get_more_widgets_body":{
-		"message":"Znajd\u017a wi\u0119cej widget\u00f3w."
-	},
-	"ui_faw_pick":{
-		"message":"Wybierz"
-	},
-	"ui_faw_pick_body":{
-		"message":"Wybierz widgety poni\u017cej, kt\u00f3re chcia\u0142by\u015b zainstalowa\u0107."
-	},
-	"ui_faw_install":{
-		"message":"Instaluj"
-	},
-	"ui_faw_install_body":{
-		"message":"Naci\u015bnij przycisk Instaluj aby doda\u0107 do Chrome'a i do okna widget\u00f3w."
-	},
-	"ui_bmb_ob":{
-		"message":"Inne zak\u0142adki"
-	},
-	"app_webstore":{
-		"message":"Chrome Web Store"
-	},
-	"ui_shortcut_img":{
-		"message":"Wskazywany obrazek musi by\u0107 dok\u0142adnie 128x128 pikseli, najlepiej w formacie PNG z przezroczysto\u015bci\u0105. Aby zresetowa\u0107, po prostu usu\u0144 wszystko w tym polu."
-	},
-	"notepad_default":{
-		"message":"Wpisz tu cokolwiek. Wszystko co tu wpiszesz b\u0119dzie zapisane przy ka\u017cdym naci\u015bni\u0119ciu jakiegokolwiek klawisza.\n\nB\u0105d\u017a ostro\u017cny, gdy\u017c nie ma \u017cadnego backupu, a przycisk Resetuj\u0105cy ca\u0142e rozszerzenie usunie zawarto\u015b\u0107 tego widgeta!"
-	},
-	"ui_resize_reset":{
-		"message":"Resetuj"
-	},
-	"ui_resize_center":{
-		"message":"\u015arodek"
-	},
-	"ui_resize_cover":{
-		"message":"Ok\u0142adka"
-	},
-	"ui_resize_contain":{
-		"message":"Zawarto\u015b\u0107"
-	},
-	"ui_resize_zoom":{
-		"message":"Powi\u0119ksz"
-	},
-	"rctm_remove":{
-		"message":"Usu\u0144"
-	},
-	"rctm_clear_all":{
-		"message":"Usu\u0144 z widoku ostatnio zamkni\u0119te karty"
-	},
-	"rctm_clear_all_confirm":{
-		"message":"Czyszczenie \"Ostatnio Zamkni\u0119tych Kart\" nie usuwa historii przegl\u0105dania stron przegl\u0105darki. Ta opcja czy\u015bci jedynie list\u0119 aplikacji."
-	},
-	"ui_import_export_btn":{
-		"message":"Importuj\/Eksportuj"
-	},
-	"ui_import_export_desc":{
-		"message":"Przenie\u015b ustawienia do innych przegl\u0105darek lub przywr\u00f3\u0107 kopi\u0119 bezpiecze\u0144stwa."
-	},
-	"ui_import_export_btn2":{
-		"message":"&laquo; Poprzedni"
-	},
-	"ui_import_export_btn_import":{
-		"message":"Importuj"
-	},
-	"ui_import_export_btn_export":{
-		"message":"Eksportuj"
-	},
-	"ui_import_export_btn_import_run":{
-		"message":"Zastosuj"
-	},
-	"ui_import_export_desc_export":{
-		"message":"Eksport: Tworzy kopi\u0119 wszystkich twoich ustawie\u0144. Mo\u017ce by\u0107 wykorzystany p\u00f3\u017aniej jako kopia zapasowa lub mo\u017ce zosta\u0107 skopiowana na inne komputery aby zastosowa\u0107 na nich styl taki sam jak na tym komputerze. Zdj\u0119cia z komputera nie b\u0119d\u0105 eksportowane; a zdj\u0119cia znajduj\u0105ce si\u0119 w sieci web b\u0119d\u0105."
-	},
-	"ui_import_export_desc_import":{
-		"message":"Import: Nadpisuje Twoj\u0105 obecn\u0105 konfiguracj\u0119 prawid\u0142owo wyeksportowan\u0105 \u015bcie\u017ck\u0105. <b>UWAGA<\/b> Wszystkie Twoje obecne ustawienia b\u0119d\u0105 nieodwracalnie utracone. Nie ma sposobu aby odwr\u00f3ci\u0107 t\u0105 operacj\u0119. Zdj\u0119cia z komputera nie b\u0119d\u0105 importowane; a zdj\u0119cia znajduj\u0105ce si\u0119 w sieci web b\u0119d\u0105."
-	},
-	"ui_import_export_installed_warning":{
-		"message":"Zainstalowane aplikacje, rozszerzenia, i gad\u017cety nie s\u0105 importowane lub eksportowane. Rozszerzenia nie mog\u0105 instalowa\u0107 innych aplikacji lub rozszerze\u0144. U\u017cyj <a href='http:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'>Chrome Sync<\/a>."
-	},
-	"ui_import_export_desc_restore":{
-		"message":"Przywracanie: Pozwala odwr\u00f3ci\u0107 efekty ostatniego importu. Twoje obecne ustawienia r\u00f3wnie\u017c zostan\u0105 zapisane w kopi zapasowej w celu p\u00f3\u017aniejszego przywr\u00f3cenia."
-	},
-	"ui_import_export_header":{
-		"message":"Importuj\/Eksportuj"
-	},
-	"ui_import_export_confirm_restore_title":{
-		"message":"Potwierd\u017a przywr\u00f3cenie"
-	},
-	"ui_import_export_confirm_restore":{
-		"message":"Jeste\u015b pewien \u017ce chcesz przywr\u00f3ci\u0107 dane? Twoje obecne ustawienia zostan\u0105 utracone."
-	},
-	"ui_import_export_msg_header":{
-		"message":"Importuj\/Eksportuj"
-	},
-	"ui_import_export_restore_complete_msg":{
-		"message":"Przywracanie zako\u0144czone."
-	},
-	"ui_import_export_no_restore_msg":{
-		"message":"Brak danych do przywr\u00f3cenia!"
-	},
-	"ui_import_export_complete_msg":{
-		"message":"Zako\u0144czono importowanie."
-	},
-	"ui_import_export_empty_string_msg":{
-		"message":"Wprowad\u017a najpierw \u015bcie\u017ck\u0119 importu!"
-	},
-	"ui_import_export_invalid_string_msg":{
-		"message":"Z\u0142a \u015bcie\u017cka importu!"
-	},
-	"ui_import_export_btn_restore":{
-		"message":"Przywr\u00f3\u0107"
-	},
-	"ui_drag_widget_message":{
-		"message":"Aby umie\u015bci\u0107 widget, kliknij i przeci\u0105gnij go na wolny kafelek."
-	},
-	"ui_apps_tip_message_title":{
-		"message":"Nowa aplikacja zainstalowana"
-	},
-	"ui_apps_tip_message":{
-		"message":"Mi\u0142o! W\u0142a\u015bnie zainstalowa\u0142e\u015b aplikacj\u0119. Wszystkie zainstalowane aplikacje mo\u017cesz znale\u017a\u0107 tutaj."
-	},
-	"ui_tutorial2_next":{
-		"message":"Dalej"
-	},
-	"ui_tutorial2_app_window_title":{
-		"message":"Okno aplikacji"
-	},
-	"ui_tutorial2_app_drawer":{
-		"message":"W tym miejscu mo\u017cesz znale\u017a\u0107 wszystkie dodatki jakie zosta\u0142y zainstalowane ze sklepu internetowego. Mo\u017cesz <b>przeci\u0105gn\u0105\u0107<\/b> aplikacje z tego okna do Twojej <b>odblokowanej<\/b> siatki. W tym oknie mo\u017cesz tak\u017ce odinstalowywa\u0107 dodatki."
-	},
-	"ui_tutorial2_widgets_window_title":{
-		"message":"Okno wid\u017cet\u00f3w"
-	},
-	"ui_tutorial2_widget_drawer":{
-		"message":"Tutaj znajdziesz wid\u017cety wykonane przez osoby trzecie, kt\u00f3re stworzy\u0142y aplikacje specjalnie dla Niesamowitej Nowej Karty. Wid\u017cety wprowadzaj\u0105 aktualne i przydatne informacje na nowej karcie."
-	},
-	"ui_tutorial2_lock_title":{
-		"message":"Zablokuj\/Odblokuj siatk\u0119"
-	},
-	"ui_tutorial2_lock_grid":{
-		"message":"Blokowanie i odblokowywanie siatki umo\u017cliwia wstawianie, przenoszenie oraz usuwanie wid\u017cet\u00f3w, aplikacji oraz skr\u00f3t\u00f3w. <b>Kliknij na symbol k\u0142\u00f3dki aby kontynuowa\u0107<\/b>."
-	},
-	"ui_tutorial2_delete_widget":{
-		"message":"Usu\u0144 ten wid\u017cet"
-	},
-	"ui_tutorial2_delete_widget_string":{
-		"message":"Siatka jest do Twojej dyspozycji. Mo\u017cesz kasowa\u0107 p\u0142ytki kt\u00f3rych nie potrzebujesz. Teraz mo\u017cesz \u015bmia\u0142o <b>usun\u0105\u0107 wid\u017cet samouczka<\/b>."
-	},
-	"ui_tutorial2_empty_grid_title":{
-		"message":"Wyczy\u015b\u0107 siatk\u0119 p\u0142ytek"
-	},
-	"ui_tutorial2_empty_grid_string":{
-		"message":"Nie ograniczaj si\u0119 aplikacjami znalezionymi w sklepie internetowym. <b> kliknij na pusty kafelek na siatce<\/b> i stw\u00f3rz skr\u00f3t do dowolnej strony w internecie."
-	},
-	"ui_tutorial2_completed_title":{
-		"message":"Jeste\u015b niesamowity(-a)!"
-	},
-	"ui_tutorial2_completed_string":{
-		"message":"Polub, bardzo niesamowite. Teraz ju\u017c wiesz jak korzysta\u0107 z Niesamowitej Nowej Karty aby jak najlepiej wykorzysta\u0107 przegl\u0105dark\u0119 Chrome. A wi\u0119c co teraz zrobisz?"
-	},
-	"ui_tutorial2_finish_string":{
-		"message":"Zako\u0144cz samouczek"
-	},
-	"ui_tutorial2_main_welcome":{
-		"message":"Witaj w"
-	},
-	"ui_tutorial2_main_feels":{
-		"message":"W\u0142asnie zaktualizowa\u0142e\u015b do Niesamowitej Nowej Strony Startowej. Jak si\u0119 z tym czujesz?"
-	},
-	"ui_tutorial2_main_getstarted":{
-		"message":"Mo\u017ce zbyt du\u017co tej niesamowito\u015bci na raz? Nie martw si\u0119, wid\u017cet samouczka na pewno pomo\u017ce Ci na pocz\u0105tku."
-	},
-	"ui_tutorial2_main_click":{
-		"message":"Kliknij na ten ma\u0142y przycisk na dole aby przej\u015b\u0107 dalej."
-	},
-	"ui_tutorial2_main_start":{
-		"message":"Rozpocznij samouczek"
-	}
+  "ui_button_apps":{
+    "message":"Dodatki"
+  },
+  "ui_button_widgets":{
+    "message":"Widżety"
+  },
+  "ui_button_widget_browser":{
+    "message":"Przeglądarka widgetów"
+  },
+  "ui_button_unlock":{
+    "message":"Odblokuj"
+  },
+  "ui_button_lock":{
+    "message":"Zablokuj aby korzystać z aplikacji i widgetów"
+  },
+  "ui_button_rct":{
+    "message":"Ostatnio zamknięte karty"
+  },
+  "ui_button_close":{
+    "message":"Zamknij"
+  },
+  "ui_button_ok":{
+    "message":"OK"
+  },
+  "ui_button_cancel":{
+    "message":"Anuluj"
+  },
+  "ui_button_yes":{
+    "message":"Tak"
+  },
+  "ui_button_no":{
+    "message":"Nie"
+  },
+  "ui_button_about":{
+    "message":"O dodatku"
+  },
+  "ui_config":{
+    "message":"Konfiguracja"
+  },
+  "ui_button_help":{
+    "message":"Pomoc & Opinie"
+  },
+  "ui_c_learnmore":{
+    "message":"Dowiedz się więcej"
+  },
+  "ui_config_bg_changecolor":{
+    "message":"Zmiana koloru tła"
+  },
+  "ui_te":{
+    "message":"Edytor kafelka"
+  },
+  "ui_te_general":{
+    "message":"Ogólne"
+  },
+  "ui_te_name":{
+    "message":"Nazwa"
+  },
+  "ui_te_name_desc":{
+    "message":"Jak chcesz nazwać skrót?"
+  },
+  "ui_te_shname":{
+    "message":"Pokaż \/ ukryj nazwę"
+  },
+  "ui_te_pin":{
+    "message":"Przypnij kartę po kliknięciu"
+  },
+  "ui_te_newtab":{
+    "message":"Otwórz na nowej karcie lewym kliknięciem"
+  },
+  "ui_te_url_desc":{
+    "message":"Podaj adres do którego chcesz linkować, np. http:\/\/www.google.pl\/"
+  },
+  "ui_te_url_tip":{
+    "message":"Porada: Prawidłowy adres URL zawiera oznaczenie protokołu - takich jak np. \"http:\/\/\" - przed adresem domeny. Bez prawidłowego oznaczenia protokołu, Twój skrót nie będzie działać."
+  },
+  "ui_te_shfavicon":{
+    "message":"Pokaż \/ ukryj favicon"
+  },
+  "ui_te_search":{
+    "message":"Szukaj"
+  },
+  "ui_te_search_desc":{
+    "message":"Wprowadź adres URL wyszukiwania na tej stronie. Na przykład:"
+  },
+  "ui_te_bg_colorpicker":{
+    "message":"Otwórz Próbnik kolorów"
+  },
+  "ui_te_bg_transparent":{
+    "message":"Przezroczyste tło"
+  },
+  "ui_te_bg_tip":{
+    "message":"Porada: Jeśli zaznaczysz tą opcję, możesz zechcieć ukryć nazwę i ikonę ulubionych."
+  },
+  "ui_te_bg_note":{
+    "message":"Uwaga: Ta opcja nie ma wpływu na ustawienia ikon i tła."
+  },
+  "ui_te_app_tip":{
+    "message":"Nie wszystkie opcje są dostępne dla aplikacji. Jeśli chciałbyś uzyskać więcej opcji, stwórz niestandardowy skrót. Po prostu kliknij na wolne pole przy odblokowanej siatce."
+  },
+  "ui_te_ib":{
+    "message":"Ikony i tło"
+  },
+  "ui_te_ib_desc":{
+    "message":"Wprowadź adres URL dla obrazka, skorzystaj z opcji \"Przeglądaj\" lub przeciągnij i upuść obrazek, aby zmienić ikonę."
+  },
+  "ui_te_ib_browse":{
+    "message":"Przeglądaj"
+  },
+  "ui_te_ib_screenshot":{
+    "message":"Użyj zrzutu ekranu"
+  },
+  "ui_screenshot_confirm_title":{
+    "message":"Wykonywanie zrzutu ekranu"
+  },
+  "ui_screenshot_confirm":{
+    "message":"W celu wykonania zrzutu ekranu strony, strona zostanie otworzona w nowej karcie. Kiedy strona się załaduje, karta się zamknie automatycznie i powrócisz do Awesome New Tab Page. Proszę nie zamykać kart i nie przełączać na inne karty. To powinno zająć nie więcej jak kilka sekund."
+  },
+  "ui_screenshot_permission_denied_title":{
+    "message":"Odmowa dostępu"
+  },
+  "ui_screenshot_permission_denied":{
+    "message":"Odmówiłeś przyznania Awesome New Tab Page uprawnień potrzebnych do umożliwienia wykonywania zrzutów ekranu. Jeśli chcesz wykonać zrzut ekranu, musisz przyznać Awesome New Tab Page potrzebne uprawnienia."
+  },
+  "ui_te_ib_tip":{
+    "message":"Porada: Zostaw puste aby nie było żadnej ikony."
+  },
+  "ui_te_ib_advanced":{
+    "message":"Zaawansowane: Ukryj nazwę i ikonę ulubionych i użyj obrazka w rozdzielczości 200 na 200 pikseli aby optymalnie dostosować wygląd w stosunku 1:1."
+  },
+  "ui_config_general":{
+    "message":"Ogólne"
+  },
+  "ui_config_shbmb":{
+    "message":"Pokaż pasek zakładek"
+  },
+  "ui_config_shbmb_tip":{
+    "message":"Pokaż pasek zakładek na górze strony"
+  },
+  "ui_config_reset":{
+    "message":"Resetuj"
+  },
+  "ui_config_reset_desc":{
+    "message":"Ten przycisk umożliwi Ci cofnięcie wszystkich zmian jakich dokonałeś w Awesome New Tab Page."
+  },
+  "ui_confirm_reset":{
+    "message":"Czy na pewno chcesz zresetować widget, aplikację, skróty niestandardowe, ustawienia widgetów (notes, itp.) oraz ustawienia tła? Wszystkie zapisane ustawienia zostaną utracone."
+  },
+  "ui_config_bg":{
+    "message":"Tło"
+  },
+  "ui_config_bg_upload":{
+    "message":"Wyślij obrazek"
+  },
+  "ui_config_bgimg1":{
+    "message":"<b>Zaawansowane<\/b> (skrócone tło CSS): Wykorzystaj obraz z internetu."
+  },
+  "ui_config_bgimg3":{
+    "message":"Wyczyść pole by przywrócić domyślne tło (jeden kolor)."
+  },
+  "ui_config_bgimg2":{
+    "message":"Przykład (BEZ średnika na końcu!):"
+  },
+  "ui_config_onoff_on":{
+    "message":"Włącz"
+  },
+  "ui_config_onoff_off":{
+    "message":"Wyłącz"
+  },
+  "ui_config_advanced":{
+    "message":"Zaawansowane"
+  },
+  "ui_config_advanced_tip":{
+    "message":"Poniżej są opcje zaawansowane, które jeśli były by źle ustawione, spowodowały by trudności z obsługą. Używasz tych opcji na własną odpowiedzialność."
+  },
+  "ui_config_advanced_grid_width":{
+    "message":"Ustaw szerokość siatki"
+  },
+  "ui_config_advanced_grid_width_tip":{
+    "message":"Zastępuje automatyczną generację siatki. Użycie tej opcji może spowodować że kafelki nie będą się ładować. Ustawiając tą wartość na zbyt wysoką, może spowodować utratę wydajności. Minimum: 4. Maksimum 50. <b>Pozostaw puste aby dezaktywować!<\/b>"
+  },
+  "ui_config_advanced_grid_height":{
+    "message":"Ustaw wysokość siatki"
+  },
+  "ui_config_advanced_grid_height_tip":{
+    "message":"Zastępuje automatyczną generację siatki. Użycie tej opcji może spowodować że kafelki nie będą się ładować. Ustawiając tą wartość na zbyt wysoką, może spowodować utratę wydajności. Minimum: 3. Maksimum 25. <b>Pozostaw puste aby dezaktywować!<\/b>"
+  },
+  "ui_about":{
+    "message":"O dodatku"
+  },
+  "ui_about_contrib":{
+    "message":"Współpracownicy"
+  },
+  "ui_about_contrib_desc":{
+    "message":"Ten projekt nie istniałby bez ciężkiej pracy, opinii, pomysłów, tłumaczeń i wsparcia kilku grup bardzo fajnych ludzi."
+  },
+  "ui_about_dev":{
+    "message":"Programiści"
+  },
+  "ui_about_contrib_translators":{
+    "message":"Tłumacze"
+  },
+  "ui_about_contrib_users":{
+    "message":"Użytkownicy"
+  },
+  "ui_about_contrib_cta":{
+    "message":"Kliknij w link powyżej by zobaczyć (i być może dołączyć do) tych wspaniałych ludzi w akcji!"
+  },
+  "ui_about_share":{
+    "message":"Podziel się"
+  },
+  "ui_about_share1":{
+    "message":"Lubisz Awesome New Tab Page? Dlaczego nie miałbyś powiedzieć o tym znajomym i rodzinie?"
+  },
+  "ui_about_rate":{
+    "message":"Oceń"
+  },
+  "ui_about_rate_desc":{
+    "message":"Lubisz to rozszerzenie? Poświęć chwilę i dodaj pozytywną ocenę w Chrome Web Store."
+  },
+  "ui_install":{
+    "message":"Instaluj"
+  },
+  "ui_uninstall":{
+    "message":"Odinstaluj"
+  },
+  "ui_uninstall_title":{
+    "message":"Odinstaluj aplikacje"
+  },
+  "ui_confirm_uninstall":{
+    "message":"Czy na pewno chcesz odinstalować dodatek $app$?",
+    "placeholders":{
+      "app":{
+        "content":"$1",
+        "example":"Chrome Web Store"
+      }
+    }
+  },
+  "ui_faw_unlock_drag":{
+    "message":"Odblokuj i Przeciągnij"
+  },
+  "ui_faw_unlock_drag_apps":{
+    "message":"Odblokuj kłódkę i <b>przeciągnij<\/b> Twoje zainstalowane aplikacje na wolne pole."
+  },
+  "ui_faw_unlock_drag_widgets":{
+    "message":"Odblokuj kłódkę i <b>przeciągnij<\/b> Twoje zainstalowane Gadżety na wolne pole."
+  },
+  "ui_faw_get_more_apps":{
+    "message":"Pobierz więcej Aplikacji"
+  },
+  "ui_faw_get_more_apps_body":{
+    "message":"Pobierz więcej aplikacji ze <a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'>Sklepu internetowego<\/a>."
+  },
+  "ui_faw_get_more_widgets":{
+    "message":"Pobierz więcej gadżetów"
+  },
+  "ui_faw_get_more_widgets_body":{
+    "message":"Znajdź więcej widgetów."
+  },
+  "ui_faw_pick":{
+    "message":"Wybierz"
+  },
+  "ui_faw_pick_body":{
+    "message":"Wybierz widgety poniżej, które chciałbyś zainstalować."
+  },
+  "ui_faw_install":{
+    "message":"Instaluj"
+  },
+  "ui_faw_install_body":{
+    "message":"Naciśnij przycisk Instaluj aby dodać do Chrome'a i do okna widgetów."
+  },
+  "ui_bmb_ob":{
+    "message":"Inne zakładki"
+  },
+  "app_webstore":{
+    "message":"Chrome Web Store"
+  },
+  "ui_shortcut_img":{
+    "message":"Wskazywany obrazek musi być dokładnie 128x128 pikseli, najlepiej w formacie PNG z przezroczystością. Aby zresetować, po prostu usuń wszystko w tym polu."
+  },
+  "notepad_default":{
+    "message":"Wpisz tu cokolwiek. Wszystko co tu wpiszesz będzie zapisane przy każdym naciśnięciu jakiegokolwiek klawisza.\n\nBądź ostrożny, gdyż nie ma żadnego backupu, a przycisk Resetujący całe rozszerzenie usunie zawartość tego widgeta!"
+  },
+  "ui_resize_reset":{
+    "message":"Resetuj"
+  },
+  "ui_resize_center":{
+    "message":"Środek"
+  },
+  "ui_resize_cover":{
+    "message":"Okładka"
+  },
+  "ui_resize_contain":{
+    "message":"Zawartość"
+  },
+  "ui_resize_zoom":{
+    "message":"Powiększ"
+  },
+  "rctm_remove":{
+    "message":"Usuń"
+  },
+  "rctm_clear_all":{
+    "message":"Usuń z widoku ostatnio zamknięte karty"
+  },
+  "rctm_clear_all_confirm":{
+    "message":"Czyszczenie \"Ostatnio Zamkniętych Kart\" nie usuwa historii przeglądania stron przeglądarki. Ta opcja czyści jedynie listę aplikacji."
+  },
+  "ui_import_export_btn":{
+    "message":"Importuj\/Eksportuj"
+  },
+  "ui_import_export_desc":{
+    "message":"Przenieś ustawienia do innych przeglądarek lub przywróć kopię bezpieczeństwa."
+  },
+  "ui_import_export_btn2":{
+    "message":"&laquo; Poprzedni"
+  },
+  "ui_import_export_btn_import":{
+    "message":"Importuj"
+  },
+  "ui_import_export_btn_export":{
+    "message":"Eksportuj"
+  },
+  "ui_import_export_btn_import_run":{
+    "message":"Zastosuj"
+  },
+  "ui_import_export_desc_export":{
+    "message":"Eksport: Tworzy kopię wszystkich twoich ustawień. Może być wykorzystany później jako kopia zapasowa lub może zostać skopiowana na inne komputery aby zastosować na nich styl taki sam jak na tym komputerze. Zdjęcia z komputera nie będą eksportowane; a zdjęcia znajdujące się w sieci web będą."
+  },
+  "ui_import_export_desc_import":{
+    "message":"Import: Nadpisuje Twoją obecną konfigurację prawidłowo wyeksportowaną ścieżką. <b>UWAGA<\/b> Wszystkie Twoje obecne ustawienia będą nieodwracalnie utracone. Nie ma sposobu aby odwrócić tą operację. Zdjęcia z komputera nie będą importowane; a zdjęcia znajdujące się w sieci web będą."
+  },
+  "ui_import_export_installed_warning":{
+    "message":"Zainstalowane aplikacje, rozszerzenia, i gadżety nie są importowane lub eksportowane. Rozszerzenia nie mogą instalować innych aplikacji lub rozszerzeń. Użyj <a href='http:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'>Chrome Sync<\/a>."
+  },
+  "ui_import_export_desc_restore":{
+    "message":"Przywracanie: Pozwala odwrócić efekty ostatniego importu. Twoje obecne ustawienia również zostaną zapisane w kopi zapasowej w celu późniejszego przywrócenia."
+  },
+  "ui_import_export_header":{
+    "message":"Importuj\/Eksportuj"
+  },
+  "ui_online_backups_header":{
+    "message":"Kopie zapasowe online"
+  },
+  "ui_import_export_confirm_restore_title":{
+    "message":"Potwierdź przywrócenie"
+  },
+  "ui_import_export_confirm_restore":{
+    "message":"Jesteś pewien że chcesz przywrócić dane? Twoje obecne ustawienia zostaną utracone."
+  },
+  "ui_import_export_msg_header":{
+    "message":"Importuj\/Eksportuj"
+  },
+  "ui_import_export_restore_complete_msg":{
+    "message":"Przywracanie zakończone."
+  },
+  "ui_import_export_no_restore_msg":{
+    "message":"Brak danych do przywrócenia!"
+  },
+  "ui_import_export_complete_msg":{
+    "message":"Zakończono importowanie."
+  },
+  "ui_import_export_empty_string_msg":{
+    "message":"Wprowadź najpierw ścieżkę importu!"
+  },
+  "ui_import_export_invalid_string_msg":{
+    "message":"Zła ścieżka importu!"
+  },
+  "ui_import_export_btn_restore":{
+    "message":"Przywróć"
+  },
+  "ui_online_backup_btn_save_backup":{
+    "message":"Zapisywanie kopii zapasowej"
+  },
+  "ui_online_backup_sync_writes_exceeded_title":{
+    "message":"Zbyt wiele operacji!"
+  },
+  "ui_online_backup_sync_size_exceeded_title":{
+    "message":"Przekroczono rozmiar!"
+  },
+  "ui_online_backup_invalid_backup_name_title":{
+    "message":"Nieprawidłowa nazwa kopii zapasowej!"
+  },
+  "ui_online_backup_backup_already_exist_title":{
+    "message":"Nazwa już istnieje!"
+  },
+  "ui_online_backup_confirm_delete_backup_title":{
+    "message":"Czy na pewno?"
+  },
+  "ui_online_backup_confirm_load_backup_title":{
+    "message":"Czy na pewno?"
+  },
+  "ui_online_backup_backup_imported_title":{
+    "message":"Kopia zapasowa importowane"
+  },
+  "ui_online_remove_load_backup":{
+    "message":"Usuwanie kopii zapasowej"
+  },
+  "ui_drag_widget_message":{
+    "message":"Aby umieścić widget, kliknij i przeciągnij go na wolny kafelek."
+  },
+  "ui_apps_tip_message_title":{
+    "message":"Nowa aplikacja zainstalowana"
+  },
+  "ui_apps_tip_message":{
+    "message":"Miło! Właśnie zainstalowałeś aplikację. Wszystkie zainstalowane aplikacje możesz znaleźć tutaj."
+  },
+  "ui_tutorial2_next":{
+    "message":"Dalej"
+  },
+  "ui_tutorial2_app_window_title":{
+    "message":"Okno aplikacji"
+  },
+  "ui_tutorial2_app_drawer":{
+    "message":"W tym miejscu możesz znaleźć wszystkie dodatki jakie zostały zainstalowane ze sklepu internetowego. Możesz <b>przeciągnąć<\/b> aplikacje z tego okna do Twojej <b>odblokowanej<\/b> siatki. W tym oknie możesz także odinstalowywać dodatki."
+  },
+  "ui_tutorial2_widgets_window_title":{
+    "message":"Okno widżetów"
+  },
+  "ui_tutorial2_widget_drawer":{
+    "message":"Tutaj znajdziesz widżety wykonane przez osoby trzecie, które stworzyły aplikacje specjalnie dla Niesamowitej Nowej Karty. Widżety wprowadzają aktualne i przydatne informacje na nowej karcie."
+  },
+  "ui_tutorial2_lock_title":{
+    "message":"Zablokuj\/Odblokuj siatkę"
+  },
+  "ui_tutorial2_lock_grid":{
+    "message":"Blokowanie i odblokowywanie siatki umożliwia wstawianie, przenoszenie oraz usuwanie widżetów, aplikacji oraz skrótów. <b>Kliknij na symbol kłódki aby kontynuować<\/b>."
+  },
+  "ui_tutorial2_delete_widget":{
+    "message":"Usuń ten widżet"
+  },
+  "ui_tutorial2_delete_widget_string":{
+    "message":"Siatka jest do Twojej dyspozycji. Możesz kasować płytki których nie potrzebujesz. Teraz możesz śmiało <b>usunąć widżet samouczka<\/b>."
+  },
+  "ui_tutorial2_empty_grid_title":{
+    "message":"Wyczyść siatkę płytek"
+  },
+  "ui_tutorial2_empty_grid_string":{
+    "message":"Nie ograniczaj się aplikacjami znalezionymi w sklepie internetowym. <b> kliknij na pusty kafelek na siatce<\/b> i stwórz skrót do dowolnej strony w internecie."
+  },
+  "ui_tutorial2_completed_title":{
+    "message":"Jesteś niesamowity(-a)!"
+  },
+  "ui_tutorial2_completed_string":{
+    "message":"Polub, bardzo niesamowite. Teraz już wiesz jak korzystać z Niesamowitej Nowej Karty aby jak najlepiej wykorzystać przeglądarkę Chrome. A więc co teraz zrobisz?"
+  },
+  "ui_tutorial2_finish_string":{
+    "message":"Zakończ samouczek"
+  },
+  "ui_tutorial2_main_welcome":{
+    "message":"Witaj w"
+  },
+  "ui_tutorial2_main_feels":{
+    "message":"Własnie zaktualizowałeś do Niesamowitej Nowej Strony Startowej. Jak się z tym czujesz?"
+  },
+  "ui_tutorial2_main_getstarted":{
+    "message":"Może zbyt dużo tej niesamowitości na raz? Nie martw się, widżet samouczka na pewno pomoże Ci na początku."
+  },
+  "ui_tutorial2_main_click":{
+    "message":"Kliknij na ten mały przycisk na dole aby przejść dalej."
+  },
+  "ui_tutorial2_main_start":{
+    "message":"Rozpocznij samouczek"
+  }
 }

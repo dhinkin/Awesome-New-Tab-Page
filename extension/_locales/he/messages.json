@@ -1,293 +1,302 @@
 {
-	"ui_button_apps":{
-		"message":"\u05d9\u05d9\u05e9\u05d5\u05de\u05d9\u05dd"
-	},
-	"ui_button_widgets":{
-		"message":"\u05d5\u05d5\u05d9\u05d3\u05d2'\u05d8\u05d9\u05dd"
-	},
-	"ui_button_unlock":{
-		"message":"\u05d1\u05d8\u05dc \u05e0\u05e2\u05d9\u05dc\u05d4"
-	},
-	"ui_button_lock":{
-		"message":"\u05e0\u05e2\u05dc \u05db\u05d3\u05d9 \u05dc\u05d4\u05e4\u05e2\u05d9\u05dc \u05d9\u05d9\u05e9\u05d5\u05de\u05d9\u05dd \u05d5\u05d5\u05d5\u05d9\u05d3\u05d2'\u05d8\u05d9\u05dd"
-	},
-	"ui_button_rct":{
-		"message":"\u05db\u05e8\u05d8\u05d9\u05e1\u05d9\u05d5\u05ea \u05e9\u05e0\u05e1\u05d2\u05e8\u05d5 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4"
-	},
-	"ui_button_close":{
-		"message":"\u05e1\u05d2\u05d5\u05e8"
-	},
-	"ui_button_ok":{
-		"message":"\u05d1\u05e1\u05d3\u05e8"
-	},
-	"ui_button_cancel":{
-		"message":"\u05d1\u05d9\u05d8\u05d5\u05dc"
-	},
-	"ui_button_about":{
-		"message":"\u05d0\u05d5\u05d3\u05d5\u05ea"
-	},
-	"ui_config":{
-		"message":"\u05e7\u05d1\u05d9\u05e2\u05ea \u05ea\u05e6\u05d5\u05e8\u05d4"
-	},
-	"ui_button_help":{
-		"message":"\u05e2\u05d6\u05e8\u05d4 \u05d5\u05de\u05e9\u05d5\u05d1"
-	},
-	"ui_c_learnmore":{
-		"message":"\u05dc\u05de\u05d3 \u05e2\u05d5\u05d3"
-	},
-	"ui_config_bg_changecolor":{
-		"message":"\u05e9\u05e0\u05d4 \u05d0\u05ea \u05e6\u05d1\u05e2 \u05d4\u05e8\u05e7\u05e2"
-	},
-	"ui_te":{
-		"message":"\u05e2\u05d5\u05e8\u05da \u05d4\u05d0\u05e8\u05d9\u05d7\u05d9\u05dd"
-	},
-	"ui_te_general":{
-		"message":"\u05db\u05dc\u05dc\u05d9"
-	},
-	"ui_te_name":{
-		"message":"\u05e9\u05dd"
-	},
-	"ui_te_name_desc":{
-		"message":"\u05d0\u05d9\u05da \u05d0\u05ea\u05d4 \u05e8\u05d5\u05e6\u05d4 \u05dc\u05e7\u05e8\u05d5\u05d0 \u05dc\u05d6\u05d4?"
-	},
-	"ui_te_shname":{
-		"message":"\u05d4\u05e6\u05d2 \/ \u05d4\u05e1\u05ea\u05e8 \u05e9\u05dd"
-	},
-	"ui_te_pin":{
-		"message":"\u05e0\u05e2\u05e5 \u05e2\u05dc \u05d9\u05d3\u05d9 \u05e2\u05db\u05d1\u05e8 \u05e9\u05de\u05d0\u05dc"
-	},
-	"ui_te_newtab":{
-		"message":"\u05e4\u05ea\u05d7 \u05d1\u05db\u05e8\u05d8\u05d9\u05e1\u05d9\u05d9\u05d4 \u05d7\u05d3\u05e9\u05d4 \u05d1\u05dc\u05d7\u05d9\u05e6\u05ea \u05e2\u05db\u05d1\u05e8 \u05e9\u05de\u05d0\u05dc\u05d9\u05ea"
-	},
-	"ui_te_url_desc":{
-		"message":"\u05d4\u05d6\u05df \u05d0\u05ea \u05db\u05ea\u05d5\u05d1\u05ea \u05d4\u05d0\u05d9\u05e0\u05d8\u05d0\u05e8\u05e0\u05d8 \u05e9\u05d0\u05ea\u05dd \u05e8\u05d5\u05e6\u05d9\u05dd \u05dc\u05d4\u05ea\u05d7\u05d1\u05e8, \u05dc\u05d3\u05d5\u05d2\u05de\u05d4 http:\/\/www.google.com\/"
-	},
-	"ui_te_url_tip":{
-		"message":"\u05d8\u05d9\u05e4: \u05e7\u05d9\u05e9\u05d5\u05e8 \u05d7\u05d5\u05e7\u05d9 \u05de\u05db\u05d9\u05dc \u05e4\u05e8\u05d5\u05d8\u05d5\u05e7\u05d5\u05dc - \u05db\u05de\u05d5 ''http'' - \u05dc\u05e4\u05e0\u05d9 \u05d4\u05ea\u05d7\u05d5\u05dd. \u05dc\u05dc\u05d0 \u05e4\u05e8\u05d5\u05d8\u05d5\u05e7\u05d5\u05dc \u05d7\u05d5\u05e7\u05d9, \u05e7\u05d9\u05e6\u05d5\u05e8 \u05d4\u05d3\u05e8\u05da \u05e9\u05dc\u05da \u05d0\u05d9\u05e0\u05d5 \u05d9\u05e2\u05d1\u05d5\u05d3."
-	},
-	"ui_te_shfavicon":{
-		"message":"\u05d4\u05e6\u05d2\u05d4 \/ \u05d4\u05e1\u05ea\u05e8\u05d4 \u05e9\u05dc \u05d4\u05e1\u05de\u05dc"
-	},
-	"ui_te_search":{
-		"message":"\u05d7\u05d9\u05e4\u05d5\u05e9"
-	},
-	"ui_te_search_desc":{
-		"message":"\u05d4\u05db\u05e0\u05e1 URL \u05d7\u05d9\u05e4\u05d5\u05e9 \u05dc\u05d0\u05ea\u05e8 \u05d6\u05d4. \u05dc\u05d3\u05d5\u05d2\u05de\u05d4:"
-	},
-	"ui_te_bg_colorpicker":{
-		"message":"\u05e4\u05ea\u05d7 \u05d0\u05ea \u05d1\u05d5\u05d7\u05e8 \u05d4\u05e6\u05d1\u05e2\u05d9\u05dd"
-	},
-	"ui_te_bg_transparent":{
-		"message":"\u05e8\u05e7\u05e2 \u05e9\u05e7\u05d5\u05e3 \u05dc\u05d7\u05dc\u05d5\u05d8\u05d9\u05df"
-	},
-	"ui_te_bg_tip":{
-		"message":"\u05d8\u05d9\u05e4: \u05d0\u05dd \u05ea\u05e1\u05de\u05df \u05ea\u05d9\u05d1\u05d4 \u05d6\u05d5, \u05d9\u05d9\u05ea\u05db\u05df \u05e9\u05d2\u05dd \u05ea\u05e8\u05e6\u05d4 \u05dc\u05d4\u05e1\u05ea\u05d9\u05e8 \u05d0\u05ea \u05d4\u05e9\u05dd \u05d5\u05d0\u05ea \u05d4\u05e1\u05de\u05dc."
-	},
-	"ui_te_bg_note":{
-		"message":"\u05d4\u05e2\u05e8\u05d4: \u05dc\u05d0\u05d5\u05e4\u05e6\u05d9\u05d4 \u05d4\u05d6\u05d5 \u05d0\u05d9\u05df \u05db\u05dc \u05d4\u05e9\u05e4\u05e2\u05d4 \u05e2\u05dc \u05d4\u05d0\u05d9\u05d9\u05e7\u05d5\u05df \u05d5\u05d4\u05d2\u05d3\u05e8\u05d5\u05ea \u05d4\u05e8\u05e7\u05e2."
-	},
-	"ui_te_app_tip":{
-		"message":"\u05dc\u05d0 \u05db\u05dc \u05d4\u05d0\u05e4\u05e9\u05e8\u05d5\u05d9\u05d5\u05ea \u05d6\u05de\u05d9\u05e0\u05d5\u05ea \u05dc\u05d0\u05e4\u05dc\u05d9\u05e7\u05e6\u05d9\u05d5\u05ea. \u05d0\u05dd \u05d1\u05e8\u05e6\u05d5\u05e0\u05da \u05dc\u05e7\u05d1\u05dc \u05e2\u05d5\u05d3 \u05d0\u05e4\u05e9\u05e8\u05d5\u05d9\u05d5\u05ea, \u05e6\u05d5\u05e8 \u05e7\u05d9\u05e6\u05d5\u05e8 \u05d3\u05e8\u05da \u05de\u05d5\u05ea\u05d0\u05dd \u05d0\u05d9\u05e9\u05d9\u05ea  \u05d1\u05de\u05e7\u05d5\u05dd. \u05e4\u05e9\u05d5\u05d8 \u05dc\u05d7\u05e5 \u05e2\u05dc \u05d0\u05e8\u05d9\u05d7\u05d9\u05dd \u05e8\u05d9\u05e7\u05d9\u05dd \u05e2\u05dd \u05d4\u05e8\u05e9\u05ea \u05e0\u05e2\u05d5\u05dc\u05d4."
-	},
-	"ui_te_ib":{
-		"message":"\u05e8\u05e7\u05e2 & \u05e1\u05de\u05dc"
-	},
-	"ui_te_ib_desc":{
-		"message":"\u05d4\u05d6\u05df \u05db\u05ea\u05d5\u05d1\u05ea \u05d0\u05ea\u05e8 \u05d0\u05d9\u05e0\u05d8\u05d0\u05e8\u05e0\u05d8 \u05dc\u05ea\u05de\u05d5\u05e0\u05d4,\u05d4\u05e9\u05ea\u05de\u05e9 \u05d1\u05dc\u05d7\u05e6\u05df \u05e2\u05d9\u05d5\u05df,\u05d0\u05d5 \u05d2\u05e8\u05d5\u05e8 \u05d0\u05ea \u05d4\u05ea\u05de\u05d5\u05e0\u05d4 \u05dc\u05de\u05e2\u05dc\u05d4 \u05db\u05d3\u05d9 \u05dc\u05e9\u05e0\u05d5\u05ea \u05d0\u05ea \u05d4\u05e1\u05de\u05dc."
-	},
-	"ui_te_ib_browse":{
-		"message":"\u05e2\u05d9\u05d5\u05df"
-	},
-	"ui_te_ib_screenshot":{
-		"message":"\u05d4\u05e9\u05ea\u05de\u05e9 \u05d1\u05e6\u05d9\u05dc\u05d5\u05dd \u05de\u05e1\u05da"
-	},
-	"ui_screenshot_confirm_title":{
-		"message":"\u05e6\u05dc\u05dd \u05ea\u05de\u05d5\u05e0\u05ea \u05de\u05e1\u05da"
-	},
-	"ui_screenshot_confirm":{
-		"message":"\u05db\u05d3\u05d9 \u05dc\u05dc\u05db\u05d5\u05d3 \u05d0\u05ea \u05e6\u05d9\u05dc\u05d5\u05dd \u05d4\u05de\u05e1\u05da, \u05d0\u05ea\u05e8 \u05d4\u05d0\u05d9\u05e0\u05d8\u05e8\u05e0\u05d8 \u05d9\u05d9\u05e4\u05ea\u05d7 \u05d1\u05db\u05e8\u05d8\u05d9\u05e1\u05d9\u05d4 \u05d7\u05d3\u05e9\u05d4. \u05dc\u05d0\u05d7\u05e8 \u05e1\u05d9\u05d5\u05dd \u05d8\u05e2\u05d9\u05e0\u05ea \u05d4\u05d3\u05e3, \u05d4\u05db\u05e8\u05d8\u05d9\u05e1\u05d9\u05d4 \u05ea\u05d9\u05e1\u05d2\u05e8 \u05d1\u05d0\u05d5\u05e4\u05df \u05d0\u05d5\u05d8\u05d5\u05de\u05d8\u05d9, \u05d5\u05d0\u05ea\u05d4 \u05ea\u05d7\u05d6\u05d5\u05e8 \u05dc\u05d3\u05e3 \u05db\u05e8\u05d8\u05d9\u05e1\u05d9\u05d9\u05d4 \u05d7\u05d3\u05e9\u05d4 \u05de\u05d3\u05d4\u05d9\u05dd.\n\u05e0\u05d0 \u05dc\u05d0 \u05dc\u05e1\u05d2\u05d5\u05e8 \u05d0\u05d5 \u05dc\u05e6\u05d0\u05ea,\u05d6\u05d4 \u05dc\u05d0 \u05d9\u05e7\u05d7 \u05d9\u05d5\u05ea\u05e8 \u05de\u05de\u05e1\u05e4\u05e8 \u05e9\u05e0\u05d9\u05d5\u05ea."
-	},
-	"ui_screenshot_permission_denied_title":{
-		"message":"\u05d2\u05d9\u05e9\u05d4 \u05e0\u05d3\u05d7\u05ea\u05d4"
-	},
-	"ui_screenshot_permission_denied":{
-		"message":"\u05d3\u05d7\u05d9\u05ea \u05d0\u05ea \u05d1\u05e7\u05e9\u05ea \u05d4\u05d4\u05e8\u05e9\u05d0\u05d4 \u05e9\u05dc Awesome New Tab Page, \u05d4\u05e0\u05d3\u05e8\u05e9\u05ea \u05dc\u05e6\u05d5\u05e8\u05da \u05d1\u05d9\u05e6\u05d5\u05e2 \u05e6\u05d9\u05dc\u05d5\u05dd \u05d4\u05de\u05e1\u05da. \u05d0\u05dd \u05d1\u05e8\u05e6\u05d5\u05e0\u05da \u05dc\u05d1\u05e6\u05e2 \u05e6\u05d9\u05dc\u05d5\u05dd \u05de\u05e1\u05da, \u05e0\u05e1\u05d4 \u05e9\u05e0\u05d9\u05ea \u05d5\u05d0\u05e4\u05e9\u05e8 \u05dcAwesome New Tab Page \u05d0\u05ea \u05d4\u05d2\u05d9\u05e9\u05d4 \u05d4\u05e0\u05d3\u05e8\u05e9\u05ea."
-	},
-	"ui_te_ib_tip":{
-		"message":"\u05e2\u05e6\u05d4: \u05dc\u05d4\u05e9\u05d0\u05d9\u05e8 \u05e8\u05d9\u05e7 \u05d1\u05e9\u05d1\u05d9\u05dc \u05e1\u05d9\u05de\u05df \u05e8\u05d9\u05e7."
-	},
-	"ui_config_general":{
-		"message":"\u05db\u05dc\u05dc\u05d9"
-	},
-	"ui_config_shbmb":{
-		"message":"\u05d4\u05e6\u05d2 \u05e1\u05e8\u05d2\u05dc \u05e1\u05d9\u05de\u05e0\u05d9\u05d5\u05ea"
-	},
-	"ui_config_shbmb_tip":{
-		"message":"\u05d4\u05e6\u05d2 \u05d0\u05ea \u05e1\u05e8\u05d2\u05dc \u05d4\u05e1\u05d9\u05de\u05e0\u05d9\u05d5\u05ea \u05d1\u05e8\u05d0\u05e9\u05d9\u05ea \u05d4\u05d3\u05e3"
-	},
-	"ui_config_reset":{
-		"message":"\u05d0\u05d9\u05e4\u05d5\u05e1"
-	},
-	"ui_config_reset_desc":{
-		"message":"\u05db\u05e4\u05ea\u05d5\u05e8 \u05d6\u05d4 \u05d9\u05d0\u05e4\u05e9\u05e8 \u05dc\u05da \u05dc\u05d1\u05d8\u05dc \u05d0\u05ea \u05db\u05dc \u05d4\u05e9\u05d9\u05e0\u05d5\u05d9\u05d9\u05dd \u05e9\u05d1\u05d9\u05e6\u05e2\u05ea \u05d1\u05d3\u05e3 \u05db\u05e8\u05d8\u05d9\u05e1\u05d9\u05d9\u05d4 \u05d7\u05d3\u05e9\u05d4 \u05de\u05d3\u05d4\u05d9\u05de\u05d4."
-	},
-	"ui_confirm_reset":{
-		"message":"\u05d4\u05d0\u05dd \u05d0\u05ea\u05d4 \u05d1\u05d8\u05d5\u05d7 \u05e9\u05d1\u05e8\u05e6\u05d5\u05e0\u05da \u05dc\u05d0\u05e4\u05e1 \u05d0\u05ea \u05d4\u05ea\u05d5\u05e1\u05e3? \u05db\u05dc\u05dc \u05d4\u05d5\u05d5\u05d9\u05d3\u05d2'\u05d8\u05d9\u05dd ,\u05d4\u05de\u05d9\u05e7\u05d5\u05de\u05d9\u05dd,\u05d5\u05d4\u05d4\u05ea\u05d0\u05de\u05d4 \u05d4\u05d0\u05d9\u05e9\u05d9\u05ea \u05e9\u05dc\u05da \u05ea\u05d0\u05d1\u05d3."
-	},
-	"ui_config_bg":{
-		"message":"\u05e8\u05e7\u05e2"
-	},
-	"ui_config_bg_upload":{
-		"message":"\u05d4\u05e2\u05dc\u05d4 \u05ea\u05de\u05d5\u05e0\u05d4"
-	},
-	"ui_config_bgimg3":{
-		"message":"\u05e0\u05e7\u05d4 \u05d0\u05ea \u05d4\u05e8\u05d9\u05d1\u05d5\u05e2 \u05db\u05d3\u05d9 \u05dc\u05d4\u05e9\u05ea\u05de\u05e9 \u05d1\u05d1\u05e8\u05d9\u05e8\u05ea \u05d4\u05de\u05d7\u05d3\u05dc \u05e9\u05dc \u05d4\u05e8\u05e7\u05e2 (\u05e6\u05d1\u05e2 \u05d0\u05d7\u05d9\u05d3)."
-	},
-	"ui_config_bgimg2":{
-		"message":"(\u05d3\u05d5\u05d2\u05de\u05d0 (\u05e4\u05e1\u05d9\u05e7 \u05dc\u05d0 \u05e0\u05d2\u05e8\u05e8"
-	},
-	"ui_config_advanced":{
-		"message":"\u05de\u05ea\u05e7\u05d3\u05dd"
-	},
-	"ui_about":{
-		"message":"\u05d0\u05d5\u05d3\u05d5\u05ea"
-	},
-	"ui_about_contrib":{
-		"message":"\u05ea\u05d5\u05e8\u05de\u05d9\u05dd"
-	},
-	"ui_about_contrib_desc":{
-		"message":"\u05e4\u05e8\u05d5\u05d9\u05e7\u05d8 \u05d6\u05d4 \u05dc\u05d0 \u05d4\u05d9\u05d4 \u05e7\u05d9\u05d9\u05dd \u05dc\u05dc\u05d0 \u05e2\u05d1\u05d5\u05d3\u05d4 \u05e7\u05e9\u05d4, \u05de\u05e9\u05d5\u05d1, \u05e8\u05e2\u05d9\u05d5\u05e0\u05d5\u05ea, \u05ea\u05e8\u05d2\u05d5\u05de\u05d9\u05dd \u05d5\u05ea\u05de\u05d9\u05db\u05d4 \u05e9\u05dc \u05db\u05de\u05d4 \u05e7\u05d1\u05d5\u05e6\u05d5\u05ea \u05e9\u05dc \u05d0\u05e0\u05e9\u05d9\u05dd \u05de\u05d3\u05d4\u05d9\u05de\u05d9\u05dd."
-	},
-	"ui_about_dev":{
-		"message":"\u05de\u05e4\u05ea\u05d7\u05d9\u05dd"
-	},
-	"ui_about_contrib_translators":{
-		"message":"\u05de\u05ea\u05e8\u05d2\u05de\u05d9\u05dd"
-	},
-	"ui_about_contrib_users":{
-		"message":"\u05de\u05e9\u05ea\u05de\u05e9\u05d9\u05dd"
-	},
-	"ui_about_contrib_cta":{
-		"message":"\u05dc\u05d7\u05e5 \u05e2\u05dc \u05d4\u05e7\u05d9\u05e9\u05d5\u05e8\u05d9\u05dd \u05db\u05d0\u05df \u05db\u05d3\u05d9 \u05dc\u05e8\u05d0\u05d5\u05ea (\u05d5\u05d0\u05d5\u05dc\u05d9 \u05dc\u05d4\u05e6\u05d8\u05e8\u05e3) \u05dc\u05d0\u05e0\u05e9\u05d9\u05dd \u05d4\u05de\u05d3\u05d4\u05d9\u05de\u05d9\u05dd \u05d1\u05e4\u05e2\u05d5\u05dc\u05d4!"
-	},
-	"ui_about_share":{
-		"message":"\u05e9\u05ea\u05e3"
-	},
-	"ui_about_share1":{
-		"message":"\u05d0\u05ea\u05d4 \u05d0\u05d5\u05d4\u05d1 \u05d0\u05ea \u05d3\u05e3 \u05db\u05e8\u05d8\u05d9\u05e1\u05d9\u05d9\u05d4 \u05d7\u05d3\u05e9\u05d4 \u05de\u05d3\u05d4\u05d9\u05de\u05d4? \u05dc\u05de\u05d4 \u05e9\u05dc\u05d0 \u05ea\u05e9\u05ea\u05e3 \u05d0\u05d5\u05ea\u05d5 \u05e2\u05dd \u05d7\u05d1\u05e8\u05d9\u05dd \u05d5\u05d1\u05e0\u05d9 \u05de\u05e9\u05e4\u05d7\u05d4?"
-	},
-	"ui_about_rate":{
-		"message":"\u05d3\u05e8\u05d2"
-	},
-	"ui_about_rate_desc":{
-		"message":".\u05d4\u05d0\u05dd \u05d0\u05ea\u05d4 \u05d0\u05d5\u05d4\u05d1 \u05d0\u05ea \u05d4\u05ea\u05d5\u05e1\u05e3 \u05d4\u05d6\u05d4? \u05d4\u05e7\u05d3\u05e9 \u05e8\u05d2\u05e2 \u05dc\u05ea\u05ea \u05d1\u05d9\u05e7\u05d5\u05e8\u05ea \u05d1\u05d7\u05e0\u05d5\u05ea \u05d4\u05d0\u05d9\u05e0\u05d8\u05e8\u05e0\u05d8 \u05e9\u05dc \u05db\u05e8\u05d5\u05dd"
-	},
-	"ui_confirm_uninstall":{
-		"message":"\u05d0\u05ea\u05d4 \u05d1\u05d8\u05d5\u05d7 \u05e9\u05d0\u05ea\u05d4 \u05e8\u05d5\u05e6\u05d4 \u05dc\u05d4\u05e1\u05d9\u05e8 \u05d0\u05ea $app$?",
-		"placeholders":{
-			"app":{
-				"content":"$1",
-				"example":"Chrome Web Store"
-			}
-		}
-	},
-	"ui_faw_unlock_drag":{
-		"message":"\u05e0\u05e2\u05d9\u05dc\u05ea & \u05d2\u05e8\u05d9\u05e8\u05d4"
-	},
-	"ui_faw_get_more_apps":{
-		"message":"\u05e7\u05d1\u05dc \u05d9\u05d9\u05e9\u05d5\u05de\u05d9\u05dd \u05e0\u05d5\u05e1\u05e4\u05d9\u05dd"
-	},
-	"ui_faw_get_more_apps_body":{
-		"message":"<a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'>\u05d7\u05e0\u05d5\u05ea \u05d4\u05d0\u05d9\u05e0\u05d8\u05e8\u05e0\u05d8 \u05e9\u05dc \u05db\u05e8\u05d5\u05dd<\/a>.\u05d4\u05e9\u05d2 \u05e2\u05d5\u05d3 \u05d0\u05e4\u05dc\u05d9\u05e7\u05e6\u05d9\u05d5\u05ea \u05de."
-	},
-	"ui_faw_get_more_widgets":{
-		"message":"\u05e7\u05d1\u05dc \u05e2\u05d5\u05d3 \u05d9\u05d9\u05e9\u05d5\u05de\u05d5\u05e0\u05d9\u05dd"
-	},
-	"ui_bmb_ob":{
-		"message":"\u05e1\u05d9\u05de\u05e0\u05d9\u05d5\u05ea \u05d0\u05d7\u05e8\u05d5\u05ea"
-	},
-	"app_webstore":{
-		"message":"\u05d7\u05e0\u05d5\u05ea \u05d4\u05d0\u05d9\u05e0\u05d8\u05e8\u05e0\u05d8 \u05e9\u05dc \u05db\u05e8\u05d5\u05dd"
-	},
-	"ui_shortcut_img":{
-		"message":"\u05d4\u05ea\u05de\u05d5\u05e0\u05d4 \u05d7\u05d9\u05d9\u05d1\u05ea \u05dc\u05d4\u05d9\u05d5\u05ea \u05d1\u05d3\u05d9\u05d5\u05e7 128 \u05e4\u05d9\u05e7\u05e1\u05dc\u05d9\u05dd \u05e2\u05dc 128 \u05e4\u05d9\u05e7\u05e1\u05dc\u05d9\u05dd, \u05d1\u05e4\u05d5\u05e8\u05de\u05d8 PNG \u05e2\u05dd \u05e9\u05e7\u05d9\u05e4\u05d5\u05ea \u05d0\u05dc\u05e4\u05d0. \u05db\u05d3\u05d9 \u05dc\u05d0\u05e4\u05e1 \u05dc\u05d1\u05e8\u05d9\u05e8\u05ea \u05d4\u05de\u05d7\u05d3\u05dc, \u05e4\u05e9\u05d5\u05d8 \u05de\u05d7\u05e7 \u05d4\u05db\u05d5\u05dc \u05d1\u05e9\u05d3\u05d4."
-	},
-	"notepad_default":{
-		"message":"\u05d4\u05e7\u05dc\u05d3 \u05db\u05d0\u05df \u05de\u05d4 \u05e9\u05ea\u05e8\u05e6\u05d4. \u05db\u05dc \u05d3\u05d1\u05e8 \u05e9\u05ea\u05e7\u05dc\u05d9\u05d3 \u05d9\u05e9\u05de\u05e8 \u05d1\u05db\u05dc \u05d4\u05e7\u05e9\u05d4.\n\u05d4\u05d6\u05d4\u05e8; \u05d0\u05d9\u05df \u05d2\u05d9\u05d5\u05d1\u05d9\u05d9\u05dd \u05d5\u05db\u05e4\u05ea\u05d5\u05e8 \u05d4\u05d0\u05d9\u05e4\u05d5\u05e1 \u05d9\u05d0\u05e4\u05e1 \u05d0\u05ea \u05db\u05dc \u05d4\u05d5\u05d5\u05d9\u05d3\u05d2'\u05d8\u05d9\u05dd!"
-	},
-	"ui_resize_reset":{
-		"message":"\u05d0\u05d9\u05e4\u05d5\u05e1"
-	},
-	"ui_resize_center":{
-		"message":"\u05de\u05e8\u05db\u05d6"
-	},
-	"ui_resize_cover":{
-		"message":"\u05e2\u05de\u05d5\u05d3 \u05e9\u05e2\u05e8"
-	},
-	"ui_resize_contain":{
-		"message":"\u05dc\u05d4\u05db\u05d9\u05dc"
-	},
-	"ui_resize_zoom":{
-		"message":"\u05d6\u05d5\u05dd"
-	},
-	"rctm_remove":{
-		"message":"\u05d4\u05e1\u05e8"
-	},
-	"rctm_clear_all":{
-		"message":"\u05e0\u05e7\u05d4 \u05db\u05e8\u05d8\u05d9\u05e1\u05d9\u05d5\u05ea \u05e9\u05e0\u05e1\u05d2\u05e8\u05d5 \u05dc\u05d0\u05d7\u05e8\u05d5\u05e0\u05d4"
-	},
-	"ui_import_export_btn":{
-		"message":"\u05dc\u05d9\u05d9\u05d1\u05d0\/\u05dc\u05d9\u05d9\u05e6\u05d0"
-	},
-	"ui_import_export_desc":{
-		"message":"\u05d4\u05e2\u05d1\u05e8 \u05d0\u05ea \u05d4\u05d4\u05d2\u05d3\u05e8\u05d5\u05ea \u05e9\u05dc\u05da \u05dc\u05d3\u05e4\u05d3\u05e4\u05df \u05d0\u05d7\u05e8 \u05d0\u05d5 \u05e9\u05d7\u05d6\u05e8 \u05e2\u05dc \u05d9\u05d3\u05d9 \u05d2\u05d9\u05d1\u05d5\u05d9."
-	},
-	"ui_import_export_btn2":{
-		"message":"\u05d7\u05d6\u05d5\u05e8"
-	},
-	"ui_import_export_btn_import":{
-		"message":"\u05d9\u05d9\u05d1\u05d0"
-	},
-	"ui_import_export_btn_export":{
-		"message":"\u05d9\u05d9\u05e6\u05d0"
-	},
-	"ui_import_export_btn_import_run":{
-		"message":"\u05d4\u05d7\u05dc"
-	},
-	"ui_import_export_desc_restore":{
-		"message":"\u05e9\u05d7\u05d6\u05d5\u05e8: \u05de\u05d0\u05e4\u05e9\u05e8 \u05dc\u05da \u05dc\u05d1\u05d8\u05dc \u05d0\u05ea \u05d9\u05d9\u05d1\u05d5\u05d0 \u200b\u200b\u05d4\u05d0\u05d7\u05e8\u05d5\u05df. \u05d4\u05de\u05e6\u05d1 \u05d4\u05e0\u05d5\u05db\u05d7\u05d9 \u05e9\u05dc\u05da \u05d9\u05d2\u05d5\u05d1\u05d4 \u05dc\u05e9\u05d9\u05e7\u05d5\u05dd \u05de\u05d0\u05d5\u05d7\u05e8 \u05d9\u05d5\u05ea\u05e8 \u05d2\u05dd \u05db\u05df.\n"
-	},
-	"ui_import_export_header":{
-		"message":"\u05dc\u05d9\u05d9\u05d1\u05d0\/\u05dc\u05d9\u05d9\u05e6\u05d0"
-	},
-	"ui_import_export_confirm_restore_title":{
-		"message":"\u05d0\u05d9\u05e9\u05d5\u05e8 \u05e9\u05d7\u05d6\u05d5\u05e8"
-	},
-	"ui_import_export_confirm_restore":{
-		"message":"\u05d4\u05d0\u05dd \u05d0\u05ea\u05d4 \u05d1\u05d8\u05d5\u05d7 \u05e9\u05d1\u05e8\u05e6\u05d5\u05e0\u05da \u05dc\u05e9\u05d7\u05d6\u05e8? \u05d4\u05d4\u05d2\u05d3\u05e8\u05d5\u05ea \u05d4\u05e0\u05d5\u05db\u05d7\u05d9\u05d5\u05ea \u05e9\u05dc\u05da \u05ea\u05d4\u05d9\u05d9\u05e0\u05d4 \u05d0\u05d1\u05d5\u05d3\u05d5\u05ea."
-	},
-	"ui_import_export_msg_header":{
-		"message":"\u05dc\u05d9\u05d9\u05d1\u05d0\/\u05dc\u05d9\u05d9\u05e6\u05d0"
-	},
-	"ui_import_export_restore_complete_msg":{
-		"message":"\u05d4\u05e9\u05d7\u05d6\u05d5\u05e8 \u05d4\u05d5\u05e9\u05dc\u05dd."
-	},
-	"ui_import_export_no_restore_msg":{
-		"message":"\u05d0\u05d9\u05df \u05de\u05d4 \u05dc\u05e9\u05d7\u05d6\u05e8."
-	},
-	"ui_import_export_complete_msg":{
-		"message":"\u05d4\u05d9\u05d9\u05d1\u05d5\u05d0 \u05d4\u05d5\u05e9\u05dc\u05dd."
-	},
-	"ui_import_export_empty_string_msg":{
-		"message":"\u05d4\u05d6\u05df \u05d0\u05ea \u05de\u05d7\u05e8\u05d5\u05d6\u05ea \u05d4\u05d9\u05d1\u05d5\u05d0 \u05e7\u05d5\u05d3\u05dd!"
-	},
-	"ui_import_export_invalid_string_msg":{
-		"message":"\u05d4\u05d9\u05d9\u05d1\u05d5\u05d0 \u05dc\u05d0 \u05d7\u05d5\u05e7\u05d9!"
-	},
-	"ui_import_export_btn_restore":{
-		"message":"\u05e9\u05d7\u05d6\u05d5\u05e8"
-	},
-	"ui_apps_tip_message_title":{
-		"message":"\u05d9\u05d9\u05e9\u05d5\u05dd \u05d7\u05d3\u05e9 \u05d4\u05d5\u05ea\u05e7\u05df"
-	}
+  "ui_button_apps":{
+    "message":"יישומים"
+  },
+  "ui_button_widgets":{
+    "message":"ווידג'טים"
+  },
+  "ui_button_unlock":{
+    "message":"בטל נעילה"
+  },
+  "ui_button_lock":{
+    "message":"נעל כדי להפעיל יישומים וווידג'טים"
+  },
+  "ui_button_rct":{
+    "message":"כרטיסיות שנסגרו לאחרונה"
+  },
+  "ui_button_close":{
+    "message":"סגור"
+  },
+  "ui_button_ok":{
+    "message":"בסדר"
+  },
+  "ui_button_cancel":{
+    "message":"ביטול"
+  },
+  "ui_button_about":{
+    "message":"אודות"
+  },
+  "ui_config":{
+    "message":"קביעת תצורה"
+  },
+  "ui_button_help":{
+    "message":"עזרה ומשוב"
+  },
+  "ui_c_learnmore":{
+    "message":"למד עוד"
+  },
+  "ui_config_bg_changecolor":{
+    "message":"שנה את צבע הרקע"
+  },
+  "ui_te":{
+    "message":"עורך האריחים"
+  },
+  "ui_te_general":{
+    "message":"כללי"
+  },
+  "ui_te_name":{
+    "message":"שם"
+  },
+  "ui_te_name_desc":{
+    "message":"איך אתה רוצה לקרוא לזה?"
+  },
+  "ui_te_shname":{
+    "message":"הצג \/ הסתר שם"
+  },
+  "ui_te_pin":{
+    "message":"נעץ על ידי עכבר שמאל"
+  },
+  "ui_te_newtab":{
+    "message":"פתח בכרטיסייה חדשה בלחיצת עכבר שמאלית"
+  },
+  "ui_te_url_desc":{
+    "message":"הזן את כתובת האינטארנט שאתם רוצים להתחבר, לדוגמה http:\/\/www.google.com\/"
+  },
+  "ui_te_url_tip":{
+    "message":"טיפ: קישור חוקי מכיל פרוטוקול - כמו ''http'' - לפני התחום. ללא פרוטוקול חוקי, קיצור הדרך שלך אינו יעבוד."
+  },
+  "ui_te_shfavicon":{
+    "message":"הצגה \/ הסתרה של הסמל"
+  },
+  "ui_te_search":{
+    "message":"חיפוש"
+  },
+  "ui_te_search_desc":{
+    "message":"הכנס URL חיפוש לאתר זה. לדוגמה:"
+  },
+  "ui_te_bg_colorpicker":{
+    "message":"פתח את בוחר הצבעים"
+  },
+  "ui_te_bg_transparent":{
+    "message":"רקע שקוף לחלוטין"
+  },
+  "ui_te_bg_tip":{
+    "message":"טיפ: אם תסמן תיבה זו, ייתכן שגם תרצה להסתיר את השם ואת הסמל."
+  },
+  "ui_te_bg_note":{
+    "message":"הערה: לאופציה הזו אין כל השפעה על האייקון והגדרות הרקע."
+  },
+  "ui_te_app_tip":{
+    "message":"לא כל האפשרויות זמינות לאפליקציות. אם ברצונך לקבל עוד אפשרויות, צור קיצור דרך מותאם אישית  במקום. פשוט לחץ על אריחים ריקים עם הרשת נעולה."
+  },
+  "ui_te_ib":{
+    "message":"רקע & סמל"
+  },
+  "ui_te_ib_desc":{
+    "message":"הזן כתובת אתר אינטארנט לתמונה,השתמש בלחצן עיון,או גרור את התמונה למעלה כדי לשנות את הסמל."
+  },
+  "ui_te_ib_browse":{
+    "message":"עיון"
+  },
+  "ui_te_ib_screenshot":{
+    "message":"השתמש בצילום מסך"
+  },
+  "ui_screenshot_confirm_title":{
+    "message":"צלם תמונת מסך"
+  },
+  "ui_screenshot_confirm":{
+    "message":"כדי ללכוד את צילום המסך, אתר האינטרנט ייפתח בכרטיסיה חדשה. לאחר סיום טעינת הדף, הכרטיסיה תיסגר באופן אוטומטי, ואתה תחזור לדף כרטיסייה חדשה מדהים.\nנא לא לסגור או לצאת,זה לא יקח יותר ממספר שניות."
+  },
+  "ui_screenshot_permission_denied_title":{
+    "message":"גישה נדחתה"
+  },
+  "ui_screenshot_permission_denied":{
+    "message":"דחית את בקשת ההרשאה של Awesome New Tab Page, הנדרשת לצורך ביצוע צילום המסך. אם ברצונך לבצע צילום מסך, נסה שנית ואפשר לAwesome New Tab Page את הגישה הנדרשת."
+  },
+  "ui_te_ib_tip":{
+    "message":"עצה: להשאיר ריק בשביל סימן ריק."
+  },
+  "ui_config_general":{
+    "message":"כללי"
+  },
+  "ui_config_shbmb":{
+    "message":"הצג סרגל סימניות"
+  },
+  "ui_config_shbmb_tip":{
+    "message":"הצג את סרגל הסימניות בראשית הדף"
+  },
+  "ui_config_reset":{
+    "message":"איפוס"
+  },
+  "ui_config_reset_desc":{
+    "message":"כפתור זה יאפשר לך לבטל את כל השינויים שביצעת בדף כרטיסייה חדשה מדהימה."
+  },
+  "ui_confirm_reset":{
+    "message":"האם אתה בטוח שברצונך לאפס את התוסף? כלל הווידג'טים ,המיקומים,וההתאמה האישית שלך תאבד."
+  },
+  "ui_config_bg":{
+    "message":"רקע"
+  },
+  "ui_config_bg_upload":{
+    "message":"העלה תמונה"
+  },
+  "ui_config_bgimg3":{
+    "message":"נקה את הריבוע כדי להשתמש בברירת המחדל של הרקע (צבע אחיד)."
+  },
+  "ui_config_bgimg2":{
+    "message":"(דוגמא (פסיק לא נגרר"
+  },
+  "ui_config_advanced":{
+    "message":"מתקדם"
+  },
+  "ui_about":{
+    "message":"אודות"
+  },
+  "ui_about_contrib":{
+    "message":"תורמים"
+  },
+  "ui_about_contrib_desc":{
+    "message":"פרויקט זה לא היה קיים ללא עבודה קשה, משוב, רעיונות, תרגומים ותמיכה של כמה קבוצות של אנשים מדהימים."
+  },
+  "ui_about_dev":{
+    "message":"מפתחים"
+  },
+  "ui_about_contrib_translators":{
+    "message":"מתרגמים"
+  },
+  "ui_about_contrib_users":{
+    "message":"משתמשים"
+  },
+  "ui_about_contrib_cta":{
+    "message":"לחץ על הקישורים כאן כדי לראות (ואולי להצטרף) לאנשים המדהימים בפעולה!"
+  },
+  "ui_about_share":{
+    "message":"שתף"
+  },
+  "ui_about_share1":{
+    "message":"אתה אוהב את דף כרטיסייה חדשה מדהימה? למה שלא תשתף אותו עם חברים ובני משפחה?"
+  },
+  "ui_about_rate":{
+    "message":"דרג"
+  },
+  "ui_about_rate_desc":{
+    "message":".האם אתה אוהב את התוסף הזה? הקדש רגע לתת ביקורת בחנות האינטרנט של כרום"
+  },
+  "ui_install":{
+    "message":"התקן"
+  },
+  "ui_uninstall":{
+    "message":"הסר התקנה"
+  },
+  "ui_confirm_uninstall":{
+    "message":"אתה בטוח שאתה רוצה להסיר את $app$?",
+    "placeholders":{
+      "app":{
+        "content":"$1",
+        "example":"Chrome Web Store"
+      }
+    }
+  },
+  "ui_faw_unlock_drag":{
+    "message":"נעילת & גרירה"
+  },
+  "ui_faw_get_more_apps":{
+    "message":"קבל יישומים נוספים"
+  },
+  "ui_faw_get_more_apps_body":{
+    "message":"<a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'>חנות האינטרנט של כרום<\/a>.השג עוד אפליקציות מ."
+  },
+  "ui_faw_get_more_widgets":{
+    "message":"קבל עוד יישומונים"
+  },
+  "ui_faw_install":{
+    "message":"התקן"
+  },
+  "ui_bmb_ob":{
+    "message":"סימניות אחרות"
+  },
+  "app_webstore":{
+    "message":"חנות האינטרנט של כרום"
+  },
+  "ui_shortcut_img":{
+    "message":"התמונה חייבת להיות בדיוק 128 פיקסלים על 128 פיקסלים, בפורמט PNG עם שקיפות אלפא. כדי לאפס לברירת המחדל, פשוט מחק הכול בשדה."
+  },
+  "notepad_default":{
+    "message":"הקלד כאן מה שתרצה. כל דבר שתקליד ישמר בכל הקשה.\nהזהר; אין גיוביים וכפתור האיפוס יאפס את כל הווידג'טים!"
+  },
+  "ui_resize_reset":{
+    "message":"איפוס"
+  },
+  "ui_resize_center":{
+    "message":"מרכז"
+  },
+  "ui_resize_cover":{
+    "message":"עמוד שער"
+  },
+  "ui_resize_contain":{
+    "message":"להכיל"
+  },
+  "ui_resize_zoom":{
+    "message":"זום"
+  },
+  "rctm_remove":{
+    "message":"הסר"
+  },
+  "rctm_clear_all":{
+    "message":"נקה כרטיסיות שנסגרו לאחרונה"
+  },
+  "ui_import_export_btn":{
+    "message":"לייבא\/לייצא"
+  },
+  "ui_import_export_desc":{
+    "message":"העבר את ההגדרות שלך לדפדפן אחר או שחזר על ידי גיבוי."
+  },
+  "ui_import_export_btn2":{
+    "message":"חזור"
+  },
+  "ui_import_export_btn_import":{
+    "message":"ייבא"
+  },
+  "ui_import_export_btn_export":{
+    "message":"ייצא"
+  },
+  "ui_import_export_btn_import_run":{
+    "message":"החל"
+  },
+  "ui_import_export_desc_restore":{
+    "message":"שחזור: מאפשר לך לבטל את ייבוא ​​האחרון. המצב הנוכחי שלך יגובה לשיקום מאוחר יותר גם כן.\n"
+  },
+  "ui_import_export_header":{
+    "message":"לייבא\/לייצא"
+  },
+  "ui_import_export_confirm_restore_title":{
+    "message":"אישור שחזור"
+  },
+  "ui_import_export_confirm_restore":{
+    "message":"האם אתה בטוח שברצונך לשחזר? ההגדרות הנוכחיות שלך תהיינה אבודות."
+  },
+  "ui_import_export_msg_header":{
+    "message":"לייבא\/לייצא"
+  },
+  "ui_import_export_restore_complete_msg":{
+    "message":"השחזור הושלם."
+  },
+  "ui_import_export_no_restore_msg":{
+    "message":"אין מה לשחזר."
+  },
+  "ui_import_export_complete_msg":{
+    "message":"הייבוא הושלם."
+  },
+  "ui_import_export_empty_string_msg":{
+    "message":"הזן את מחרוזת היבוא קודם!"
+  },
+  "ui_import_export_invalid_string_msg":{
+    "message":"הייבוא לא חוקי!"
+  },
+  "ui_import_export_btn_restore":{
+    "message":"שחזור"
+  },
+  "ui_apps_tip_message_title":{
+    "message":"יישום חדש הותקן"
+  }
 }

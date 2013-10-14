@@ -1,395 +1,389 @@
 {
-	"ui_button_apps":{
-		"message":"Alkalmaz\u00e1sok"
-	},
-	"ui_button_widgets":{
-		"message":"Widgetek"
-	},
-	"ui_button_widget_browser":{
-		"message":"Widget b\u00f6ng\u00e9sz\u0151"
-	},
-	"ui_button_unlock":{
-		"message":"Felold\u00e1s"
-	},
-	"ui_button_lock":{
-		"message":"A widgetek \u00e9s alkalmaz\u00e1sok haszn\u00e1lat\u00e1hoz kattintson a Lez\u00e1r\u00e1sra"
-	},
-	"ui_button_rct":{
-		"message":"Legut\u00f3bb bez\u00e1rt lapok"
-	},
-	"ui_button_close":{
-		"message":"Bez\u00e1r\u00e1s"
-	},
-	"ui_button_ok":{
-		"message":"OK"
-	},
-	"ui_button_cancel":{
-		"message":"M\u00e9gse"
-	},
-	"ui_button_about":{
-		"message":"N\u00e9vjegy"
-	},
-	"ui_config":{
-		"message":"Konfigur\u00e1l\u00e1s"
-	},
-	"ui_button_help":{
-		"message":"Seg\u00edts\u00e9g & Visszajelz\u00e9s"
-	},
-	"ui_c_learnmore":{
-		"message":"Tudj meg t\u00f6bbet"
-	},
-	"ui_config_bg_changecolor":{
-		"message":"H\u00e1tt\u00e9rsz\u00edn megv\u00e1ltoztat\u00e1sa"
-	},
-	"ui_te":{
-		"message":"R\u00e1csszerkeszt\u0151"
-	},
-	"ui_te_general":{
-		"message":"\u00c1ltal\u00e1nos"
-	},
-	"ui_te_name":{
-		"message":"N\u00e9v"
-	},
-	"ui_te_name_desc":{
-		"message":"Hogy szeretn\u00e9 h\u00edvni?"
-	},
-	"ui_te_shname":{
-		"message":"N\u00e9v megjelen\u00edt\u00e9se \/ elrejt\u00e9se"
-	},
-	"ui_te_pin":{
-		"message":"R\u00f6gz\u00edt\u00e9shez kattintson az eg\u00e9rrel"
-	},
-	"ui_te_newtab":{
-		"message":"Nyissa meg egy \u00faj ablakban bal eg\u00e9r kattint\u00e1sra"
-	},
-	"ui_te_url_desc":{
-		"message":"Adja meg az URL-c\u00edmet, amit csatolni szeretne (pl.: http:\/\/www.google.com\/)"
-	},
-	"ui_te_url_tip":{
-		"message":"Tipp: Egy \u00e9rv\u00e9nyes URL tartalmaz egy protokollt - \"http:\/\/\" - a domain el\u0151tt. E n\u00e9lk\u00fcl a parancsikon nem fog m\u0171k\u00f6dni."
-	},
-	"ui_te_shfavicon":{
-		"message":"Favikon mutat\u00e1sa \/ elrejt\u00e9se"
-	},
-	"ui_te_search":{
-		"message":"Keres\u00e9s"
-	},
-	"ui_te_search_desc":{
-		"message":"\u00cdrj be egy keres\u00e9si URL-t ennek a weboldalnak. Mint p\u00e9ld\u00e1ul:"
-	},
-	"ui_te_bg_colorpicker":{
-		"message":"Sz\u00ednv\u00e1laszt\u00f3 megnyit\u00e1sa"
-	},
-	"ui_te_bg_transparent":{
-		"message":"Teljesen \u00e1tl\u00e1tsz\u00f3 h\u00e1tt\u00e9rk\u00e9p"
-	},
-	"ui_te_bg_tip":{
-		"message":"Tipp: Ha bejel\u00f6li ezt az opci\u00f3t, akkor el k\u00edv\u00e1nja rejteni a nevet \u00e9s az favikont."
-	},
-	"ui_te_bg_note":{
-		"message":"Megjegyz\u00e9s: Ez az opci\u00f3 nincs hat\u00e1ssal az Ikon \u00e9s H\u00e1tt\u00e9r be\u00e1ll\u00edt\u00e1sokra."
-	},
-	"ui_te_app_tip":{
-		"message":"Nem minden opci\u00f3 \u00e9rv\u00e9nyes az alkalmaz\u00e1sokra. Ha t\u00f6bb be\u00e1ll\u00edt\u00e1si lehet\u0151s\u00e9get szeretne, akkor k\u00e9sz\u00edtsen egy parancsikont. Csak kattintson egy \u00fcres r\u00e1csra."
-	},
-	"ui_te_ib":{
-		"message":"Ikon \u00e9s h\u00e1tt\u00e9r"
-	},
-	"ui_te_ib_desc":{
-		"message":"\u00cdrja be a k\u00e9p URL-c\u00edm\u00e9t, haszn\u00e1lja a Tall\u00f3z\u00e1s gombot, vagy h\u00fazza ide egy k\u00e9pet az ikon megv\u00e1ltoztat\u00e1s\u00e1hoz."
-	},
-	"ui_te_ib_browse":{
-		"message":"Tall\u00f3z\u00e1s"
-	},
-	"ui_te_ib_screenshot":{
-		"message":"K\u00e9plop\u00e1s haszn\u00e1lata"
-	},
-	"ui_screenshot_confirm_title":{
-		"message":"K\u00e9perny\u0151k\u00e9p k\u00e9sz\u00edt\u00e9se"
-	},
-	"ui_screenshot_confirm":{
-		"message":"Annak \u00e9rdek\u00e9ben, hogy elk\u00e9sz\u00fclj\u00f6n ez a k\u00e9perny\u0151k\u00e9p, a weboldal egy \u00faj ablakban ker\u00fcl megnyit\u00e1sra. Miut\u00e1n az oldal teljesen bet\u00f6lt\u0151d\u00f6tt, az oldal automatikusan bez\u00e1rul \u00e9s \u00d6n vissza lesz ir\u00e1ny\u00edtva az Awesome New Tab Page-re. K\u00e9rj\u00fck, ne z\u00e1rja be az oldalt vagy navig\u00e1ljon m\u00e1shova. Nem tart tov\u00e1bb p\u00e1r m\u00e1sodpercn\u00e9l."
-	},
-	"ui_screenshot_permission_denied_title":{
-		"message":"Enged\u00e9ly megtagadva"
-	},
-	"ui_screenshot_permission_denied":{
-		"message":"Megtagadta az Awesome New Tab Page-t\u0151l az enged\u00e9lyt, hogy k\u00e9sz\u00edtsen egy k\u00e9perny\u0151k\u00e9pet. Ha szeretne egy k\u00e9perny\u0151k\u00e9pet k\u00e9sz\u00edteni, pr\u00f3b\u00e1lja \u00fajra, \u00e9s enged\u00e9lyezze az Awesome New Tab Page-nek, hogy k\u00e9perny\u0151k\u00e9pet k\u00e9sz\u00edtsen."
-	},
-	"ui_te_ib_tip":{
-		"message":"Tipp: Hagyja \u00fcresen, hogy elt\u0171nj\u00f6n az ikon."
-	},
-	"ui_te_ib_advanced":{
-		"message":"Aj\u00e1nlott: Rejtse el a nevet \u00e9s az ikont \u00e9s haszn\u00e1ljon egy 200x200 pixeles k\u00e9pet az 1x1 m\u00e9ret\u0171 r\u00e1cshoz."
-	},
-	"ui_config_general":{
-		"message":"\u00c1ltal\u00e1nos"
-	},
-	"ui_config_shbmb":{
-		"message":"K\u00f6nyvjelz\u0151 eszk\u00f6zt\u00e1r mutat\u00e1sa"
-	},
-	"ui_config_shbmb_tip":{
-		"message":"K\u00f6nyvjelz\u0151 eszk\u00f6zt\u00e1r megjelen\u00edt\u00e9se az oldal tetej\u00e9n"
-	},
-	"ui_config_shtlb":{
-		"message":"A bal oldali gombok csak az eg\u00e9r odah\u00faz\u00e1s\u00e1val jelenik meg"
-	},
-	"ui_config_shtlb_desc":{
-		"message":"Ha ez enged\u00e9lyezve van, a bal fels\u0151 ikonok kitol\u00f3dnak az \u00fatb\u00f3l. Hogy \u00fajra el\u00e9rje \u0151ket, vigye az egeret egyszer\u0171en oda, ahol \u00e1ltal\u00e1ban vannak."
-	},
-	"ui_config_shgrid":{
-		"message":"Mutassa a r\u00e1csot (ha nincs lez\u00e1rva)"
-	},
-	"ui_config_shgrid_desc":{
-		"message":"Ha ez enged\u00e9lyezve van, a r\u00e1cs mindig megjelenik."
-	},
-	"ui_config_amazonlocale":{
-		"message":"Az <i>alap<\/i> Amazon parancsikonhoz v\u00e1lassza ki orsz\u00e1g\u00e1t."
-	},
-	"ui_config_reset":{
-		"message":"Vissza\u00e1ll\u00edt\u00e1s"
-	},
-	"ui_config_reset_desc":{
-		"message":"Ezzel a gombbal visszavonhat minden be\u00e1ll\u00edt\u00e1st az Awesome New Tab Page alkalmaz\u00e1sban."
-	},
-	"ui_confirm_reset":{
-		"message":"Biztos benne, hogy vissza\u00e1ll\u00edt mindent (h\u00e1tt\u00e9r, jegyzett\u00f6mb, stb.) az eredeti \u00e1llapotra? Minden visszavonhatatlanul elv\u00e9sz."
-	},
-	"ui_config_bg":{
-		"message":"H\u00e1tt\u00e9r"
-	},
-	"ui_config_bg_upload":{
-		"message":"K\u00e9p felt\u00f6lt\u00e9se"
-	},
-	"ui_config_bgimg1":{
-		"message":"<b>Aj\u00e1nlott<\/b> (Shorthand Background CSS): Haszn\u00e1ljon egy k\u00e9pet a webr\u0151l."
-	},
-	"ui_config_bgimg3":{
-		"message":"Az alap\u00e9rtelmezett h\u00e1tt\u00e9rhez (egysz\u00edn\u0171) t\u00f6r\u00f6lje a mez\u0151 tartalm\u00e1t."
-	},
-	"ui_config_bgimg2":{
-		"message":"P\u00e9lda (nincs lez\u00e1r\u00f3 pontosvessz\u0151):"
-	},
-	"ui_config_onoff_on":{
-		"message":"BE"
-	},
-	"ui_config_onoff_off":{
-		"message":"KI"
-	},
-	"ui_config_hide_scrollbar":{
-		"message":"Als\u00f3 g\u00f6rget\u0151 elt\u00fcntet\u00e9se"
-	},
-	"ui_config_hide_scrollbar_tip":{
-		"message":"Elrejti a g\u00f6rget\u0151t az oldal alj\u00e1n."
-	},
-	"ui_config_advanced":{
-		"message":"Halad\u00f3"
-	},
-	"ui_about":{
-		"message":"N\u00e9vjegy"
-	},
-	"ui_about_contrib":{
-		"message":"K\u00f6zrem\u0171k\u00f6d\u0151k"
-	},
-	"ui_about_contrib_desc":{
-		"message":"Ez a projekt nem j\u00f6tt volna l\u00e9tre kem\u00e9ny munka, visszajelz\u00e9sek, \u00f6tletek, ford\u00edt\u00e1sok \u00e9s n\u00e9h\u00e1ny csod\u00e1latos ember n\u00e9lk\u00fcl."
-	},
-	"ui_about_dev":{
-		"message":"Fejleszt\u0151k"
-	},
-	"ui_about_contrib_translators":{
-		"message":"Ford\u00edt\u00f3k"
-	},
-	"ui_about_contrib_users":{
-		"message":"Felhaszn\u00e1l\u00f3k"
-	},
-	"ui_about_contrib_cta":{
-		"message":"Kattintson a fenti linkekre \u00e9s n\u00e9zze meg (vagy csatlakozzon) hogyan dolgoznak ezek a csod\u00e1latos emberek!"
-	},
-	"ui_about_share":{
-		"message":"Megoszt\u00e1s"
-	},
-	"ui_about_share1":{
-		"message":"Tetszik az Elk\u00e9peszt\u0151 \u00daj Lap oldal? Oszd meg a csal\u00e1doddal \u00e9s a bar\u00e1taiddal!"
-	},
-	"ui_about_rate":{
-		"message":"\u00c9rt\u00e9kel\u00e9s"
-	},
-	"ui_about_rate_desc":{
-		"message":"Tetszik ez a kiterjeszt\u00e9s? Sz\u00e1nj egy percet arra, hogy \u00e9rt\u00e9keld a Chrome webt\u00e1rhelyen."
-	},
-	"ui_install":{
-		"message":"Telep\u00edt\u00e9s"
-	},
-	"ui_uninstall":{
-		"message":"Elt\u00e1vol\u00edt\u00e1s"
-	},
-	"ui_uninstall_title":{
-		"message":"Uninstal\u00e1l\u00f3 alkalmaz\u00e1s"
-	},
-	"ui_confirm_uninstall":{
-		"message":"Biztos, hogy el szeretn\u00e9 t\u00e1vol\u00edtani a(z) $app$-t?",
-		"placeholders":{
-			"app":{
-				"content":"$1",
-				"example":"Chrome Web Store"
-			}
-		}
-	},
-	"ui_faw_unlock_drag":{
-		"message":"Felold\u00e1s \u00e9s h\u00faz\u00e1s"
-	},
-	"ui_faw_unlock_drag_apps":{
-		"message":"Oldja fel a mez\u0151t \u00e9s <b>drag<\/b> a telep\u00edtett alkalmaz\u00e1sokat egy \u00fcres helyre."
-	},
-	"ui_faw_unlock_drag_widgets":{
-		"message":"Oldja fel a mez\u0151t \u00e9s <b>drag<\/b> a telep\u00edtett widget-eket egy \u00fcres helyre."
-	},
-	"ui_faw_get_more_apps":{
-		"message":"Tov\u00e1bbi alkalmaz\u00e1sok"
-	},
-	"ui_faw_get_more_apps_body":{
-		"message":"Tov\u00e1bbi alkalmaz\u00e1sok a <a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'>Chrome Web Store<\/a>-b\u00f3l."
-	},
-	"ui_faw_get_more_widgets":{
-		"message":"Tov\u00e1bbi widgetek"
-	},
-	"ui_faw_get_more_widgets_body":{
-		"message":"Tal\u00e1ljon t\u00f6bb widgetet."
-	},
-	"ui_faw_pick":{
-		"message":"V\u00e1lasszon"
-	},
-	"ui_faw_pick_body":{
-		"message":"V\u00e1lassza ki a widgeteket amiket telep\u00edteni szeretne."
-	},
-	"ui_faw_install":{
-		"message":"Telep\u00edt\u00e9s"
-	},
-	"ui_faw_install_body":{
-		"message":"Kattintson a telep\u00edt\u00e9s gombra, hogy hozz\u00e1adja a Chromehoz \u00e9s a widget ablakhoz."
-	},
-	"ui_bmb_ob":{
-		"message":"Tov\u00e1bbi k\u00f6nyvjelz\u0151k"
-	},
-	"app_webstore":{
-		"message":"Chrome webt\u00e1rhely"
-	},
-	"ui_shortcut_img":{
-		"message":"A megadott URL alatt tal\u00e1lhat\u00f3 k\u00e9pf\u00e1jl pontosan 128-szor 128 pixel m\u00e9ret\u0171nek kell lennie."
-	},
-	"notepad_default":{
-		"message":"\u00cdrjon ide b\u00e1rmit. Minden amit le\u00edr le\u00fct\u00e9senk\u00e9nt ment\u00e9sre ker\u00fcl.  Vigy\u00e1zat, nem k\u00e9sz\u00fcl biztons\u00e1gi ment\u00e9s, a Vissza\u00e1ll\u00edt\u00e1s gomb alaphelyzetbe \u00e1ll\u00edtja a widget-et!"
-	},
-	"ui_resize_reset":{
-		"message":"Vissza\u00e1ll\u00edt\u00e1s"
-	},
-	"ui_resize_center":{
-		"message":"K\u00f6z\u00e9pre"
-	},
-	"ui_resize_cover":{
-		"message":"Bor\u00edt\u00f3"
-	},
-	"ui_resize_contain":{
-		"message":"Tartalmaz"
-	},
-	"ui_resize_zoom":{
-		"message":"Nagy\u00edt\u00e1s\/Kicsiny\u00edt\u00e9s"
-	},
-	"rctm_remove":{
-		"message":"T\u00f6rl\u00e9s"
-	},
-	"rctm_clear_all":{
-		"message":"Legut\u00f3bb bez\u00e1rt lapok \u00fcr\u00edt\u00e9se"
-	},
-	"rctm_clear_all_confirm":{
-		"message":"A Legut\u00f3bb bez\u00e1rt lapok men\u00fc t\u00f6rl\u00e9se nem \u00e9rinti a Chrome el\u0151zm\u00e9nyeit. Ez a lehet\u0151s\u00e9g csak ezt a list\u00e1t t\u00f6rli."
-	},
-	"ui_import_export_btn":{
-		"message":"Import\u00e1l\u00e1s\/Export\u00e1l\u00e1s"
-	},
-	"ui_import_export_desc":{
-		"message":"Haszn\u00e1lja ezeket a be\u00e1ll\u00edt\u00e1sokat egy m\u00e1sik b\u00f6ng\u00e9sz\u0151n vagy t\u00f6lts\u00f6n be egy biztons\u00e1gi ment\u00e9st."
-	},
-	"ui_import_export_btn2":{
-		"message":"Vissza"
-	},
-	"ui_import_export_btn_import":{
-		"message":"Import\u00e1l\u00e1s"
-	},
-	"ui_import_export_btn_export":{
-		"message":"Export\u00e1l\u00e1s"
-	},
-	"ui_import_export_btn_import_run":{
-		"message":"Alkalmaz"
-	},
-	"ui_import_export_desc_export":{
-		"message":"Export\u00e1l\u00e1s: L\u00e9trehoz egy sz\u00f6veges f\u00e1jlt, amely tartalmazz az \u00d6n \u00f6sszes szem\u00e9lyes be\u00e1ll\u00edt\u00e1s\u00e1t. Ezt a f\u00e1jlt elmentheti k\u00e9s\u0151bbi haszn\u00e1latra, vagy \u00e1tm\u00e1solhatja m\u00e1s sz\u00e1m\u00edt\u00f3g\u00e9pekre, hogy automatikusan \u00edgy haszn\u00e1lhassa. A sz\u00e1m\u00edt\u00f3g\u00e9pr\u0151l felt\u00f6lt\u00f6tt k\u00e9pek nem ker\u00fclnek export\u00e1l\u00e1sra, csak a weben t\u00e1rolt k\u00e9pek."
-	},
-	"ui_import_export_desc_import":{
-		"message":"Import\u00e1l\u00e1s: Fel\u00fcl\u00edrja a jelenlegi be\u00e1ll\u00edt\u00e1saidat egy \u00e9rv\u00e9nyes f\u00e1jlal. <b>WARNING<\/b>: Minden jelenlegi be\u00e1ll\u00edt\u00e1s visszavonhatatlanul elveszik. A m\u0171velet visszavon\u00e1s\u00e1ra nincs lehet\u0151s\u00e9g. A felt\u00f6lt\u00f6tt k\u00e9pek nem ker\u00fclnek import\u00e1l\u00e1sra, csak a weben t\u00e1roltak."
-	},
-	"ui_import_export_installed_warning":{
-		"message":"A telep\u00edtett alkalmaz\u00e1sok, b\u0151v\u00edtm\u00e9nyek \u00e9s widgetek nem lesznek import\u00e1lva vagy export\u00e1lva. A b\u0151v\u00edtm\u00e9nyek nem telep\u00edthetnek tov\u00e1bbi alkalmaz\u00e1sokat vagy b\u0151v\u00edtm\u00e9nyeket, erre a c\u00e9lra haszn\u00e1lja ezt a linket: <a href='http:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'>Chrome Sync<\/a>."
-	},
-	"ui_import_export_desc_restore":{
-		"message":"Vissza\u00e1ll\u00edt\u00e1s: Lehet\u0151v\u00e9 teszi, hogy visszavonja az utols\u00f3 import\u00e1l\u00e1st. Az aktu\u00e1lis \u00e1llapotr\u00f3l is k\u00e9sz\u00fcl biztons\u00e1gi m\u00e1solat, hogy k\u00e9s\u0151bb vissza lehessen \u00e1ll\u00edtani."
-	},
-	"ui_import_export_header":{
-		"message":"Import\u00e1l\u00e1s\/Export\u00e1l\u00e1s"
-	},
-	"ui_import_export_confirm_restore_title":{
-		"message":"Er\u0151s\u00edtse meg a vissza\u00e1ll\u00edt\u00e1st"
-	},
-	"ui_import_export_confirm_restore":{
-		"message":"Biztos benne, hogy szeretne vissza\u00e1ll\u00edtani? A jelenlegi be\u00e1ll\u00edt\u00e1sok elvesznek."
-	},
-	"ui_import_export_msg_header":{
-		"message":"Import\u00e1l\u00e1s\/Export\u00e1l\u00e1s"
-	},
-	"ui_import_export_restore_complete_msg":{
-		"message":"Vissza\u00e1ll\u00edt\u00e1s sikeres."
-	},
-	"ui_import_export_no_restore_msg":{
-		"message":"Nincs mit vissza\u00e1ll\u00edtani!"
-	},
-	"ui_import_export_complete_msg":{
-		"message":"Az import\u00e1l\u00e1s elk\u00e9sz\u00fclt."
-	},
-	"ui_import_export_empty_string_msg":{
-		"message":"El\u0151sz\u00f6r adja meg az import\u00e1l\u00e1si felt\u00e9telt!"
-	},
-	"ui_import_export_invalid_string_msg":{
-		"message":"\u00c9rv\u00e9nytelen import\u00e1l\u00e1si felt\u00e9tel!"
-	},
-	"ui_import_export_btn_restore":{
-		"message":"Vissza\u00e1ll\u00edt\u00e1s"
-	},
-	"ui_drag_widget_message":{
-		"message":"Ahhoz, hogy elhelyezzen egy widgetet, kattintson \u00e9s h\u00fazza a widgetet egy \u00fcres helyre."
-	},
-	"ui_apps_tip_message_title":{
-		"message":"\u00daj alkalmaz\u00e1s telep\u00edtve"
-	},
-	"ui_apps_tip_message":{
-		"message":"Remek! Telep\u00edtett\u00e9l egy alkalmaz\u00e1st. Az \u00f6sszes telep\u00edtett alkalmaz\u00e1st itt megtal\u00e1lhatod."
-	},
-	"ui_tutorial2_next":{
-		"message":"K\u00f6vetkez\u0151"
-	},
-	"ui_tutorial2_app_window_title":{
-		"message":"Alkalmaz\u00e1sok ablak"
-	},
-	"ui_tutorial2_widgets_window_title":{
-		"message":"Widgetek ablak"
-	},
-	"ui_tutorial2_completed_title":{
-		"message":"Te fantasztikus vagy!"
-	},
-	"ui_tutorial2_finish_string":{
-		"message":"Bemutat\u00f3 befejez\u00e9se"
-	},
-	"ui_tutorial2_main_start":{
-		"message":"Bemutat\u00f3 ind\u00edt\u00e1sa"
-	}
+  "ui_button_apps":{
+    "message":"Alkalmazások"
+  },
+  "ui_button_widgets":{
+    "message":"Widgetek"
+  },
+  "ui_button_widget_browser":{
+    "message":"Widget böngésző"
+  },
+  "ui_button_unlock":{
+    "message":"Feloldás"
+  },
+  "ui_button_lock":{
+    "message":"A widgetek és alkalmazások használatához kattintson a Lezárásra"
+  },
+  "ui_button_rct":{
+    "message":"Legutóbb bezárt lapok"
+  },
+  "ui_button_close":{
+    "message":"Bezárás"
+  },
+  "ui_button_ok":{
+    "message":"OK"
+  },
+  "ui_button_cancel":{
+    "message":"Mégse"
+  },
+  "ui_button_about":{
+    "message":"Névjegy"
+  },
+  "ui_config":{
+    "message":"Konfigurálás"
+  },
+  "ui_button_help":{
+    "message":"Segítség & Visszajelzés"
+  },
+  "ui_c_learnmore":{
+    "message":"Tudj meg többet"
+  },
+  "ui_config_bg_changecolor":{
+    "message":"Háttérszín megváltoztatása"
+  },
+  "ui_te":{
+    "message":"Rácsszerkesztő"
+  },
+  "ui_te_general":{
+    "message":"Általános"
+  },
+  "ui_te_name":{
+    "message":"Név"
+  },
+  "ui_te_name_desc":{
+    "message":"Hogy szeretné hívni?"
+  },
+  "ui_te_shname":{
+    "message":"Név megjelenítése \/ elrejtése"
+  },
+  "ui_te_pin":{
+    "message":"Rögzítéshez kattintson az egérrel"
+  },
+  "ui_te_newtab":{
+    "message":"Nyissa meg egy új ablakban bal egér kattintásra"
+  },
+  "ui_te_url_desc":{
+    "message":"Adja meg az URL-címet, amit csatolni szeretne (pl.: http:\/\/www.google.com\/)"
+  },
+  "ui_te_url_tip":{
+    "message":"Tipp: Egy érvényes URL tartalmaz egy protokollt - \"http:\/\/\" - a domain előtt. E nélkül a parancsikon nem fog működni."
+  },
+  "ui_te_shfavicon":{
+    "message":"Favikon mutatása \/ elrejtése"
+  },
+  "ui_te_search":{
+    "message":"Keresés"
+  },
+  "ui_te_search_desc":{
+    "message":"Írj be egy keresési URL-t ennek a weboldalnak. Mint például:"
+  },
+  "ui_te_bg_colorpicker":{
+    "message":"Színválasztó megnyitása"
+  },
+  "ui_te_bg_transparent":{
+    "message":"Teljesen átlátszó háttérkép"
+  },
+  "ui_te_bg_tip":{
+    "message":"Tipp: Ha bejelöli ezt az opciót, akkor el kívánja rejteni a nevet és az favikont."
+  },
+  "ui_te_bg_note":{
+    "message":"Megjegyzés: Ez az opció nincs hatással az Ikon és Háttér beállításokra."
+  },
+  "ui_te_app_tip":{
+    "message":"Nem minden opció érvényes az alkalmazásokra. Ha több beállítási lehetőséget szeretne, akkor készítsen egy parancsikont. Csak kattintson egy üres rácsra."
+  },
+  "ui_te_ib":{
+    "message":"Ikon és háttér"
+  },
+  "ui_te_ib_desc":{
+    "message":"Írja be a kép URL-címét, használja a Tallózás gombot, vagy húzza ide egy képet az ikon megváltoztatásához."
+  },
+  "ui_te_ib_browse":{
+    "message":"Tallózás"
+  },
+  "ui_te_ib_screenshot":{
+    "message":"Képlopás használata"
+  },
+  "ui_screenshot_confirm_title":{
+    "message":"Képernyőkép készítése"
+  },
+  "ui_screenshot_confirm":{
+    "message":"Annak érdekében, hogy elkészüljön ez a képernyőkép, a weboldal egy új ablakban kerül megnyitásra. Miután az oldal teljesen betöltődött, az oldal automatikusan bezárul és Ön vissza lesz irányítva az Awesome New Tab Page-re. Kérjük, ne zárja be az oldalt vagy navigáljon máshova. Nem tart tovább pár másodpercnél."
+  },
+  "ui_screenshot_permission_denied_title":{
+    "message":"Engedély megtagadva"
+  },
+  "ui_screenshot_permission_denied":{
+    "message":"Megtagadta az Awesome New Tab Page-től az engedélyt, hogy készítsen egy képernyőképet. Ha szeretne egy képernyőképet készíteni, próbálja újra, és engedélyezze az Awesome New Tab Page-nek, hogy képernyőképet készítsen."
+  },
+  "ui_te_ib_tip":{
+    "message":"Tipp: Hagyja üresen, hogy eltűnjön az ikon."
+  },
+  "ui_te_ib_advanced":{
+    "message":"Ajánlott: Rejtse el a nevet és az ikont és használjon egy 200x200 pixeles képet az 1x1 méretű rácshoz."
+  },
+  "ui_config_general":{
+    "message":"Általános"
+  },
+  "ui_config_shbmb":{
+    "message":"Könyvjelző eszköztár mutatása"
+  },
+  "ui_config_shbmb_tip":{
+    "message":"Könyvjelző eszköztár megjelenítése az oldal tetején"
+  },
+  "ui_config_reset":{
+    "message":"Visszaállítás"
+  },
+  "ui_config_reset_desc":{
+    "message":"Ezzel a gombbal visszavonhat minden beállítást az Awesome New Tab Page alkalmazásban."
+  },
+  "ui_confirm_reset":{
+    "message":"Biztos benne, hogy visszaállít mindent (háttér, jegyzettömb, stb.) az eredeti állapotra? Minden visszavonhatatlanul elvész."
+  },
+  "ui_config_bg":{
+    "message":"Háttér"
+  },
+  "ui_config_bg_upload":{
+    "message":"Kép feltöltése"
+  },
+  "ui_config_bgimg1":{
+    "message":"<b>Ajánlott<\/b> (Shorthand Background CSS): Használjon egy képet a webről."
+  },
+  "ui_config_bgimg3":{
+    "message":"Az alapértelmezett háttérhez (egyszínű) törölje a mező tartalmát."
+  },
+  "ui_config_bgimg2":{
+    "message":"Példa (nincs lezáró pontosvessző):"
+  },
+  "ui_config_onoff_on":{
+    "message":"BE"
+  },
+  "ui_config_onoff_off":{
+    "message":"KI"
+  },
+  "ui_config_advanced":{
+    "message":"Haladó"
+  },
+  "ui_config_advanced_grid_width":{
+    "message":"Rács szélességének beállítása"
+  },
+  "ui_config_advanced_grid_height":{
+    "message":"Rács magasságának beállítása"
+  },
+  "ui_about":{
+    "message":"Névjegy"
+  },
+  "ui_about_contrib":{
+    "message":"Közreműködők"
+  },
+  "ui_about_contrib_desc":{
+    "message":"Ez a projekt nem jött volna létre kemény munka, visszajelzések, ötletek, fordítások és néhány csodálatos ember nélkül."
+  },
+  "ui_about_dev":{
+    "message":"Fejlesztők"
+  },
+  "ui_about_contrib_translators":{
+    "message":"Fordítók"
+  },
+  "ui_about_contrib_users":{
+    "message":"Felhasználók"
+  },
+  "ui_about_contrib_cta":{
+    "message":"Kattintson a fenti linkekre és nézze meg (vagy csatlakozzon) hogyan dolgoznak ezek a csodálatos emberek!"
+  },
+  "ui_about_share":{
+    "message":"Megosztás"
+  },
+  "ui_about_share1":{
+    "message":"Tetszik az Elképesztő Új Lap oldal? Oszd meg a családoddal és a barátaiddal!"
+  },
+  "ui_about_rate":{
+    "message":"Értékelés"
+  },
+  "ui_about_rate_desc":{
+    "message":"Tetszik ez a kiterjesztés? Szánj egy percet arra, hogy értékeld a Chrome webtárhelyen."
+  },
+  "ui_install":{
+    "message":"Telepítés"
+  },
+  "ui_uninstall":{
+    "message":"Eltávolítás"
+  },
+  "ui_uninstall_title":{
+    "message":"Uninstaláló alkalmazás"
+  },
+  "ui_confirm_uninstall":{
+    "message":"Biztos, hogy el szeretné távolítani a(z) $app$-t?",
+    "placeholders":{
+      "app":{
+        "content":"$1",
+        "example":"Chrome Web Store"
+      }
+    }
+  },
+  "ui_faw_unlock_drag":{
+    "message":"Feloldás és húzás"
+  },
+  "ui_faw_unlock_drag_apps":{
+    "message":"Oldja fel a mezőt és <b>drag<\/b> a telepített alkalmazásokat egy üres helyre."
+  },
+  "ui_faw_unlock_drag_widgets":{
+    "message":"Oldja fel a mezőt és <b>drag<\/b> a telepített widget-eket egy üres helyre."
+  },
+  "ui_faw_get_more_apps":{
+    "message":"További alkalmazások"
+  },
+  "ui_faw_get_more_apps_body":{
+    "message":"További alkalmazások a <a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'>Chrome Web Store<\/a>-ból."
+  },
+  "ui_faw_get_more_widgets":{
+    "message":"További widgetek"
+  },
+  "ui_faw_get_more_widgets_body":{
+    "message":"Találjon több widgetet."
+  },
+  "ui_faw_pick":{
+    "message":"Válasszon"
+  },
+  "ui_faw_pick_body":{
+    "message":"Válassza ki a widgeteket amiket telepíteni szeretne."
+  },
+  "ui_faw_install":{
+    "message":"Telepítés"
+  },
+  "ui_faw_install_body":{
+    "message":"Kattintson a telepítés gombra, hogy hozzáadja a Chromehoz és a widget ablakhoz."
+  },
+  "ui_bmb_ob":{
+    "message":"További könyvjelzők"
+  },
+  "app_webstore":{
+    "message":"Chrome webtárhely"
+  },
+  "ui_shortcut_img":{
+    "message":"A megadott URL alatt található képfájl pontosan 128-szor 128 pixel méretűnek kell lennie."
+  },
+  "notepad_default":{
+    "message":"Írjon ide bármit. Minden amit leír leütésenként mentésre kerül.  Vigyázat, nem készül biztonsági mentés, a Visszaállítás gomb alaphelyzetbe állítja a widget-et!"
+  },
+  "ui_resize_reset":{
+    "message":"Visszaállítás"
+  },
+  "ui_resize_center":{
+    "message":"Középre"
+  },
+  "ui_resize_cover":{
+    "message":"Borító"
+  },
+  "ui_resize_contain":{
+    "message":"Tartalmaz"
+  },
+  "ui_resize_zoom":{
+    "message":"Nagyítás\/Kicsinyítés"
+  },
+  "rctm_remove":{
+    "message":"Törlés"
+  },
+  "rctm_clear_all":{
+    "message":"Legutóbb bezárt lapok ürítése"
+  },
+  "rctm_clear_all_confirm":{
+    "message":"A Legutóbb bezárt lapok menü törlése nem érinti a Chrome előzményeit. Ez a lehetőség csak ezt a listát törli."
+  },
+  "ui_import_export_btn":{
+    "message":"Importálás\/Exportálás"
+  },
+  "ui_import_export_desc":{
+    "message":"Használja ezeket a beállításokat egy másik böngészőn vagy töltsön be egy biztonsági mentést."
+  },
+  "ui_import_export_btn2":{
+    "message":"Vissza"
+  },
+  "ui_import_export_btn_import":{
+    "message":"Importálás"
+  },
+  "ui_import_export_btn_export":{
+    "message":"Exportálás"
+  },
+  "ui_import_export_btn_import_run":{
+    "message":"Alkalmaz"
+  },
+  "ui_import_export_desc_export":{
+    "message":"Exportálás: Létrehoz egy szöveges fájlt, amely tartalmazz az Ön összes személyes beállítását. Ezt a fájlt elmentheti későbbi használatra, vagy átmásolhatja más számítógépekre, hogy automatikusan így használhassa. A számítógépről feltöltött képek nem kerülnek exportálásra, csak a weben tárolt képek."
+  },
+  "ui_import_export_desc_import":{
+    "message":"Importálás: Felülírja a jelenlegi beállításaidat egy érvényes fájlal. <b>WARNING<\/b>: Minden jelenlegi beállítás visszavonhatatlanul elveszik. A művelet visszavonására nincs lehetőség. A feltöltött képek nem kerülnek importálásra, csak a weben tároltak."
+  },
+  "ui_import_export_installed_warning":{
+    "message":"A telepített alkalmazások, bővítmények és widgetek nem lesznek importálva vagy exportálva. A bővítmények nem telepíthetnek további alkalmazásokat vagy bővítményeket, erre a célra használja ezt a linket: <a href='http:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'>Chrome Sync<\/a>."
+  },
+  "ui_import_export_desc_restore":{
+    "message":"Visszaállítás: Lehetővé teszi, hogy visszavonja az utolsó importálást. Az aktuális állapotról is készül biztonsági másolat, hogy később vissza lehessen állítani."
+  },
+  "ui_import_export_header":{
+    "message":"Importálás\/Exportálás"
+  },
+  "ui_import_export_confirm_restore_title":{
+    "message":"Erősítse meg a visszaállítást"
+  },
+  "ui_import_export_confirm_restore":{
+    "message":"Biztos benne, hogy szeretne visszaállítani? A jelenlegi beállítások elvesznek."
+  },
+  "ui_import_export_msg_header":{
+    "message":"Importálás\/Exportálás"
+  },
+  "ui_import_export_restore_complete_msg":{
+    "message":"Visszaállítás sikeres."
+  },
+  "ui_import_export_no_restore_msg":{
+    "message":"Nincs mit visszaállítani!"
+  },
+  "ui_import_export_complete_msg":{
+    "message":"Az importálás elkészült."
+  },
+  "ui_import_export_empty_string_msg":{
+    "message":"Először adja meg az importálási feltételt!"
+  },
+  "ui_import_export_invalid_string_msg":{
+    "message":"Érvénytelen importálási feltétel!"
+  },
+  "ui_import_export_btn_restore":{
+    "message":"Visszaállítás"
+  },
+  "ui_drag_widget_message":{
+    "message":"Ahhoz, hogy elhelyezzen egy widgetet, kattintson és húzza a widgetet egy üres helyre."
+  },
+  "ui_apps_tip_message_title":{
+    "message":"Új alkalmazás telepítve"
+  },
+  "ui_apps_tip_message":{
+    "message":"Remek! Telepítettél egy alkalmazást. Az összes telepített alkalmazást itt megtalálhatod."
+  },
+  "ui_tutorial2_next":{
+    "message":"Következő"
+  },
+  "ui_tutorial2_app_window_title":{
+    "message":"Alkalmazások ablak"
+  },
+  "ui_tutorial2_widgets_window_title":{
+    "message":"Widgetek ablak"
+  },
+  "ui_tutorial2_lock_title":{
+    "message":"Rács zárolása\/feloldása"
+  },
+  "ui_tutorial2_delete_widget":{
+    "message":"Widget törlése"
+  },
+  "ui_tutorial2_completed_title":{
+    "message":"Te fantasztikus vagy!"
+  },
+  "ui_tutorial2_finish_string":{
+    "message":"Bemutató befejezése"
+  },
+  "ui_tutorial2_main_welcome":{
+    "message":"Üdvözöllek a(z)"
+  },
+  "ui_tutorial2_main_start":{
+    "message":"Bemutató indítása"
+  }
 }

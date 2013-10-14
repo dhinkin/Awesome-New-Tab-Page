@@ -1,455 +1,497 @@
 {
-	"ui_button_apps":{
-		"message":"Applications"
-	},
-	"ui_button_widgets":{
-		"message":"Widgets"
-	},
-	"ui_button_widget_browser":{
-		"message":"Navigateur de widget."
-	},
-	"ui_button_unlock":{
-		"message":"D\u00e9verrouiller"
-	},
-	"ui_button_lock":{
-		"message":"Verrouiller pour interagir avec les Applications et les Widgets"
-	},
-	"ui_button_rct":{
-		"message":"Onglets r\u00e9cemment ferm\u00e9s"
-	},
-	"ui_button_close":{
-		"message":"Fermer"
-	},
-	"ui_button_ok":{
-		"message":"OK"
-	},
-	"ui_button_cancel":{
-		"message":"Annuler"
-	},
-	"ui_button_about":{
-		"message":"\u00c0 propos"
-	},
-	"ui_config":{
-		"message":"Configurer"
-	},
-	"ui_button_help":{
-		"message":"Aide & Avis"
-	},
-	"ui_c_learnmore":{
-		"message":"En savoir plus"
-	},
-	"ui_config_bg_changecolor":{
-		"message":"Changer la couleur de fond"
-	},
-	"ui_te":{
-		"message":"\u00c9diteur de carreaux"
-	},
-	"ui_te_general":{
-		"message":"G\u00e9n\u00e9ral"
-	},
-	"ui_te_name":{
-		"message":"Nom"
-	},
-	"ui_te_name_desc":{
-		"message":"Comment voulez-vous l'appeler ?"
-	},
-	"ui_te_shname":{
-		"message":"Afficher\/Masquer le nom"
-	},
-	"ui_te_pin":{
-		"message":"\u00c9pingler avec un clic gauche"
-	},
-	"ui_te_newtab":{
-		"message":"Ouvrir dans un nouvel onglet sur clic gauche"
-	},
-	"ui_te_url_desc":{
-		"message":"Entrer l'URL vers laquelle acc\u00e9der, comme http:\/\/www.google.com\/"
-	},
-	"ui_te_url_tip":{
-		"message":"Astuce : Une URL valide contient un protocole (tel que http:\/\/) avant le domaine. Sans protocole valide, votre raccourci ne fonctionnera pas."
-	},
-	"ui_te_shfavicon":{
-		"message":"Afficher \/ Masquer favicon"
-	},
-	"ui_te_search":{
-		"message":"Recherche"
-	},
-	"ui_te_search_desc":{
-		"message":"Entrez une URL de recherche pour ce site. Par exemple :"
-	},
-	"ui_te_bg_colorpicker":{
-		"message":"S\u00e9lectionneur de couleur"
-	},
-	"ui_te_bg_transparent":{
-		"message":"Fond compl\u00e8tement transparent"
-	},
-	"ui_te_bg_tip":{
-		"message":"Astuce : Si vous cochez cette case, vous pouvez \u00e9galement masquer le nom et la favicon."
-	},
-	"ui_te_bg_note":{
-		"message":"Note : Cette option n'a aucun effet sur l'Ic\u00f4ne & Param\u00e8tres de fond."
-	},
-	"ui_te_app_tip":{
-		"message":"Les options ne sont pas toutes disponibles pour les applis. Si vous avez envie de plus d'options, cr\u00e9ez un raccourci personnalis\u00e9. Il suffit pour cela de cliquer sur un carreau vide sur la grille d\u00e9verrouill\u00e9e."
-	},
-	"ui_te_ib":{
-		"message":"Ic\u00f4ne & Fond"
-	},
-	"ui_te_ib_desc":{
-		"message":"Entrez l'adresse URL d'une image, utilisez le bouton Parcourir ou glissez-d\u00e9posez une image pour changer l'ic\u00f4ne."
-	},
-	"ui_te_ib_browse":{
-		"message":"Parcourir"
-	},
-	"ui_te_ib_screenshot":{
-		"message":"Utiliser la capture d'\u00e9cran"
-	},
-	"ui_screenshot_confirm_title":{
-		"message":"Prendre une capture d'\u00e9cran"
-	},
-	"ui_screenshot_confirm":{
-		"message":"Afin d'effectuer la capture d'\u00e9cran, le site sera ouvert dans un nouvel onglet. Apr\u00e8s la fin du chargement de la page, l'onglet se fermera automatiquement et vous allez retourner sur Awesome New Tab Page. Veuillez ne pas fermer ou naviguer plus loin. Cela ne devrait pas prendre que quelques secondes."
-	},
-	"ui_screenshot_permission_denied_title":{
-		"message":"Autorisation refus\u00e9e"
-	},
-	"ui_screenshot_permission_denied":{
-		"message":"Vous a refus\u00e9 d'accorder \u00e0 Awesome New Tab Page l'autorisation n\u00e9cessaire pour lui permettre de capturer des captures d'\u00e9cran. Si vous souhaitez prendre une capture d'\u00e9cran, veuillez essayer \u00e0 nouveau et accorder \u00e0 Awesome New Tab Page l'autorisation n\u00e9cessaire."
-	},
-	"ui_te_ib_tip":{
-		"message":"Astuce : Laisser en blanc pour aucune ic\u00f4ne."
-	},
-	"ui_te_ib_advanced":{
-		"message":"Avanc\u00e9 : masquer le nom et la favicon et utiliser une image de 200px par 200px pour personnaliser compl\u00e8tement un carreau de 1x1."
-	},
-	"ui_config_general":{
-		"message":"G\u00e9n\u00e9ral"
-	},
-	"ui_config_shbmb":{
-		"message":"Afficher la barre de favoris."
-	},
-	"ui_config_shbmb_tip":{
-		"message":"Afficher la barre de favoris en haut des pages."
-	},
-	"ui_config_shtlb":{
-		"message":"Afficher les boutons en haut \u00e0 gauche uniquement sur la zone de pointage"
-	},
-	"ui_config_shtlb_desc":{
-		"message":"Une fois activ\u00e9, les boutons sup\u00e9rieur gauche dispara\u00eetront. Pour y acc\u00e9der de nouveau, passer votre souris \u00e0 leur emplacement habituel."
-	},
-	"ui_config_shgrid":{
-		"message":"Afficher la grille (quand d\u00e9verrouill\u00e9)"
-	},
-	"ui_config_shgrid_desc":{
-		"message":"Quand activ\u00e9, la grille est affich\u00e9e en permanence."
-	},
-	"ui_config_amazonlocale":{
-		"message":"Pour l'ic\u00f4ne de <i>stock<\/i> Amazon, s\u00e9lectionnez votre pays."
-	},
-	"ui_config_reset":{
-		"message":"R\u00e9initialiser"
-	},
-	"ui_config_reset_desc":{
-		"message":"Ce bouton va annuler tout les changements appliqu\u00e9s \u00e0 l'incroyable nouvelle page d'onglets."
-	},
-	"ui_confirm_reset":{
-		"message":"\u00cates-vous s\u00fbr de vouloir r\u00e9initialiser le widgets, l'application et l'emplacement des raccourcis personnalis\u00e9s, ainsi que les pr\u00e9f\u00e9rences du widget stock (bloc-notes, etc.) et les pr\u00e9f\u00e9rences de l'arri\u00e8re-plan ? Toutes les personnalisations seront perdues de fa\u00e7on permanente."
-	},
-	"ui_config_bg":{
-		"message":"Arri\u00e8re-plan"
-	},
-	"ui_config_bg_upload":{
-		"message":"Charger une image"
-	},
-	"ui_config_bgimg1":{
-		"message":"<b>Avanc\u00e9<\/b> (Raccourci Fond CSS) : Utiliser une image du web."
-	},
-	"ui_config_bgimg3":{
-		"message":"Effacer le champ pour utiliser l'arri\u00e8re-plan d'origine (couleur unie)."
-	},
-	"ui_config_bgimg2":{
-		"message":"Exemple (PAS de point-virgule final!):"
-	},
-	"ui_config_onoff_on":{
-		"message":"ACTIV\u00c9"
-	},
-	"ui_config_onoff_off":{
-		"message":"D\u00c9SACTIV\u00c9"
-	},
-	"ui_config_hide_scrollbar":{
-		"message":"Cacher Barre de d\u00e9filement du bas"
-	},
-	"ui_config_hide_scrollbar_tip":{
-		"message":"Cache la barre de d\u00e9filement en bas de page."
-	},
-	"ui_config_advanced":{
-		"message":"Avanc\u00e9"
-	},
-	"ui_config_advanced_tip":{
-		"message":"Ci-dessous ce trouve des options qui, si mal utilis\u00e9es, peuvent mener \u00e0 une exp\u00e9rience utilisateurs d\u00e9grad\u00e9e. Utilisez les \u00e0 vos risques et p\u00e9rils."
-	},
-	"ui_config_advanced_grid_width":{
-		"message":"D\u00e9finir Largeur Grille"
-	},
-	"ui_config_advanced_grid_width_tip":{
-		"message":"Remplace la g\u00e9n\u00e9ration automatique de la taille de la grille. Utiliser ce param\u00e8tre peut emp\u00eacher vos tuiles de se charger correctement. R\u00e9gler ce param\u00e8tre sur une valeur trop importante peut impacter les performances. Min : 4. Max : 50. <b>Effacer le nombre pour d\u00e9sactiver !<\/b>"
-	},
-	"ui_config_advanced_grid_height":{
-		"message":"D\u00e9finir Hauteur Grille"
-	},
-	"ui_config_advanced_grid_height_tip":{
-		"message":"Remplace la g\u00e9n\u00e9ration automatique de la taille de la grille. Utiliser ce param\u00e8tre peut emp\u00eacher vos tuiles de se charger correctement. R\u00e9gler ce param\u00e8tre sur une valeur trop importante peut impacter les performances. Min : 3. Max : 25. <b>Effacer le nombre pour d\u00e9sactiver !<\/b>"
-	},
-	"ui_config_advanced_disable_horizontal_scrollbar":{
-		"message":"D\u00e9sactiver le d\u00e9filement horizontale."
-	},
-	"ui_config_advanced_disable_horizontal_scrollbar_tip":{
-		"message":"D\u00e9sactive le d\u00e9filement horizontale, autorisant le d\u00e9filement verticale."
-	},
-	"ui_about":{
-		"message":"\u00c0 propos"
-	},
-	"ui_about_contrib":{
-		"message":"Contributeurs"
-	},
-	"ui_about_contrib_desc":{
-		"message":"Ce projet n'existerait pas sans travail acharn\u00e9, des avis, des id\u00e9es, des traductions et le soutien de quelques groupes de personnes formidables."
-	},
-	"ui_about_dev":{
-		"message":"D\u00e9veloppeurs"
-	},
-	"ui_about_contrib_translators":{
-		"message":"Traducteurs"
-	},
-	"ui_about_contrib_users":{
-		"message":"Utilisateurs"
-	},
-	"ui_about_contrib_cta":{
-		"message":"Cliquez sur les liens ci-dessus pour voir (et peut-\u00eatre rejoindre) ces personnes formidables en pleine action !"
-	},
-	"ui_about_share":{
-		"message":"Partager"
-	},
-	"ui_about_share1":{
-		"message":"Vous aimez cette impressionnant nouvelle page d'onglets ? Pourquoi ne pas la partager avec vos amis et votre famille ?"
-	},
-	"ui_about_rate":{
-		"message":"\u00c9valuer"
-	},
-	"ui_about_rate_desc":{
-		"message":"Vous aimez cette extension ? Prenez une minute pour donner un avis positif sur le Chrome Web Store."
-	},
-	"ui_install":{
-		"message":"Installer"
-	},
-	"ui_uninstall":{
-		"message":"D\u00e9sinstaller"
-	},
-	"ui_uninstall_title":{
-		"message":"D\u00e9sinstaller App"
-	},
-	"ui_confirm_uninstall":{
-		"message":"\u00cates-vous s\u00fbr de vouloir d\u00e9sinstaller $app$?",
-		"placeholders":{
-			"app":{
-				"content":"$1",
-				"example":"Chrome Web Store"
-			}
-		}
-	},
-	"ui_faw_unlock_drag":{
-		"message":"D\u00e9bloquez et faites glisser"
-	},
-	"ui_faw_unlock_drag_apps":{
-		"message":"D\u00e9verrouillez la grille et faites <b>glisser<\/b> vos applications install\u00e9es sur un emplacement vide."
-	},
-	"ui_faw_unlock_drag_widgets":{
-		"message":"D\u00e9verrouillez la grille et <b>glissez<\/b> vos widgets install\u00e9s \u00e0 un emplacement vide."
-	},
-	"ui_faw_get_more_apps":{
-		"message":"Obtenir plus d'applications"
-	},
-	"ui_faw_get_more_apps_body":{
-		"message":"Obtenez plus d'applications \u00e0 partir du <a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'>Chrome Web Store<\/a> ."
-	},
-	"ui_faw_get_more_widgets":{
-		"message":"Obtenir plus de widgets"
-	},
-	"ui_faw_get_more_widgets_body":{
-		"message":"Trouver plus de widgets."
-	},
-	"ui_faw_pick":{
-		"message":"Choisir"
-	},
-	"ui_faw_pick_body":{
-		"message":"Ci-dessous, choisissez les widgets que vous souhaitez installer."
-	},
-	"ui_faw_install":{
-		"message":"Installer"
-	},
-	"ui_faw_install_body":{
-		"message":"Frappe la touche d'installation pour l'ajouter \u00e0 Chrome et la fen\u00eatre d'applis."
-	},
-	"ui_bmb_ob":{
-		"message":"Autres favoris"
-	},
-	"app_webstore":{
-		"message":"Chrome Web Store"
-	},
-	"ui_shortcut_img":{
-		"message":"Votre image doit \u00eatre un carr\u00e9 (longueur=largeur) d'au minimum 128px par 128px, au format PNG avec transparence alpha. Pour r\u00e9initialiser les r\u00e9glages par d\u00e9faut, effacer simplement le contenu du champ."
-	},
-	"notepad_default":{
-		"message":"Tapez ce que voulez ici. Tout ce que vous taperez sera enregistr\u00e9 \u00e0 chaque nouvelle frappe.\n\nAttention: il n'y a PAS de sauvegarde, et appuyer sur le bouton \"R\u00e9initialiser\" vous fera perdre le contenu de votre widget!"
-	},
-	"ui_resize_reset":{
-		"message":"R\u00e9initialiser"
-	},
-	"ui_resize_center":{
-		"message":"Centrer"
-	},
-	"ui_resize_cover":{
-		"message":"Couverture"
-	},
-	"ui_resize_contain":{
-		"message":"Contiennent des"
-	},
-	"ui_resize_zoom":{
-		"message":"Zoom"
-	},
-	"rctm_remove":{
-		"message":"Supprimer"
-	},
-	"rctm_clear_all":{
-		"message":"Effacer onglets r\u00e9cemment ferm\u00e9s"
-	},
-	"rctm_clear_all_confirm":{
-		"message":"Effacer le menu des onglets ferm\u00e9s r\u00e9cemment n'efface pas l'historique du navigateur de Chrome. Cette fonction efface cette liste uniquement."
-	},
-	"ui_import_export_btn":{
-		"message":"Importation\/exportation"
-	},
-	"ui_import_export_desc":{
-		"message":"Prenez vos param\u00e8tres \u00e0 d'autres navigateurs ou restaurer une sauvegarde."
-	},
-	"ui_import_export_btn2":{
-		"message":"Pr\u00e9c\u00e9dent"
-	},
-	"ui_import_export_btn_import":{
-		"message":"Importation"
-	},
-	"ui_import_export_btn_export":{
-		"message":"Exportation"
-	},
-	"ui_import_export_btn_import_run":{
-		"message":"Appliquer"
-	},
-	"ui_import_export_desc_export":{
-		"message":"Exportation : G\u00e9n\u00e8re une cha\u00eene qui contient l'ensemble de vos pr\u00e9f\u00e9rences. Cette cha\u00eene peut \u00eatre sauv\u00e9e pour plus tard comme une sauvegarde ou peut \u00eatre copi\u00e9e sur d'autres ordinateurs pour d\u00e9finir automatiquement leur comme celle-ci. Images t\u00e9l\u00e9charg\u00e9es ne sont pas export\u00e9s ; sont des images sur le web."
-	},
-	"ui_import_export_desc_import":{
-		"message":"Importation : Remplace votre configuration actuelle avec une cha\u00eene export\u00e9e valide. <b>Avertissement<\/b> : toutes vos pr\u00e9f\u00e9rences actuelles seront irr\u00e9m\u00e9diablement perdues. Il n'y a aucun moyen d'annuler cette op\u00e9ration. Images t\u00e9l\u00e9charg\u00e9es ne sont pas import\u00e9es ; sont des images sur le web."
-	},
-	"ui_import_export_installed_warning":{
-		"message":"Applications install\u00e9es, les extensions et des widgets ne sont pas import\u00e9s ou export\u00e9s. Les extensions ne peuvent pas installer d'autres applications ou extensions. Utilisez <a href='http:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'>Sync Chrome<\/a> \u00e0 la place."
-	},
-	"ui_import_export_desc_restore":{
-		"message":"Restaurer: Permet d'annuler la derni\u00e8re importation. Votre \u00e9tat actuel sera sauvegard\u00e9 pour une restauration ult\u00e9rieure ainsi."
-	},
-	"ui_import_export_header":{
-		"message":"Importation\/exportation"
-	},
-	"ui_import_export_confirm_restore_title":{
-		"message":"Confirmer la restauration"
-	},
-	"ui_import_export_confirm_restore":{
-		"message":"\u00cates-vous s\u00fbr de vouloir restaurer ? Vos param\u00e8tres actuels seront perdus."
-	},
-	"ui_import_export_msg_header":{
-		"message":"Importation\/exportation"
-	},
-	"ui_import_export_restore_complete_msg":{
-		"message":"Restauration termin\u00e9e."
-	},
-	"ui_import_export_no_restore_msg":{
-		"message":"Rien \u00e0 restaurer !"
-	},
-	"ui_import_export_complete_msg":{
-		"message":"Importation termin\u00e9e."
-	},
-	"ui_import_export_empty_string_msg":{
-		"message":"Entrez la cha\u00eene importation d'abord !"
-	},
-	"ui_import_export_invalid_string_msg":{
-		"message":"Cha\u00eene d'importation non valide !"
-	},
-	"ui_import_export_btn_restore":{
-		"message":"Restaurer"
-	},
-	"ui_drag_widget_message":{
-		"message":"Pour placer un widget, cliquez puis fa\u00eetes glisser sur une tuile vide."
-	},
-	"ui_apps_tip_message_title":{
-		"message":"Nouvelle App Install\u00e9e"
-	},
-	"ui_apps_tip_message":{
-		"message":"Bien jou\u00e9! Vous avez install\u00e9 une application. Vous pouvez trouver toutes vos applications install\u00e9es ici."
-	},
-	"ui_tutorial2_next":{
-		"message":"Suivant"
-	},
-	"ui_tutorial2_app_window_title":{
-		"message":"Fen\u00eatre Apps"
-	},
-	"ui_tutorial2_app_drawer":{
-		"message":"Ici, vous trouverez toutes les applications que vous avez install\u00e9es depuis le Chrome Web Store. Vous pouvez <b>glisser<\/b> les applications en dehors de cette fen\u00eatre sur votre grille <b>d\u00e9verrouill\u00e9e<\/b>. Vous pouvez aussi d\u00e9sinstaller des applications depuis cette fen\u00eatre."
-	},
-	"ui_tutorial2_widgets_window_title":{
-		"message":"Fen\u00eatre Widgets"
-	},
-	"ui_tutorial2_widget_drawer":{
-		"message":"Ici, vous trouverez les widgets install\u00e9s, r\u00e9alis\u00e9s par des d\u00e9veloppeurs tiers et sp\u00e9cialement con\u00e7u pour Awesome New Tab Page. Les widgets apportent un contenu dynamique et des informations utiles, directement sur votre page de nouvel onglet."
-	},
-	"ui_tutorial2_lock_title":{
-		"message":"V\u00e9rouiller\/D\u00e9verrouiller Grille"
-	},
-	"ui_tutorial2_lock_grid":{
-		"message":"Verrouiller et d\u00e9verrouiller la grille vous permet de placer, d\u00e9placer et supprimer widgets, applications et raccourcis personnalis\u00e9s. <b>Cliquez sur le cadenas pour continuer.<\/b>"
-	},
-	"ui_tutorial2_delete_widget":{
-		"message":"Supprimer ce widget"
-	},
-	"ui_tutorial2_delete_widget_string":{
-		"message":"Vous pouvez personnaliser la grille comme bon vous semble. Vous pouvez supprimer les tuiles que vous ne voulez pas. Essayer en <b>supprimant le widget du tutoriel.<\/b>"
-	},
-	"ui_tutorial2_empty_grid_title":{
-		"message":"Titre grille vide"
-	},
-	"ui_tutorial2_empty_grid_string":{
-		"message":"Pourquoi se limiter aux applications trouv\u00e9es sur le Chrome Web Store ? <b>Cliquez sur cette tuile vide<\/b> pour cr\u00e9er un raccourci personnalis\u00e9 vers n'importe o\u00f9 sur le web."
-	},
-	"ui_tutorial2_completed_title":{
-		"message":"Vous \u00eates super !"
-	},
-	"ui_tutorial2_completed_string":{
-		"message":"Genre, vraiment g\u00e9nial. Maintenant vous savez comment utiliser Awesome New Tab Page pour obtenir le meilleur de votre exp\u00e9rience Chrome. Alors, qu'allez vous faire maintenant ?"
-	},
-	"ui_tutorial2_finish_string":{
-		"message":"Finir Tutoriel"
-	},
-	"ui_tutorial2_main_welcome":{
-		"message":"Bienvenue sur"
-	},
-	"ui_tutorial2_main_feels":{
-		"message":"Vous venez juste de mettre \u00e0 niveau vers l'incroyable. Comment se sent-on ?"
-	},
-	"ui_tutorial2_main_getstarted":{
-		"message":"Peut-\u00eatre un peu trop g\u00e9nial tout \u00e0 la fois? Ne vous inqui\u00e9tez pas, le widget tutoriel va vous aider \u00e0 d\u00e9marrer."
-	},
-	"ui_tutorial2_main_click":{
-		"message":"Cliquez sur ce petit bouton minuscule l\u00e0-bas pour y aller."
-	},
-	"ui_tutorial2_main_start":{
-		"message":"Commencer Tutoriel"
-	}
+  "ui_button_apps":{
+    "message":"Applications"
+  },
+  "ui_button_widgets":{
+    "message":"Widgets"
+  },
+  "ui_button_widget_browser":{
+    "message":"Navigateur de widget."
+  },
+  "ui_button_unlock":{
+    "message":"Déverrouiller"
+  },
+  "ui_button_lock":{
+    "message":"Verrouiller pour interagir avec les Applications et les Widgets"
+  },
+  "ui_button_rct":{
+    "message":"Onglets récemment fermés"
+  },
+  "ui_button_close":{
+    "message":"Fermer"
+  },
+  "ui_button_ok":{
+    "message":"OK"
+  },
+  "ui_button_cancel":{
+    "message":"Annuler"
+  },
+  "ui_button_yes":{
+    "message":"Oui"
+  },
+  "ui_button_no":{
+    "message":"Non"
+  },
+  "ui_button_about":{
+    "message":"À propos"
+  },
+  "ui_config":{
+    "message":"Configurer"
+  },
+  "ui_button_help":{
+    "message":"Aide & Avis"
+  },
+  "ui_c_learnmore":{
+    "message":"En savoir plus"
+  },
+  "ui_config_bg_changecolor":{
+    "message":"Changer la couleur de fond"
+  },
+  "ui_te":{
+    "message":"Éditeur de carreaux"
+  },
+  "ui_te_general":{
+    "message":"Général"
+  },
+  "ui_te_name":{
+    "message":"Nom"
+  },
+  "ui_te_name_desc":{
+    "message":"Comment voulez-vous l'appeler ?"
+  },
+  "ui_te_shname":{
+    "message":"Afficher\/Masquer le nom"
+  },
+  "ui_te_pin":{
+    "message":"Épingler avec un clic gauche"
+  },
+  "ui_te_newtab":{
+    "message":"Ouvrir dans un nouvel onglet sur clic gauche"
+  },
+  "ui_te_url_desc":{
+    "message":"Entrer l'URL vers laquelle accéder, comme http:\/\/www.google.com\/"
+  },
+  "ui_te_url_tip":{
+    "message":"Astuce : Une URL valide contient un protocole (tel que http:\/\/) avant le domaine. Sans protocole valide, votre raccourci ne fonctionnera pas."
+  },
+  "ui_te_shfavicon":{
+    "message":"Afficher \/ Masquer favicon"
+  },
+  "ui_te_search":{
+    "message":"Recherche"
+  },
+  "ui_te_search_desc":{
+    "message":"Entrez une URL de recherche pour ce site. Par exemple :"
+  },
+  "ui_te_bg_colorpicker":{
+    "message":"Sélectionneur de couleur"
+  },
+  "ui_te_bg_transparent":{
+    "message":"Fond complètement transparent"
+  },
+  "ui_te_bg_tip":{
+    "message":"Astuce : Si vous cochez cette case, vous pouvez également masquer le nom et le favicon."
+  },
+  "ui_te_bg_note":{
+    "message":"Note : Cette option n'a aucun effet sur l'Icône & Paramètres de fond."
+  },
+  "ui_te_app_tip":{
+    "message":"Les options ne sont pas toutes disponibles pour les applis. Si vous avez envie de plus d'options, créez un raccourci personnalisé. Il suffit pour cela de cliquer sur un carreau vide sur la grille déverrouillée."
+  },
+  "ui_te_ib":{
+    "message":"Icône & Fond"
+  },
+  "ui_te_ib_desc":{
+    "message":"Entrez l'adresse URL d'une image, utilisez le bouton Parcourir ou glissez-déposez une image pour changer l'icône."
+  },
+  "ui_te_ib_browse":{
+    "message":"Parcourir"
+  },
+  "ui_te_ib_screenshot":{
+    "message":"Utiliser la capture d'écran"
+  },
+  "ui_screenshot_confirm_title":{
+    "message":"Prendre une capture d'écran"
+  },
+  "ui_screenshot_confirm":{
+    "message":"Afin d'effectuer la capture d'écran, le site sera ouvert dans un nouvel onglet. Après la fin du chargement de la page, l'onglet se fermera automatiquement et vous allez retourner sur Awesome New Tab Page. Veuillez ne pas fermer ou naviguer plus loin. Cela ne devrait pas prendre que quelques secondes."
+  },
+  "ui_screenshot_permission_denied_title":{
+    "message":"Autorisation refusée"
+  },
+  "ui_screenshot_permission_denied":{
+    "message":"Vous avez refusé d'accorder à Awesome New Tab Page l'autorisation nécessaire pour lui permettre de réaliser des captures d'écran. Si vous souhaitez prendre une capture d'écran, veuillez essayer à nouveau et accorder à Awesome New Tab Page l'autorisation nécessaire."
+  },
+  "ui_te_ib_tip":{
+    "message":"Astuce : Laisser en blanc pour aucune icône."
+  },
+  "ui_te_ib_advanced":{
+    "message":"Avancé : masquer le nom et la favicon et utiliser une image de 200px par 200px pour personnaliser complètement un carreau de 1x1."
+  },
+  "ui_config_general":{
+    "message":"Général"
+  },
+  "ui_config_shbmb":{
+    "message":"Afficher la barre de favoris."
+  },
+  "ui_config_shbmb_tip":{
+    "message":"Afficher la barre de favoris en haut des pages."
+  },
+  "ui_config_reset":{
+    "message":"Réinitialiser"
+  },
+  "ui_config_reset_desc":{
+    "message":"Ce bouton va annuler tout les changements appliqués à l'incroyable nouvelle page d'onglets."
+  },
+  "ui_confirm_reset":{
+    "message":"Êtes-vous sûr de vouloir réinitialiser le widgets, l'application et l'emplacement des raccourcis personnalisés, ainsi que les préférences du widget stock (bloc-notes, etc.) et les préférences de l'arrière-plan ? Toutes les personnalisations seront perdues de façon permanente."
+  },
+  "ui_config_bg":{
+    "message":"Arrière-plan"
+  },
+  "ui_config_bg_upload":{
+    "message":"Charger une image"
+  },
+  "ui_config_bgimg1":{
+    "message":"<b>Avancé<\/b> (Raccourci Fond CSS) : Utiliser une image du web."
+  },
+  "ui_config_bgimg3":{
+    "message":"Effacer le champ pour utiliser l'arrière-plan d'origine (couleur unie)."
+  },
+  "ui_config_bgimg2":{
+    "message":"Exemple (PAS de point-virgule final!):"
+  },
+  "ui_config_onoff_on":{
+    "message":"ACTIVÉ"
+  },
+  "ui_config_onoff_off":{
+    "message":"DÉSACTIVÉ"
+  },
+  "ui_config_advanced":{
+    "message":"Avancé"
+  },
+  "ui_config_advanced_tip":{
+    "message":"Ci-dessous ce trouve des options qui, si elles sont mal utilisées, peuvent mener à une expérience utilisateur dégradée. Utilisez les à vos risques et périls."
+  },
+  "ui_config_advanced_grid_width":{
+    "message":"Définir Largeur Grille"
+  },
+  "ui_config_advanced_grid_width_tip":{
+    "message":"Remplace la génération automatique de la taille de la grille. Utiliser ce paramètre peut empêcher vos tuiles de se charger correctement. Régler ce paramètre sur une valeur trop importante peut impacter les performances. Min : 4. Max : 50. <b>Effacer le nombre pour désactiver !<\/b>"
+  },
+  "ui_config_advanced_grid_height":{
+    "message":"Définir Hauteur Grille"
+  },
+  "ui_config_advanced_grid_height_tip":{
+    "message":"Remplace la génération automatique de la taille de la grille. Utiliser ce paramètre peut empêcher vos tuiles de se charger correctement. Régler ce paramètre sur une valeur trop importante peut impacter les performances. Min : 3. Max : 25. <b>Effacer le nombre pour désactiver !<\/b>"
+  },
+  "ui_about":{
+    "message":"À propos"
+  },
+  "ui_about_contrib":{
+    "message":"Contributeurs"
+  },
+  "ui_about_contrib_desc":{
+    "message":"Ce projet n'existerait pas sans travail acharné, des avis, des idées, des traductions et le soutien de quelques groupes de personnes formidables."
+  },
+  "ui_about_dev":{
+    "message":"Développeurs"
+  },
+  "ui_about_contrib_translators":{
+    "message":"Traducteurs"
+  },
+  "ui_about_contrib_users":{
+    "message":"Utilisateurs"
+  },
+  "ui_about_contrib_cta":{
+    "message":"Cliquez sur les liens ci-dessus pour voir (et peut-être rejoindre) ces personnes formidables en pleine action !"
+  },
+  "ui_about_share":{
+    "message":"Partager"
+  },
+  "ui_about_share1":{
+    "message":"Vous aimez cette impressionnant nouvelle page d'onglets ? Pourquoi ne pas la partager avec vos amis et votre famille ?"
+  },
+  "ui_about_rate":{
+    "message":"Évaluer"
+  },
+  "ui_about_rate_desc":{
+    "message":"Vous aimez cette extension ? Prenez une minute pour donner un avis positif sur le Chrome Web Store."
+  },
+  "ui_install":{
+    "message":"Installer"
+  },
+  "ui_uninstall":{
+    "message":"Désinstaller"
+  },
+  "ui_uninstall_title":{
+    "message":"Désinstaller App"
+  },
+  "ui_confirm_uninstall":{
+    "message":"Êtes-vous sûr de vouloir désinstaller $app$?",
+    "placeholders":{
+      "app":{
+        "content":"$1",
+        "example":"Chrome Web Store"
+      }
+    }
+  },
+  "ui_faw_unlock_drag":{
+    "message":"Débloquez et faites glisser"
+  },
+  "ui_faw_unlock_drag_apps":{
+    "message":"Déverrouillez la grille et faites <b>glisser<\/b> vos applications installées sur un emplacement vide."
+  },
+  "ui_faw_unlock_drag_widgets":{
+    "message":"Déverrouillez la grille et <b>glissez<\/b> vos widgets installés à un emplacement vide."
+  },
+  "ui_faw_get_more_apps":{
+    "message":"Obtenir plus d'applications"
+  },
+  "ui_faw_get_more_apps_body":{
+    "message":"Obtenez plus d'applications à partir du <a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'>Chrome Web Store<\/a> ."
+  },
+  "ui_faw_get_more_widgets":{
+    "message":"Obtenir plus de widgets"
+  },
+  "ui_faw_get_more_widgets_body":{
+    "message":"Trouver plus de widgets."
+  },
+  "ui_faw_pick":{
+    "message":"Choisir"
+  },
+  "ui_faw_pick_body":{
+    "message":"Ci-dessous, choisissez les widgets que vous souhaitez installer."
+  },
+  "ui_faw_install":{
+    "message":"Installer"
+  },
+  "ui_faw_install_body":{
+    "message":"Frappe la touche d'installation pour l'ajouter à Chrome et la fenêtre d'applis."
+  },
+  "ui_bmb_ob":{
+    "message":"Autres favoris"
+  },
+  "app_webstore":{
+    "message":"Chrome Web Store"
+  },
+  "ui_shortcut_img":{
+    "message":"Votre image doit être un carré (longueur=largeur) d'au minimum 128px par 128px, au format PNG avec transparence alpha. Pour réinitialiser les réglages par défaut, effacer simplement le contenu du champ."
+  },
+  "notepad_default":{
+    "message":"Tapez ce que voulez ici. Tout ce que vous taperez sera enregistré à chaque nouvelle frappe.\n\nAttention: il n'y a PAS de sauvegarde, et appuyer sur le bouton \"Réinitialiser\" vous fera perdre le contenu de votre widget!"
+  },
+  "ui_resize_reset":{
+    "message":"Réinitialiser"
+  },
+  "ui_resize_center":{
+    "message":"Centrer"
+  },
+  "ui_resize_cover":{
+    "message":"Couverture"
+  },
+  "ui_resize_contain":{
+    "message":"Contiennent des"
+  },
+  "ui_resize_zoom":{
+    "message":"Zoom"
+  },
+  "rctm_remove":{
+    "message":"Supprimer"
+  },
+  "rctm_clear_all":{
+    "message":"Effacer onglets récemment fermés"
+  },
+  "rctm_clear_all_confirm":{
+    "message":"Effacer le menu des onglets fermés récemment n'efface pas l'historique du navigateur de Chrome. Cette fonction efface cette liste uniquement."
+  },
+  "ui_import_export_btn":{
+    "message":"Importation\/exportation"
+  },
+  "ui_import_export_desc":{
+    "message":"Prenez vos paramètres à d'autres navigateurs ou restaurer une sauvegarde."
+  },
+  "ui_import_export_btn2":{
+    "message":"Précédent"
+  },
+  "ui_import_export_btn_import":{
+    "message":"Importation"
+  },
+  "ui_import_export_btn_export":{
+    "message":"Exportation"
+  },
+  "ui_import_export_btn_import_run":{
+    "message":"Appliquer"
+  },
+  "ui_import_export_desc_export":{
+    "message":"Exportation : Génère une chaîne qui contient l'ensemble de vos préférences. Cette chaîne peut être sauvée pour plus tard comme une sauvegarde ou peut être copiée sur d'autres ordinateurs pour définir automatiquement leur comme celle-ci. Images téléchargées ne sont pas exportés ; sont des images sur le web."
+  },
+  "ui_import_export_desc_import":{
+    "message":"Importation : Remplace votre configuration actuelle avec une chaîne exportée valide. <b>Avertissement<\/b> : toutes vos préférences actuelles seront irrémédiablement perdues. Il n'y a aucun moyen d'annuler cette opération. Images téléchargées ne sont pas importées ; sont des images sur le web."
+  },
+  "ui_import_export_installed_warning":{
+    "message":"Applications installées, les extensions et des widgets ne sont pas importés ou exportés. Les extensions ne peuvent pas installer d'autres applications ou extensions. Utilisez <a href='http:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'>Sync Chrome<\/a> à la place."
+  },
+  "ui_import_export_desc_restore":{
+    "message":"Restaurer: Permet d'annuler la dernière importation. Votre état actuel sera sauvegardé pour une restauration ultérieure ainsi."
+  },
+  "ui_import_export_header":{
+    "message":"Importation\/exportation"
+  },
+  "ui_online_backups_header":{
+    "message":"Sauvegardes en ligne"
+  },
+  "ui_import_export_confirm_restore_title":{
+    "message":"Confirmer la restauration"
+  },
+  "ui_import_export_confirm_restore":{
+    "message":"Êtes-vous sûr de vouloir restaurer ? Vos paramètres actuels seront perdus."
+  },
+  "ui_import_export_msg_header":{
+    "message":"Importation\/exportation"
+  },
+  "ui_import_export_restore_complete_msg":{
+    "message":"Restauration terminée."
+  },
+  "ui_import_export_no_restore_msg":{
+    "message":"Rien à restaurer !"
+  },
+  "ui_import_export_complete_msg":{
+    "message":"Importation terminée."
+  },
+  "ui_import_export_empty_string_msg":{
+    "message":"Entrez la chaîne importation d'abord !"
+  },
+  "ui_import_export_invalid_string_msg":{
+    "message":"Chaîne d'importation non valide !"
+  },
+  "ui_import_export_btn_restore":{
+    "message":"Restaurer"
+  },
+  "ui_online_backup_btn_save_backup":{
+    "message":"Enregistrer la sauvegarde"
+  },
+  "ui_online_backup_name_placeholder":{
+    "message":"Saisir un nom de sauvegarde"
+  },
+  "ui_online_backup_sync_writes_exceeded_title":{
+    "message":"Opérations trop nombreuses !"
+  },
+  "ui_online_backup_sync_writes_exceeded":{
+    "message":"Vous avez dépassé la limite d'opérations d'écriture maximale par minute. Veuillez réessayer dans quelques secondes."
+  },
+  "ui_online_backup_sync_size_exceeded_title":{
+    "message":"Taille dépassée !"
+  },
+  "ui_online_backup_sync_size_exceeded":{
+    "message":"Trop gros pour être placé dans le stockage en ligne."
+  },
+  "ui_online_backup_invalid_backup_name_title":{
+    "message":"Nom de la sauvegarde non valide !"
+  },
+  "ui_online_backup_invalid_backup_name":{
+    "message":"Le nom de la sauvegarde doit avoir au moins un caractère."
+  },
+  "ui_online_backup_backup_already_exist_title":{
+    "message":"Nom déjà existant !"
+  },
+  "ui_online_backup_backup_already_exist":{
+    "message":"Une sauvegarde avec ce nom existe déjà. Veuillez saisir un nom de sauvegarde unique."
+  },
+  "ui_online_backup_confirm_delete_backup_title":{
+    "message":"Êtes-vous sûr ?"
+  },
+  "ui_online_backup_confirm_delete_backup":{
+    "message":"Êtes-vous sûr de que vouloir supprimer la sauvegarde ? Une fois supprimée, vous ne pourrez pas la récupérer."
+  },
+  "ui_online_backup_confirm_load_backup_title":{
+    "message":"Êtes-vous sûr ?"
+  },
+  "ui_online_backup_confirm_load_backup":{
+    "message":"Voulez-vous importer cette sauvegarde ? Si vous importez la sauvegarde, vos paramètres actuels seront perdus."
+  },
+  "ui_online_backup_backup_imported_title":{
+    "message":"Sauvegarde importée"
+  },
+  "ui_online_backup_backup_imported":{
+    "message":"La sauvegarde a été importée avec succès."
+  },
+  "ui_online_backup_load_backup":{
+    "message":"Charger une sauvegarde"
+  },
+  "ui_online_remove_load_backup":{
+    "message":"Supprimer la sauvegarde"
+  },
+  "ui_drag_widget_message":{
+    "message":"Pour placer un widget, cliquez puis faîtes glisser sur une tuile vide."
+  },
+  "ui_online_backups_desc":{
+    "message":"Les sauvegardes en ligne sont stockées à l'aide de l'API de stockage Chrome et ont un espace limité de 100KB. Vous pouvez accéder à ces sauvegardes sur plusieurs ordinateurs qui sont connectés avec le même compte Google Chrome. <a href='https:\/\/support.google.com\/chrome\/answer\/185277?hl=en'> Apprenez à vous connecter à Chrome.<\/a>"
+  },
+  "ui_online_backups_warning":{
+    "message":"<b>Important :<\/b> Vous devez être connecté à Google Chrome en utilisant le même compte pour synchroniser les sauvegardes en ligne. Si vous n'êtes pas connecté, ces sauvegardes seront stockées hors ligne, uniquement sur cet ordinateur. Les images téléchargées directement dans l'extension <i>ne sont pas<\/i> sauvegardées."
+  },
+  "ui_apps_tip_message_title":{
+    "message":"Nouvelle App Installée"
+  },
+  "ui_apps_tip_message":{
+    "message":"Bien joué! Vous avez installé une application. Vous pouvez trouver toutes vos applications installées ici."
+  },
+  "ui_tutorial2_next":{
+    "message":"Suivant"
+  },
+  "ui_tutorial2_app_window_title":{
+    "message":"Fenêtre Apps"
+  },
+  "ui_tutorial2_app_drawer":{
+    "message":"Ici, vous trouverez toutes les applications que vous avez installées depuis le Chrome Web Store. Vous pouvez <b>glisser<\/b> les applications en dehors de cette fenêtre sur votre grille <b>déverrouillée<\/b>. Vous pouvez aussi désinstaller des applications depuis cette fenêtre."
+  },
+  "ui_tutorial2_widgets_window_title":{
+    "message":"Fenêtre Widgets"
+  },
+  "ui_tutorial2_widget_drawer":{
+    "message":"Ici, vous trouverez les widgets installés, réalisés par des développeurs tiers et spécialement conçu pour Awesome New Tab Page. Les widgets apportent un contenu dynamique et des informations utiles, directement sur votre page de nouvel onglet."
+  },
+  "ui_tutorial2_lock_title":{
+    "message":"Vérouiller\/Déverrouiller Grille"
+  },
+  "ui_tutorial2_lock_grid":{
+    "message":"Verrouiller et déverrouiller la grille vous permet de placer, déplacer et supprimer widgets, applications et raccourcis personnalisés. <b>Cliquez sur le cadenas pour continuer.<\/b>"
+  },
+  "ui_tutorial2_delete_widget":{
+    "message":"Supprimer cette appli"
+  },
+  "ui_tutorial2_delete_widget_string":{
+    "message":"Vous pouvez personnaliser la grille comme bon vous semble. Vous pouvez supprimer les tuiles que vous ne voulez pas. Essayer en <b>supprimant le widget du tutoriel.<\/b>"
+  },
+  "ui_tutorial2_empty_grid_title":{
+    "message":"Titre grille vide"
+  },
+  "ui_tutorial2_empty_grid_string":{
+    "message":"Pourquoi se limiter aux applications trouvées sur le Chrome Web Store ? <b>Cliquez sur cette tuile vide<\/b> pour créer un raccourci personnalisé vers n'importe où sur le web."
+  },
+  "ui_tutorial2_completed_title":{
+    "message":"Vous êtes super !"
+  },
+  "ui_tutorial2_completed_string":{
+    "message":"Genre, vraiment génial. Maintenant vous savez comment utiliser Awesome New Tab Page pour obtenir le meilleur de votre expérience Chrome. Alors, qu'allez vous faire maintenant ?"
+  },
+  "ui_tutorial2_finish_string":{
+    "message":"Finir Tutoriel"
+  },
+  "ui_tutorial2_main_welcome":{
+    "message":"Bienvenue sur"
+  },
+  "ui_tutorial2_main_feels":{
+    "message":"Vous venez juste de mettre à niveau vers l'incroyable. Comment se sent-on ?"
+  },
+  "ui_tutorial2_main_getstarted":{
+    "message":"Peut-être un peu trop génial tout à la fois? Ne vous inquiétez pas, le widget tutoriel va vous aider à démarrer."
+  },
+  "ui_tutorial2_main_click":{
+    "message":"Cliquez sur ce petit bouton minuscule là-bas pour y aller."
+  },
+  "ui_tutorial2_main_start":{
+    "message":"Commencer Tutoriel"
+  }
 }
