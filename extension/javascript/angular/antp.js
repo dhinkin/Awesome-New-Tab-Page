@@ -53,7 +53,11 @@ var
         tiles = stock_widgets;
         storage.set({
           tiles: tiles
+        }, function() {
+          $(window).trigger("antp-widgets")
         });
+
+        return;
       };
 
       $scope.widgets = [];
@@ -64,8 +68,7 @@ var
         if ( tile.isApp === true )
           tile.type = "app";
 
-        tile.ext = tile.id;
-        tile.id = id;
+        tile.ext = tile.id = id;
 
         if ( tiles[tile.id].optionsUrl ) {
           tile.optionsUrl = tiles[tile.id].optionsUrl;
@@ -147,7 +150,6 @@ var
             $scope.custom_shortcuts[id] = tile;
             break;
         }
-
       });
 
       setTimeout(function(){

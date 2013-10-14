@@ -37,7 +37,7 @@
       isApp: true
       name: "Get Widgets"
       color: "rgba(0, 160, 60, 1)"
-      id: "webstore"
+      id: "getwidgets"
       stock: true
       img: "/images/antp-flat-128.png"
       simg: "/images/antp-flat-128.png"
