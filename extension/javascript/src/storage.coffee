@@ -48,8 +48,9 @@
 
     # If there are tiles in localStorage, set Chrome Storage to localStorage
     if localStorage.getItem("widgets")
-        tiles: JSON.parse(localStorage.getItem("widgets"))
-      # localStorage.removeItem("widgets")
+      storage.set tiles: JSON.parse(localStorage.getItem("widgets"))
+      localStorage.setItem("old_widgets", localStorage.getItem("widgets"))
+      localStorage.removeItem("widgets")
 
 # Load widget settings
   window.widgets = JSON.parse(localStorage.getItem("widgets"))
