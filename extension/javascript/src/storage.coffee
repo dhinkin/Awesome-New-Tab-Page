@@ -18,7 +18,7 @@
 
       chrome.storage.local.get keys, (items) ->
         # Process settings and replace
-        items.settings_debug = items.settings;
+        items.settings_raw = items.settings;
         items.settings = settings.getAll(items.settings);
 
         if callback

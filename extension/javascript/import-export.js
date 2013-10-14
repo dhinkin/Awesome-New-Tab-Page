@@ -34,11 +34,7 @@ function restore(callbackReturned) {
 
   var restoreString = localStorage.backupBeforeImport;
   if (restoreString) {
-    if (importLocalStorage(restoreString)) {
-      localStorage.msg = JSON.stringify({title: chrome.i18n.getMessage("ui_import_export_msg_header"),
-        message: chrome.i18n.getMessage("ui_import_export_restore_complete_msg")});
-      window.location.reload();
-    }
+    importLocalStorage(restoreString);
   } else {
     $.jGrowl(chrome.i18n.getMessage("ui_import_export_no_restore_msg"), { header: chrome.i18n.getMessage("ui_import_export_msg_header") });
   }
@@ -51,10 +47,10 @@ $("#export-btn").bind("click", function() {
   $textArea = $("#export-textarea");
   $textArea.show();
 
-  var exportString = buildExportString();
-
-  $textArea.val(exportString);
-  $textArea.select();
+  buildExportString(function(export_string){
+    $textArea.val(export_string);
+    $textArea.select();
+  });
 });
 
 // upon click on Save Backup online
@@ -62,27 +58,26 @@ $("#save-backup-btn").bind("click", function() {
 
 });
 
-function buildExportString() {
-  var exportDataObj = {};
-  var locStor = localStorage;
-  for(var i=0, len=locStor.length; i<len; i++) {
-    var key = locStor.key(i);
-    if (key != "backupBeforeImport" && key != "installed_widgets" &&
-        key != "open_tabs" && key != "recently_closed") { // don't export restore data and installed_widgets
-      var value = locStor[key];
-      exportDataObj[key] = value;
-    }
-  }
-  var base64str = Base64.encode(JSON.stringify(exportDataObj));
-  var dateObj = new Date();
-  var fullYearVal = dateObj.getFullYear();
-  var monthVal = dateObj.getMonth()+1;
-  var dateVal = dateObj.getDate();
-  if (dateVal<10) {dateVal='0'+dateVal;}
-  if (monthVal<10) {monthVal='0'+monthVal;}
+function buildExportString(callback) {
+  storage.get(["tiles", "settings"], function(storage_data) {
+    var exportDataObj = {};
 
-  var exportString = '[ANTP_EXPORT|' + fullYearVal + '-' + monthVal + '-' + dateVal + '|' + chrome.app.getDetails().version + '|' + base64str + ']';
-  return exportString;
+    if (storage_data.tiles)
+      exportDataObj.tiles = storage_data.tiles;
+    if (storage_data.settings_raw)
+      exportDataObj.settings = storage_data.settings_raw;
+
+    var base64str = Base64.encode(JSON.stringify(exportDataObj));
+    var dateObj = new Date();
+    var fullYearVal = dateObj.getFullYear();
+    var monthVal = dateObj.getMonth()+1;
+    var dateVal = dateObj.getDate();
+    if (dateVal<10) {dateVal='0'+dateVal;}
+    if (monthVal<10) {monthVal='0'+monthVal;}
+
+    var exportString = '[ANTP_EXPORT|' + fullYearVal + '-' + monthVal + '-' + dateVal + '|' + chrome.app.getDetails().version + '|' + base64str + ']';
+    callback(exportString);
+  });
 }
 
 
@@ -90,14 +85,8 @@ function buildExportString() {
 $("#import-export-contents #run-import-btn").bind("click", function() {
   var $textArea = $("#import-textarea");
   var inputStr = $textArea.val().trim();
-  if (validateImportString(inputStr))
-  {
-    if (importLocalStorage(inputStr)) {
-      // to display message on page refresh, store it in localstorage
-      localStorage.msg = JSON.stringify({title: chrome.i18n.getMessage("ui_import_export_msg_header"),
-        message: chrome.i18n.getMessage("ui_import_export_complete_msg")});
-      window.location.reload();
-    }
+  if (validateImportString(inputStr)) {
+    importLocalStorage(inputStr);
   }
 });
 
@@ -105,14 +94,12 @@ function validateImportString(importString) {
   if (importString.length == 0) {
     $.jGrowl(chrome.i18n.getMessage("ui_import_export_empty_string_msg"), { header: chrome.i18n.getMessage("ui_import_export_msg_header") });
     return false;
-  }
-  else {
+  } else {
     var stringParts = importString.split('|');
     if (stringParts.length != 4 || stringParts[0] != "[ANTP_EXPORT" || (new Date(stringParts[1])).toString() == "Invalid Date" || stringParts[3].length < 1) {
       $.jGrowl(chrome.i18n.getMessage("ui_import_export_invalid_string_msg"), { header: chrome.i18n.getMessage("ui_import_export_msg_header") });
       return false;
-    }
-    else {
+    } else {
       var antpVersion = stringParts[2].split('.');
       if (antpVersion.length != 4) {
         $.jGrowl(chrome.i18n.getMessage("ui_import_export_invalid_string_msg"), { header: chrome.i18n.getMessage("ui_import_export_msg_header") });
@@ -124,14 +111,27 @@ function validateImportString(importString) {
 }
 
 function importLocalStorage(importString) {
-  importString = importString.substring(0, importString.length-1);
-  var tArr = importString.split('|');
-  var base64str = tArr[tArr.length-1];
-  var exportDataObj = JSON.parse(Base64.decode(base64str));
-  localStorage.backupBeforeImport = buildExportString();  // save data before import for restore purpose
-  var locStor = localStorage;
-  for(var key in exportDataObj) {
-    locStor.setItem(key, exportDataObj[key]);
-  }
-  return true;
+  buildExportString(function(export_string) {
+    localStorage.backupBeforeImport = export_string;
+    localStorage.msg = JSON.stringify({
+      title: chrome.i18n.getMessage("ui_online_backup_backup_imported_title"),
+      message: chrome.i18n.getMessage("ui_online_backup_backup_imported")
+    });
+
+    importString = importString.substring(0, importString.length-1);
+    var tArr = importString.split('|');
+    var base64str = tArr[tArr.length-1];
+    var exportDataObj = JSON.parse(Base64.decode(base64str));
+
+    if (exportDataObj.tiles) {
+      storage.set({tiles: exportDataObj.tiles});
+      if (exportDataObj.settings) {
+        storage.set({settings: exportDataObj.settings});
+      }
+    } else if (exportDataObj.widgets) {
+      storage.set({tiles: JSON.parse(exportDataObj.widgets)});
+    }
+
+    window.location.reload();
+  });
 }

@@ -871,12 +871,7 @@ var
                 if (!checkForErrors(chrome.runtime.lastError)) {
                   var importString = combineChunks(chunks);
                   if (validateImportString(importString)) {
-                    if (importLocalStorage(importString)) {
-                      // to display message on page refresh, store it in localstorage
-                      localStorage.msg = JSON.stringify({title: chrome.i18n.getMessage("ui_online_backup_backup_imported_title"),
-                        message: chrome.i18n.getMessage("ui_online_backup_backup_imported")});
-                      window.location.reload();
-                    }
+                    importLocalStorage(importString)
                   }
                 }
               });
