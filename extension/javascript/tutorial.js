@@ -63,7 +63,9 @@ function startTutorial() {
               break;
             case 3:
               $("#unlock-button").removeClass("tutorial-next");
-              api.set('position.target', current.target.show().addClass("tutorial-next"));
+              setTimeout(function(){
+                api.set('position.target', current.target.show().addClass("tutorial-next"));
+              }, 0);
               break;
             case 4:
               $(".tile#0x0").removeClass("tutorial-next");
